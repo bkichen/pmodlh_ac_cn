@@ -1,0 +1,581 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>中国科学院紫金山天文台青海观测站2017年招聘启事----中国科学院紫金山天文台青海观测站</title>
+<link href="../../images/cn53css.css" rel="stylesheet" type="text/css">
+<script>
+function writeImg(){
+   var filePath = "";//记录A链接的地址
+   var imgUl = document.getElementById('imgUl');//得到appendix的父标签
+   for(var i=imgUl.childNodes.length-1;i>=0;i--){//倒序循环父标签的元素，通过标签名得到A标签的地址
+      if(imgUl.childNodes[i].tagName=="A"){
+	     filePath = imgUl.childNodes[i].href;
+		 //alert(imgUl.childNodes[i].innerText);
+		 break;//得到父标签里最后的一个A标签即退出循环
+	  }
+   }
+
+   var fileExt = filePath.substring(filePath.lastIndexOf(".")+1);//得到附件的后缀名
+   //根据后缀名判断附件类型，填写不同的图片
+   if(fileExt=="doc" || fileExt=="docx"){
+     document.write("<img src='../../images/ico_doc.jpg' />");
+   }
+   else if(fileExt=="xls" || fileExt=="xlsx"){
+	 document.write("<img src='../../images/ico_xls.jpg' />");
+   }
+   else if(fileExt=="ppt" || fileExt=="pptx"){
+	 document.write("<img src='../../images/ico_ppt.jpg' />");
+   }
+   else if(fileExt=="rar"){
+	 document.write("<img src='../../images/ico_rar.jpg' />");
+   }
+   else if(fileExt=="txt"){
+	 document.write("<img src='../../images/ico_txt.jpg' />");
+   }
+   else{
+	 document.write("<img src='../../images/ico_other.jpg' />");
+   }
+}
+   </script>
+<script language="javascript">    
+ 
+function doZoom(size){
+	document.getElementById('content').className ="black_12_zhengwne"+size;
+}    
+</script>
+<style>
+.black_12_zhengwne{font-size: 12px;line-height: 24px;font-style:normal; color:#424242; padding:20px 25px;border-bottom:1px dashed #d1d1d1;}
+
+.black_12_zhengwne1{font-size:12px;line-height: 24px;font-style:normal; color:#424242; padding:20px 25px;border-bottom:1px dashed #d1d1d1;}
+.black_12_zhengwne1 p{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 span{font-size:12px;line-height: 24px;  }
+.black_12_zhengwne1 div{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 strong{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 table{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 tr{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 td{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 font{font-size:12px;line-height: 24px; }
+.black_12_zhengwne2{font-size:14px;line-height: 24px; font-style:normal; color:#424242; padding:20px 25px;border-bottom:1px dashed #d1d1d1; }
+.black_12_zhengwne2 span{font-size:14px;line-height: 24px; }
+.black_12_zhengwne2 p{font-size:14px;line-height: 24px; }
+.black_12_zhengwne2 div{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 strong{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 table{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 tr{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 td{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 font{font-size:14px;line-height: 24px; }
+.black_12_zhengwne3{font-size:16px; line-height: 24px;font-style:normal; color:#424242; padding:20px 25px;border-bottom:1px dashed #d1d1d1;}
+.black_12_zhengwne3 p{font-size:16px;line-height: 24px;}
+.black_12_zhengwne3 span{font-size:16px; line-height: 24px;  }
+.black_12_zhengwne3 div{font-size:16px;line-height: 24px; }
+.black_12_zhengwne3 strong{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 table{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 tr{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 td{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 font{font-size:16px;line-height: 24px; }
+</style>		
+
+<script language="javascript">   
+function num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt){
+		var nCurrIndex = _nCurrIndex || 0;
+		if(nCurrIndex == 0)
+			document.write("<span style='color:#007355'>1</span>&nbsp;");
+		else
+			document.write("<a style='font-size:12px;color:#007355' href=\""+_sPageName+"."+_sPageExt+"\">1</a>&nbsp;");
+		
+		for(var i=1; i<_nPageCount; i++){
+		if(nCurrIndex == i)
+			document.write("<span style='color:#007355'>"+(i+1)+"</span>&nbsp;");
+		else
+			document.write("<a style='font-size:12px;color:#007355' href=\""+_sPageName+"_" + i + "."+_sPageExt+"\">"+(i+1)+"</a>&nbsp;");
+			}
+		return "";
+		}
+		
+function createPageHTML(_nPageCount, _nCurrIndex, _sPageName, _sPageExt){
+	if(_nPageCount == null || _nPageCount<=1){
+		return;
+	}
+	
+	var nCurrIndex = _nCurrIndex || 0;
+	
+	if (_nPageCount==2){
+		if(nCurrIndex == 0){
+		document.write("<span style='color:#007355'>1</span>&nbsp;<a style='font-size:12px;color:#007355' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">2</a>&nbsp;<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">【下一页】</a>&nbsp;");
+		}
+		else if (nCurrIndex == 1){
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+ "."+_sPageExt+"\">【上一页】</a>&nbsp;<a style='font-size:12px;color:#007355' href=\""+_sPageName+ "."+_sPageExt+"\">1</a>&nbsp;<span style='color:#007355'>2</span>&nbsp;");
+		}
+	}
+	else{
+
+	if(nCurrIndex == 0){
+		document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">【下一页】</a>&nbsp;");
+		}
+	else if (nCurrIndex == 1){
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"."+_sPageExt+"\">【上一页】</a>&nbsp;");
+		document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">【下一页】</a>&nbsp;");
+		}
+	else if(nCurrIndex == (_nPageCount-1)){
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex-1) + "."+_sPageExt+"\">【上一页】</a>&nbsp;");
+		document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+		}
+	else{
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex-1) + "."+_sPageExt+"\">【上一页】</a>&nbsp;");
+		document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">【下一页】</a>&nbsp;");
+		}
+		} 
+	
+}
+    
+</script>
+</head>
+<body>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="15" background="../../images/cn53l02.gif"><img src="../../images/cn53l01.jpg"></td>
+    <td width="970">
+      <style>
+.apDiv1 {
+	position:absolute;
+	z-index:1;
+	text-align:left;
+	visibility:visible; 
+}
+.apDiv2 {
+	position:absolute;
+	z-index:1;
+	text-align:left;
+	visibility: hidden;
+        white-space:nowrap;
+}
+.cn51toppd1 {
+color:#FFFFFF;
+font-size:12px;
+font-weight:bold;
+padding:0 8px 0 8px;
+}
+.mmul { padding:0px;  border:1px #b9b9b9 solid; margin:29px 0px 0px 0px; background: #F6F6F6; padding:4px 0px; }
+.mmul li { list-style-type:none; margin:0px;}
+.mmul li a { width:100%; height:100%; margin:0px; background: #F6F6F6; padding:3px 8px 3px 10px; font-size:10px; font-weight:normal; }
+.mmul li a:hover { color:#CC3300; text-decoration:none; background: #e1e1e1;}
+</style>
+<script type="text/javascript">
+<!--
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+<table width="970" border="0" cellpadding="0" cellspacing="0" class="logo" align="center">
+        <tr>
+          <td width="509" height="64" align="right" valign="top"><img src="../../images/cn53logo01.jpg" width="484" height="60"></td>
+          <td width="461" align="right" valign="top"><table border="0" cellpadding="0" cellspacing="0" class="cn51white12" style="margin-top:10px;">
+              <tr>
+                <td height="25" align="right" style="padding:0 10px 0 0"><a href="../../lxwm/index.html" class="cn51white12" target="_top">联系我们</a> | <a href="../../wzdt/index.html" class="cn51white12" target="_top">网站地图</a> | <a href="../../index1.html" class="cn51white12" target="_top">English</a> | <a href="javascript:;" class="cn51white12" target="_top">中国科学院紫金山天文台</a> | <a href="javascript:;" class="cn51white12" target="_top">中国科学院</a></td>
+              </tr>
+            </table>
+			<table border="0" cellpadding="0" cellspacing="0" style="margin:5px 15px 0 0;">
+        <form name="searchform" action="http://search.cas.cn/search" method="post" onsubmit="return search_check()" target="_top">
+        <input type="hidden" name="channelid" value="44052">
+        <input type="hidden" name="option" value="ideosingle">
+        <input type="hidden" name="searchword" value="">
+<input name="preKeyword" value="" type="hidden">
+        <tr> 
+          <td align="left" valign="center">
+          关键字：<input name="iptSword" id="iptSword" type="text" onclick="javascript:if(this.value=='请输入关键字') this.value=''" class="input" border="0" value="请输入关键字"></td>
+          <td width="43" align="right"><input type="image" src="../../images/cn53icon.jpg" width="27" height="18"></td>
+        </tr></form>
+<script type="text/javascript">
+function escapeTrs(str){//转义trs关键字
+	var arr = new Array("\\\\","!","@","#","\\$","\%","\\^","\&","\\*","\\(","\\)","\\_","\\+","\-","\=","\\{","\\}","\\|","\\[","\\]",";","'",":","\"","\<","\>","\\?","\,","\\.","\/");
+	
+	for(var i=0;i<arr.length;i++){
+	 var re = new RegExp(arr[i],"img");
+	 str = str.replace(re, '\\' + arr[i]);
+	}
+	
+	return str;
+}
+function dealKeywords(sword, relation)
+{	
+	var sTemp = "";
+	var swordtemp = ""; 
+	var sArray;
+
+	if(sword.indexOf("*")<0&&sword.indexOf("+")<0&&sword.indexOf(")")<0&&sword.indexOf("(")<0&&sword.indexOf("\\")<0)
+	{
+		sword = escapeTrs(sword);
+		//不含trs关键字
+		sArray = sword.split(" ");//输入框空格处理,空格表示 relation 关系
+		for(var i=0; i<sArray.length;i++)
+		{	
+			sTemp = sArray[i].replace(/^\s+|\s+$/g,"");//去掉sword前后空格
+			if(sTemp!="")
+			{
+				swordtemp += "'"+ sTemp + "' "+relation+" ";/*加上''符号,处理trs带运算符的检索词报错的问题*/
+			}					
+		}
+		if(swordtemp.lastIndexOf(" "+relation+" ")!=-1)//去掉relation结尾
+		{
+			swordtemp = swordtemp.substring(0,swordtemp.length-relation.length-2);
+		} 
+	}
+	
+	else//包含trs关键字
+	{    
+		 if(sword.indexOf("\\")!=-1){
+		 	var re = new RegExp("\\\\","img");
+	 		sword = sword.replace(re, '\\\\');
+		 }
+		 swordtemp = "'"+sword+"'";
+	}
+	return swordtemp;	
+} 
+
+function search_check() {
+	var sword =document.getElementById("iptSword").value.replace(/^\s+|\s+$/g,"");
+	
+	if (sword=='' || sword=='请输入关键字') {
+		alert('请输入关键字!');
+		return false;
+	} else {	
+		document.searchform.searchword.value = dealKeywords(sword, "and");
+		document.searchform.preKeyword.value = encodeURI(document.getElementById("iptSword").value);//传参前进行编码
+		document.searchform.submit();
+	}
+}
+</script>
+      </table>
+	  </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="banner" align="center">
+        <tr>
+          <td valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:15px;">
+            <tr>
+              <td align="right">&nbsp;</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="34" background="http://www.dlh.pmo.cas.cn/images/cn53top04.gif"><table border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+			  <style>
+			  .cn51toppd{font-weight: bold;color: #FFFFFF;padding: 0 12px 0 15px;font-size: 12px;}
+			  </style>
+                <td width="2"><img src="../../images/cn53top06.gif"></td>
+                <td>  
+				<a href="../../index.html" class="cn51toppd" target="_top">首页</a>
+				</td>
+                <td width="2"><img src="../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu01" onmousemove="MM_showHideLayers('menu01','','show')" onmouseout="MM_showHideLayers('menu01','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../qhzgk/qhgczjj/index.html" target="_top">青海观测站简介</a></li> 
+				
+                <li><a href="../../qhzgk/qhzhyc/index.html" target="_top">青海站欢迎辞</a></li> 
+				
+                <li><a href="../../qhzgk/xrld/index.html" target="_top">现任领导</a></li> 
+				
+                <li><a href="../../qhzgk/lrld/index.html" target="_top">历任领导</a></li> 
+				
+                <li><a href="../../qhzgk/qhzfm/index.html" target="_top">青海站风貌</a></li> 
+				
+                </ul></div>  
+				<a href="../../qhzgk/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu01','','show')" onmouseout="MM_showHideLayers('menu01','','hide')" target="_top">青海站概况</a>
+				</td>
+				<td width="2"><img src="../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu02" onmousemove="MM_showHideLayers('menu02','','show')" onmouseout="MM_showHideLayers('menu02','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../jgsz/yxz/index.html" target="_top">运行组</a></li> 
+				
+                <li><a href="../../jgsz/gcyjz/index.html" target="_top">观测研究组</a></li> 
+				
+                <li><a href="../../jgsz/hqz/index.html" target="_top">后勤组</a></li> 
+				
+                <li><a href="../../jgsz/song/index.html" target="_top">SONG组</a></li> 
+				
+                </ul></div>  
+				<a href="../../jgsz/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu02','','show')" onmouseout="MM_showHideLayers('menu02','','hide')" target="_top">机构设置</a>
+				</td>
+				<td width="2"><img src="../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu03" onmousemove="MM_showHideLayers('menu03','','show')" onmouseout="MM_showHideLayers('menu03','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../xwdt/cdcxppy/index.html" target="_top">超导成像频谱仪（多波束系统）最新观测结果</a></li> 
+				
+                <li><a href="../../xwdt/xw/index.html" target="_top">新闻</a></li> 
+				
+                <li><a href="../../xwdt/tpxw/index.html" target="_top">图片新闻</a></li> 
+				
+                </ul></div>  
+				<a href="../../xwdt/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu03','','show')" onmouseout="MM_showHideLayers('menu03','','hide')" target="_top">新闻动态</a>
+				</td>
+                <td width="2"><img src="../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu04" onmousemove="MM_showHideLayers('menu04','','show')" onmouseout="MM_showHideLayers('menu04','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../wyjsbjs/hmbwyj/index.html" target="_top">13.7米毫米波望远镜</a></li> 
+				
+                <li><a href="../../wyjsbjs/kjsp/index.html" target="_top">空间碎片</a></li> 
+				
+                <li><a href="../../wyjsbjs/song/index.html" target="_top">SONG</a></li> 
+				
+                <li><a href="../../wyjsbjs/lztx/index.html" target="_top">量子通信</a></li> 
+				
+                </ul></div> 
+				<a href="../../wyjsbjs/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu04','','show')" onmouseout="MM_showHideLayers('menu04','','hide')" target="_top">望远镜设备介绍</a>
+				</td>
+                <td width="2"><img src="../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu05" onmousemove="MM_showHideLayers('menu05','','show')" onmouseout="MM_showHideLayers('menu05','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../rydw/kygg/index.html" target="_top">科研骨干</a></li> 
+				
+                <li><a href="../../rydw/yjy/index.html" target="_top">研究员</a></li> 
+				
+                <li><a href="../../rydw/fyjy/index.html" target="_top">副研究员</a></li> 
+				
+                </ul></div> 
+				<a href="../../rydw/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu05','','show')" onmouseout="MM_showHideLayers('menu05','','hide')" target="_top">人员队伍</a>
+				</td>
+				<td width="2"><img src="../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu06" onmousemove="MM_showHideLayers('menu06','','show')" onmouseout="MM_showHideLayers('menu06','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../rczp/gk/index.html" target="_top">概况</a></li> 
+				
+                <li><a href="../../rczp/zpxx/index.html" target="_top">招聘信息</a></li> 
+				
+                <li><a href="../../rczp/lyxx/index.html" target="_top">录用信息</a></li> 
+				
+                </ul></div> 
+				<a href="../../rczp/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu06','','show')" onmouseout="MM_showHideLayers('menu06','','hide')" target="_top">人才招聘</a>
+				</td>
+				
+                                     <td width="2"><img src="../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu07" onmousemove="MM_showHideLayers('menu07','','show')" onmouseout="MM_showHideLayers('menu07','','hide')">
+                <ul class="mmul">
+
+				
+                <li><a href="../../hzjl/hzyjl/index.html" target="_top">合作交流</a></li> 
+				
+                </ul></div> 
+				<a href="../../hzjl/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu07','','show')" onmouseout="MM_showHideLayers('menu07','','hide')" target="_top">合作交流</a>
+				</td>
+				<td width="2"><img src="../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu08" onmousemove="MM_showHideLayers('menu08','','show')" onmouseout="MM_showHideLayers('menu08','','hide')">
+                <ul class="mmul">
+
+				
+                <li><a href="../../kycc/hjqk/index.html" target="_top">获奖情况</a></li> 
+				
+                <li><a href="../../kycc/lwcc/index.html" target="_top">论文产出</a></li> 
+				
+                <li><a href="../../kycc/zlsq/index.html" target="_top">专利申请</a></li> 
+				
+                </ul></div> 
+				<a href="../../kycc/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu08','','show')" onmouseout="MM_showHideLayers('menu08','','hide')" target="_top">科研产出</a>
+				</td>
+
+                <td width="2"><img src="../../images/cn53top06.gif"></td>
+                <td>
+
+				<div class="apDiv2" id="menu09" onmousemove="MM_showHideLayers('menu09','','show')" onmouseout="MM_showHideLayers('menu09','','hide')">
+                <ul class="mmul">
+
+				
+                <li><a href="../../xzzq/wyjxgrj/index.html" target="_top">13.7米望远镜相关软件</a></li> 
+				
+                <li><a href="../../xzzq/sqb/index.html" target="_top">申请表</a></li> 
+				
+                </ul></div> 
+				<a href="../../xzzq/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu09','','show')" onmouseout="MM_showHideLayers('menu09','','hide')" target="_top">下载专区</a>
+				</td>
+
+                <td width="2"><img src="../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu11" onmousemove="MM_showHideLayers('menu11','','show')" onmouseout="MM_showHideLayers('menu11','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../kpjd/kpdt/index.html" target="_top">科普动态</a></li> 
+				
+                <li><a href="../../kpjd/kxtp/index.html" target="_top">科学图片</a></li> 
+				
+                </ul></div> 
+				<a href="../../kpjd/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu11','','show')" onmouseout="MM_showHideLayers('menu11','','hide')" target="_top">科普基地</a>
+				</td>
+
+                <td width="2"><img src="../../images/cn53top06.gif"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td height="3" bgcolor="#46acfb"></td>
+        </tr>
+      </table>
+      <table width="970" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="235" bgcolor="#EEEEEE">
+		  <table width="235" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="1" bgcolor="#FFFFFF"></td>
+              </tr>
+              <tr>
+                <td height="30" bgcolor="#1B67B0"><table width="235" border="0" cellpadding="0" cellspacing="0" class="cn51white14b">
+                    <tr>
+                      <td width="30" align="center"><img src="../../images/cn53left02.gif" width="14" height="14"></td>
+                      <td width="205">通知公告</td>
+                    </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td height="1" bgcolor="#738B98"></td>
+              </tr>
+              <tr>
+                <td height="1" bgcolor="#FFFFFF"></td>
+              </tr>
+            </table>
+            <table width="235" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" valign="top" style="padding:16px">
+                  
+                  </td>
+              </tr>
+            </table>		
+			</td>
+          <td width="3" bgcolor="#FFFFFF"></td>
+          <td width="1" bgcolor="#D8D8D8"></td>
+          <td width="731" bgcolor="#FFFFFF"><table width="731" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="30" bgcolor="#E9E9E9" style="padding:0 0 0 10px"><span>现在位置：<a href="../../index.html" class="CurrChnlCls">首页</a>&nbsp;&gt;&nbsp;<a href="../index.html" class="CurrChnlCls">通知公告</a></span></td>
+              </tr>
+              <tr>
+                <td height="1" bgcolor="#BCC3B9"></td>
+              </tr>
+            </table>
+            <table width="724" border="0" cellpadding="0" cellspacing="0" class="cn5rightkj">
+              <tr>
+                <td valign="top" style="padding:10px 0 10px 0"><table width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td align="center" class="black_20_600">中国科学院紫金山天文台青海观测站2017年招聘启事</td>
+                    </tr>
+                    <tr>
+                      <td align="center" class="font03"> | 17-03-15 |  【<a href="javascript:doZoom(3)" class="black12data">大</a> <a href="javascript:doZoom(2)" class="black12data">中</a> <a href="javascript:doZoom(1)" class="black12data">小</a>】<a href="#" onclick="window.print()">【打印】</a><a href="#" onclick="javascript:window.close();">【关闭】</a></td>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top" class="font04" id="content"><div class="TRS_Editor"><p align="justify">　　<span>中国科学院紫金山天文台青海观测站为国家全额拨款事业单位，位于青海省海西州德令哈市，于</span><span>1982</span><span>年开始建设，包括</span><span>13.7</span><span>米毫米波射电望远镜、移动式亚毫米波望远镜、空间目标与碎片观测望远镜、</span><span>SONG 1</span><span>米望远镜、</span><span>50Bin</span><span>望远镜、</span><span>1.2</span><span>米量子通讯科学实验专用望远镜、实验室、制氮车间、金工车间等设备和设施。目前正在为即将建设的南极天文台做技术和人员准备。</span>&nbsp;</p><p align="justify">　　<span>建成于</span><span>1990</span><span>年的</span><span>13.7</span><span>米毫米波射电望远镜是我国毫米波段唯一的一台大型设备，向全世界天文研究人员开放使用，主要用于宇宙毫米波射电天文观测。该望远镜装备了国家重大科研装备研制项目</span><span>-</span><span>超导成像频谱仪，工作频段为</span><span>85—115GHz</span><span>，用于进行银河系内分子云与恒星形成研究、行星状星云研究、恒星晚期演化研究、星际介质物理、星际分子谱线巡天等现代天文学和天体物理若干前沿领域的天文观测研究。先后有日本、巴西、俄罗斯、德国、荷兰等国家和地区的研究人员使用该设备。</span><span>13.7</span><span>米毫米波射电望远镜工程</span><span>1999</span><span>年获国家科技进步二等奖；研制</span><span>90-115GHz</span><span>超导</span><span>SIS</span><span>接收机获</span><span>2002</span><span>年度江苏省科技进步一等奖。</span><span>2002</span><span>年研制成功了</span><span>“</span><span>多谱线后端</span><span>”</span><span>，该项目，</span><span>2005</span><span>年获青海省科技进步一等奖，</span><span>2006</span><span>年获国家科技进步二等奖。</span>&nbsp;</p><p align="justify">　　<span>紫金山天文台青海观测站从中国科学院一期创新开始得到了中国科学院知识创新一、二和三期强化支持。经过中国科学院三期创新工作的努力，望远镜设备运行状态和观测服务、科学产出、高技术研究等方面取得了更多的创新成果，成为毫米波</span><span>-</span><span>亚毫米波射电天文开放观测研究的国际性基地，成为普及现代科学技术知识的开放性的教育基地。</span><span>2009</span><span>年</span><span>6</span><span>月，青海德令哈毫米波射电天文观测基地获科技部</span><span>“</span><span>全国野外科技工作先进集体</span><span>”</span><span>称号。</span><span>2009-2011</span><span>、</span><span>2012-2015</span><span>两次天文财政专项评估中，基地在同类望远镜中均取得第一的好成绩。</span>&nbsp;</p><p align="justify">　　<b><span>工作条件良好</span></b>&nbsp;<span>本单位具有现代化的科技信息网络、宽带互联网，有优越的工作学习场所、先进的科研实验仪器设备，承担多项国家和自然科学基金的研究课题，科研经费充足。</span>&nbsp;</p><p align="justify">　　<b><span>科研技术力量强</span></b>&nbsp;<span>本单位现有创新人员１９＋</span><span>3</span><span>人，研究员</span><span>4</span><span>人（其中：站长</span><span>1</span><span>人，总工</span><span>1</span><span>人），高级工程师</span><span>8</span><span>人，副研究员</span><span>1</span><span>人。本站博士导师</span><span>4</span><span>人。目前承担</span><span>“</span><span>国家重点基础研究发展规划（</span><span>973</span><span>）</span><span>”</span><span>项目、国家自然科学基金十三五重点项目、中国科学院创新方向性项目、</span><span>863</span><span>高技术项目等一批国家和部门的重点科研项目，与美国、日本、意大利、俄罗斯、韩国、台湾等国家和地区从事合作研究和联合观测。</span>&nbsp;</p><p align="justify">　　<b><span>待遇从优</span></b>&nbsp;<span>见习期</span><span> </span><span>正常收入包括基本工资、岗位津贴、绩效奖励等</span><span>“</span><span>三元工资</span><span>”</span><span>。按国家法律、法规有关规定参加养老、失业、医疗等社会保险，并享受相关的待遇。其他福利待遇，按国家、中科院有关规定执行。对新聘人员，单位提供单身宿舍。</span>&nbsp;</p><p align="justify">　　<b><span>我们热忱欢迎事业心强、充满活力、热爱天文科研事业的有志青年来我单位施展才华。</span></b>&nbsp;</p><p align="justify">　　<b><span>说明：</span></b>&nbsp;</p><p align="justify">　　<b><span><span>一、</span></span></b><b><span>报名截止日期</span></b><span>： <b><span>2017</span>年<span>8</span>月<span>30</span>日。</b></span><b><span>有意报名应聘者，请尽快按要求投递简历，</span></b><b><span>岗位招满为止。</span></b>&nbsp;</p><p align="justify">　　<b><span>二、应聘材料及要求 </span></b>&nbsp;</p><p align="justify">　　<span>1</span><span>、所需应聘材料</span>&nbsp;</p><p align="justify">　　<span>1</span><span>）《个人简历》（请按<b>附件<span>2</span></b>填写）；</span>&nbsp;</p><p align="justify">　　<span>2</span><span>）承担科研工作及论文著作、专利授权、获奖成果的情况；</span>&nbsp;</p><p align="justify">　　<span>3</span><span>）学历学位证书复印件；持有国外学历学位者，提供我国相关认证机构的国外学历学位认证材料；</span>&nbsp;</p><p align="justify">　　<span>4)</span><span>其它可以证明个人能力水平的材料；</span>&nbsp;</p><p align="justify">　　<span>5)</span><span>还需要提供成绩单（盖章）、<span>2</span>份推荐信及《毕业生双向选择就业推荐表》；</span>&nbsp;</p><p align="justify">　　<span>6)</span><span>身份证复印件（身份证正、反两面复印在同一页上）。</span>&nbsp;</p><p align="justify">　　<span>2</span><span>、要求</span>&nbsp;</p><p align="justify">　　<span>1</span><span>）应聘人员个人简历（附件<span>2</span>表）“应聘岗位”栏填报格式：<span>***</span>岗位</span>&nbsp;</p><p align="justify">　　<span>2</span><span>）须同时提交<u>电子版和纸质版</u>应聘材料。纸质版应聘材料需打印目录，按顺序装订成册。注意：面试时须提供所有应聘材料的原件。</span>&nbsp;</p><p align="justify">　　<b><span>三、其他事宜</span></b>&nbsp;</p><p align="justify">　　<span>1</span><span>、经过初审，确定为面试候选人后通知本人面试事宜；</span>&nbsp;</p><p align="justify">　　<span>2</span><span>、所有应聘资料予以保密，不退还；</span>&nbsp;</p><p align="justify">　　<span>3</span><span>、<b>附件<span>2</span></b>需本人签字确认，所填写的内容需要提供相关的证明材料，例如填写的学历<span>/</span>学位以已经获得的证书为准；</span>&nbsp;</p><p align="justify">　　<span>4</span><span>、邮寄材料时请在信封注明“应聘材料”。</span>&nbsp;</p><p align="justify">　　<b><span>四、联系方式</span></b>&nbsp;</p><p align="justify">　　<span>地 址：青海省海西州德令哈市邮政局人民路支局<span>26</span>号信箱<span>(</span>天文台<span>)</span></span>&nbsp;</p><p align="justify">　　<span>邮 编：<span>817000<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span>&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>电话：<span>0977-8224969</span></span>&nbsp;</p><p align="justify">　　<span>联系人：巨秉刚</span><a name="_GoBack"></a>&nbsp;</p><p align="justify">　　<span>网 址：</span><span><a href="../../index.html"><span>www.dlh.pmo.cas.cn</span></a></span><span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span>电子信箱：</span><span><a href="mailto:dlhoffice@pmo.ac.cn"><b><span>dlhoffice@pmo.ac.cn</span></b></a></span>&nbsp;</p><p align="right">　&nbsp; <span><span>二〇一七年二月二十一日</span></span>&nbsp;</p></div></td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding:5px">
+</td>
+                    </tr>
+					<tr>
+                      <td align="center" style="padding:5px"><script language="JavaScript">
+createPageHTML(1, 0, "t20170315_4759169", "html");	
+</script>
+</td>
+                    </tr>
+                  </table>
+                  <table width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td valign="top"><table width="692" border="0" align="center" cellpadding="0" cellspacing="0" class="font05">
+                          <tr>
+                            <td height="22"><img src="../../images/cn53right11.gif" width="11" height="11"> <a href="javascript:;">评 论</a></td>
+                          </tr>
+                        </table>
+                        <table width="692" height="8" border="0" align="center" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table>
+				  <table id="appendix" width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td valign="top"><table width="692" border="0" align="center" cellpadding="0" cellspacing="0" class="font05">
+                          <tr>
+                            <td height="22"><img src="../../images/cn53right11.gif" width="11" height="11"> 附件下载：</td>
+                          </tr>
+                        </table>
+                        <table width="692" height="8" border="0" align="center" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td>
+	<ul class="isa_article_list" id="imgUl">
+		<a href="javascript:;" target="_blank">附件1 －中国科学院紫金山天文台青海观测站2017年度第1期公开招聘人才需求表.xls</a>&nbsp;&nbsp;<script>writeImg();</script>	<br><a href="javascript:;" target="_blank">附件2  个 人 简 历.doc</a>&nbsp;&nbsp;<script>writeImg();</script>	</ul>
+</td>
+<script>
+				if(document.getElementById("imgUl").innerText=="")
+				{document.getElementById("appendix").style.display="none"}
+				</script>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table>
+                  <table id="RelNews" width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td valign="top"><table width="692" border="0" align="center" cellpadding="0" cellspacing="0" class="font05">
+                          <tr>
+                            <td height="22"><img src="../../images/cn53right11.gif" width="11" height="11"> 相关新闻</td>
+                          </tr>
+                        </table>
+						 
+                        <table style="display:" width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+						  <tr>
+                            <td class="hui_13" style="padding:10px 20px">
+							<ul id="relnew">
+							
+							  </ul></td>
+							  <script>
+			  
+				if(document.getElementById("relnew").innerText=="")
+				{
+				document.getElementById("RelNews").style.display="none"}
+			  </script>
+                          </tr>
+						   </table>
+						</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+    </table></td>
+    <td width="15" background="../../images/cn53r02.gif"><img src="../../images/cn53r01.jpg"></td>
+  </tr>
+</table>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="77" align="center" valign="top" background="http://www.dlh.pmo.cas.cn/images/cn53bottom01.gif"><table width="970" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="234" height="57" align="center" background="http://www.dlh.pmo.cas.cn/images/cn53bottom02.gif"><a href="javascript:;"><img src="../../images/cn53bottom04.jpg" width="186" height="57" border="0"></a></td>
+          <td width="2" background="http://www.dlh.pmo.cas.cn/images/cn53bottom02.gif"><img src="../../images/cn53bottom03.gif" width="2" height="43"></td>
+          <td width="714" background="http://www.dlh.pmo.cas.cn/images/cn53bottom02.gif" class="cn51white13" style="padding:0 0 0 20px">Copyright？2003-2009 中国科学院紫金山天文台青海观测站 版权所有 青ICP备06001436号<br> 
+            <span class="cn51blue124">青海省德令哈市邮政局人民路支局26号信箱（天文台）817000<br>电话：09778221935 传真：09778224970
+</span></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,1508 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>2020-2021观测季节13.7米望远镜状态报告----中国科学院紫金山天文台青海观测站</title>
+<link href="../../../images/cn53css.css" rel="stylesheet" type="text/css">
+<script>
+function writeImg(){
+   var filePath = "";//记录A链接的地址
+   var imgUl = document.getElementById('imgUl');//得到appendix的父标签
+   for(var i=imgUl.childNodes.length-1;i>=0;i--){//倒序循环父标签的元素，通过标签名得到A标签的地址
+      if(imgUl.childNodes[i].tagName=="A"){
+	     filePath = imgUl.childNodes[i].href;
+		 //alert(imgUl.childNodes[i].innerText);
+		 break;//得到父标签里最后的一个A标签即退出循环
+	  }
+   }
+
+   var fileExt = filePath.substring(filePath.lastIndexOf(".")+1);//得到附件的后缀名
+   //根据后缀名判断附件类型，填写不同的图片
+   if(fileExt=="doc" || fileExt=="docx"){
+     document.write("<img src='../../../images/ico_doc.jpg' />");
+   }
+   else if(fileExt=="xls" || fileExt=="xlsx"){
+	 document.write("<img src='../../../images/ico_xls.jpg' />");
+   }
+   else if(fileExt=="ppt" || fileExt=="pptx"){
+	 document.write("<img src='../../../images/ico_ppt.jpg' />");
+   }
+   else if(fileExt=="rar"){
+	 document.write("<img src='../../../images/ico_rar.jpg' />");
+   }
+   else if(fileExt=="txt"){
+	 document.write("<img src='../../../images/ico_txt.jpg' />");
+   }
+   else{
+	 document.write("<img src='../../../images/ico_other.jpg' />");
+   }
+}
+   </script>
+<script language="javascript">    
+ 
+function doZoom(size){
+	document.getElementById('content').className ="black_12_zhengwne"+size;
+}    
+</script>
+<style>
+.black_12_zhengwne{font-size: 12px;line-height: 24px;font-style:normal; color:#424242; padding:20px 25px;border-bottom:1px dashed #d1d1d1;}
+
+.black_12_zhengwne1{font-size:12px;line-height: 24px;font-style:normal; color:#424242; padding:20px 25px;border-bottom:1px dashed #d1d1d1;}
+.black_12_zhengwne1 p{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 span{font-size:12px;line-height: 24px;  }
+.black_12_zhengwne1 div{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 strong{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 table{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 tr{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 td{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 font{font-size:12px;line-height: 24px; }
+.black_12_zhengwne2{font-size:14px;line-height: 24px; font-style:normal; color:#424242; padding:20px 25px;border-bottom:1px dashed #d1d1d1; }
+.black_12_zhengwne2 span{font-size:14px;line-height: 24px; }
+.black_12_zhengwne2 p{font-size:14px;line-height: 24px; }
+.black_12_zhengwne2 div{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 strong{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 table{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 tr{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 td{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 font{font-size:14px;line-height: 24px; }
+.black_12_zhengwne3{font-size:16px; line-height: 24px;font-style:normal; color:#424242; padding:20px 25px;border-bottom:1px dashed #d1d1d1;}
+.black_12_zhengwne3 p{font-size:16px;line-height: 24px;}
+.black_12_zhengwne3 span{font-size:16px; line-height: 24px;  }
+.black_12_zhengwne3 div{font-size:16px;line-height: 24px; }
+.black_12_zhengwne3 strong{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 table{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 tr{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 td{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 font{font-size:16px;line-height: 24px; }
+</style>		
+
+<script language="javascript">   
+function num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt){
+		var nCurrIndex = _nCurrIndex || 0;
+		if(nCurrIndex == 0)
+			document.write("<span style='color:#007355'>1</span>&nbsp;");
+		else
+			document.write("<a style='font-size:12px;color:#007355' href=\""+_sPageName+"."+_sPageExt+"\">1</a>&nbsp;");
+		
+		for(var i=1; i<_nPageCount; i++){
+		if(nCurrIndex == i)
+			document.write("<span style='color:#007355'>"+(i+1)+"</span>&nbsp;");
+		else
+			document.write("<a style='font-size:12px;color:#007355' href=\""+_sPageName+"_" + i + "."+_sPageExt+"\">"+(i+1)+"</a>&nbsp;");
+			}
+		return "";
+		}
+		
+function createPageHTML(_nPageCount, _nCurrIndex, _sPageName, _sPageExt){
+	if(_nPageCount == null || _nPageCount<=1){
+		return;
+	}
+	
+	var nCurrIndex = _nCurrIndex || 0;
+	
+	if (_nPageCount==2){
+		if(nCurrIndex == 0){
+		document.write("<span style='color:#007355'>1</span>&nbsp;<a style='font-size:12px;color:#007355' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">2</a>&nbsp;<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">【下一页】</a>&nbsp;");
+		}
+		else if (nCurrIndex == 1){
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+ "."+_sPageExt+"\">【上一页】</a>&nbsp;<a style='font-size:12px;color:#007355' href=\""+_sPageName+ "."+_sPageExt+"\">1</a>&nbsp;<span style='color:#007355'>2</span>&nbsp;");
+		}
+	}
+	else{
+
+	if(nCurrIndex == 0){
+		document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">【下一页】</a>&nbsp;");
+		}
+	else if (nCurrIndex == 1){
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"."+_sPageExt+"\">【上一页】</a>&nbsp;");
+		document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">【下一页】</a>&nbsp;");
+		}
+	else if(nCurrIndex == (_nPageCount-1)){
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex-1) + "."+_sPageExt+"\">【上一页】</a>&nbsp;");
+		document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+		}
+	else{
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex-1) + "."+_sPageExt+"\">【上一页】</a>&nbsp;");
+		document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">【下一页】</a>&nbsp;");
+		}
+		} 
+	
+}
+    
+</script>
+</head>
+<body>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="15" background="../../../images/cn53l02.gif"><img src="../../../images/cn53l01.jpg"></td>
+    <td width="970">
+      <style>
+.apDiv1 {
+	position:absolute;
+	z-index:1;
+	text-align:left;
+	visibility:visible; 
+}
+.apDiv2 {
+	position:absolute;
+	z-index:1;
+	text-align:left;
+	visibility: hidden;
+        white-space:nowrap;
+}
+.cn51toppd1 {
+color:#FFFFFF;
+font-size:12px;
+font-weight:bold;
+padding:0 8px 0 8px;
+}
+.mmul { padding:0px;  border:1px #b9b9b9 solid; margin:29px 0px 0px 0px; background: #F6F6F6; padding:4px 0px; }
+.mmul li { list-style-type:none; margin:0px;}
+.mmul li a { width:100%; height:100%; margin:0px; background: #F6F6F6; padding:3px 8px 3px 10px; font-size:10px; font-weight:normal; }
+.mmul li a:hover { color:#CC3300; text-decoration:none; background: #e1e1e1;}
+</style>
+<script type="text/javascript">
+<!--
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+<table width="970" border="0" cellpadding="0" cellspacing="0" class="logo" align="center">
+        <tr>
+          <td width="509" height="64" align="right" valign="top"><img src="../../../images/cn53logo01.jpg" width="484" height="60"></td>
+          <td width="461" align="right" valign="top"><table border="0" cellpadding="0" cellspacing="0" class="cn51white12" style="margin-top:10px;">
+              <tr>
+                <td height="25" align="right" style="padding:0 10px 0 0"><a href="../../../lxwm/index.html" class="cn51white12" target="_top">联系我们</a> | <a href="../../../wzdt/index.html" class="cn51white12" target="_top">网站地图</a> | <a href="../../../index1.html" class="cn51white12" target="_top">English</a> | <a href="javascript:;" class="cn51white12" target="_top">中国科学院紫金山天文台</a> | <a href="javascript:;" class="cn51white12" target="_top">中国科学院</a></td>
+              </tr>
+            </table>
+			<table border="0" cellpadding="0" cellspacing="0" style="margin:5px 15px 0 0;">
+        <form name="searchform" action="http://search.cas.cn/search" method="post" onsubmit="return search_check()" target="_top">
+        <input type="hidden" name="channelid" value="44052">
+        <input type="hidden" name="option" value="ideosingle">
+        <input type="hidden" name="searchword" value="">
+<input name="preKeyword" value="" type="hidden">
+        <tr> 
+          <td align="left" valign="center">
+          关键字：<input name="iptSword" id="iptSword" type="text" onclick="javascript:if(this.value=='请输入关键字') this.value=''" class="input" border="0" value="请输入关键字"></td>
+          <td width="43" align="right"><input type="image" src="../../images/cn53icon.jpg" width="27" height="18"></td>
+        </tr></form>
+<script type="text/javascript">
+function escapeTrs(str){//转义trs关键字
+	var arr = new Array("\\\\","!","@","#","\\$","\%","\\^","\&","\\*","\\(","\\)","\\_","\\+","\-","\=","\\{","\\}","\\|","\\[","\\]",";","'",":","\"","\<","\>","\\?","\,","\\.","\/");
+	
+	for(var i=0;i<arr.length;i++){
+	 var re = new RegExp(arr[i],"img");
+	 str = str.replace(re, '\\' + arr[i]);
+	}
+	
+	return str;
+}
+function dealKeywords(sword, relation)
+{	
+	var sTemp = "";
+	var swordtemp = ""; 
+	var sArray;
+
+	if(sword.indexOf("*")<0&&sword.indexOf("+")<0&&sword.indexOf(")")<0&&sword.indexOf("(")<0&&sword.indexOf("\\")<0)
+	{
+		sword = escapeTrs(sword);
+		//不含trs关键字
+		sArray = sword.split(" ");//输入框空格处理,空格表示 relation 关系
+		for(var i=0; i<sArray.length;i++)
+		{	
+			sTemp = sArray[i].replace(/^\s+|\s+$/g,"");//去掉sword前后空格
+			if(sTemp!="")
+			{
+				swordtemp += "'"+ sTemp + "' "+relation+" ";/*加上''符号,处理trs带运算符的检索词报错的问题*/
+			}					
+		}
+		if(swordtemp.lastIndexOf(" "+relation+" ")!=-1)//去掉relation结尾
+		{
+			swordtemp = swordtemp.substring(0,swordtemp.length-relation.length-2);
+		} 
+	}
+	
+	else//包含trs关键字
+	{    
+		 if(sword.indexOf("\\")!=-1){
+		 	var re = new RegExp("\\\\","img");
+	 		sword = sword.replace(re, '\\\\');
+		 }
+		 swordtemp = "'"+sword+"'";
+	}
+	return swordtemp;	
+} 
+
+function search_check() {
+	var sword =document.getElementById("iptSword").value.replace(/^\s+|\s+$/g,"");
+	
+	if (sword=='' || sword=='请输入关键字') {
+		alert('请输入关键字!');
+		return false;
+	} else {	
+		document.searchform.searchword.value = dealKeywords(sword, "and");
+		document.searchform.preKeyword.value = encodeURI(document.getElementById("iptSword").value);//传参前进行编码
+		document.searchform.submit();
+	}
+}
+</script>
+      </table>
+	  </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="banner" align="center">
+        <tr>
+          <td valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:15px;">
+            <tr>
+              <td align="right">&nbsp;</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="34" background="http://www.dlh.pmo.cas.cn/images/cn53top04.gif"><table border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+			  <style>
+			  .cn51toppd{font-weight: bold;color: #FFFFFF;padding: 0 12px 0 15px;font-size: 12px;}
+			  </style>
+                <td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>  
+				<a href="../../../index.html" class="cn51toppd" target="_top">首页</a>
+				</td>
+                <td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu01" onmousemove="MM_showHideLayers('menu01','','show')" onmouseout="MM_showHideLayers('menu01','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../../qhzgk/qhgczjj/index.html" target="_top">青海观测站简介</a></li> 
+				
+                <li><a href="../../../qhzgk/qhzhyc/index.html" target="_top">青海站欢迎辞</a></li> 
+				
+                <li><a href="../../../qhzgk/xrld/index.html" target="_top">现任领导</a></li> 
+				
+                <li><a href="../../../qhzgk/lrld/index.html" target="_top">历任领导</a></li> 
+				
+                <li><a href="../../../qhzgk/qhzfm/index.html" target="_top">青海站风貌</a></li> 
+				
+                </ul></div>  
+				<a href="../../../qhzgk/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu01','','show')" onmouseout="MM_showHideLayers('menu01','','hide')" target="_top">青海站概况</a>
+				</td>
+				<td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu02" onmousemove="MM_showHideLayers('menu02','','show')" onmouseout="MM_showHideLayers('menu02','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../../jgsz/yxz/index.html" target="_top">运行组</a></li> 
+				
+                <li><a href="../../../jgsz/gcyjz/index.html" target="_top">观测研究组</a></li> 
+				
+                <li><a href="../../../jgsz/hqz/index.html" target="_top">后勤组</a></li> 
+				
+                <li><a href="../../../jgsz/song/index.html" target="_top">SONG组</a></li> 
+				
+                </ul></div>  
+				<a href="../../../jgsz/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu02','','show')" onmouseout="MM_showHideLayers('menu02','','hide')" target="_top">机构设置</a>
+				</td>
+				<td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu03" onmousemove="MM_showHideLayers('menu03','','show')" onmouseout="MM_showHideLayers('menu03','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../../xwdt/cdcxppy/index.html" target="_top">超导成像频谱仪（多波束系统）最新观测结果</a></li> 
+				
+                <li><a href="../../../xwdt/xw/index.html" target="_top">新闻</a></li> 
+				
+                <li><a href="../../../xwdt/tpxw/index.html" target="_top">图片新闻</a></li> 
+				
+                </ul></div>  
+				<a href="../../../xwdt/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu03','','show')" onmouseout="MM_showHideLayers('menu03','','hide')" target="_top">新闻动态</a>
+				</td>
+                <td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu04" onmousemove="MM_showHideLayers('menu04','','show')" onmouseout="MM_showHideLayers('menu04','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../index.html" target="_top">13.7米毫米波望远镜</a></li> 
+				
+                <li><a href="../../kjsp/index.html" target="_top">空间碎片</a></li> 
+				
+                <li><a href="../../song/index.html" target="_top">SONG</a></li> 
+				
+                <li><a href="../../lztx/index.html" target="_top">量子通信</a></li> 
+				
+                </ul></div> 
+				<a href="../../index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu04','','show')" onmouseout="MM_showHideLayers('menu04','','hide')" target="_top">望远镜设备介绍</a>
+				</td>
+                <td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu05" onmousemove="MM_showHideLayers('menu05','','show')" onmouseout="MM_showHideLayers('menu05','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../../rydw/kygg/index.html" target="_top">科研骨干</a></li> 
+				
+                <li><a href="../../../rydw/yjy/index.html" target="_top">研究员</a></li> 
+				
+                <li><a href="../../../rydw/fyjy/index.html" target="_top">副研究员</a></li> 
+				
+                </ul></div> 
+				<a href="../../../rydw/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu05','','show')" onmouseout="MM_showHideLayers('menu05','','hide')" target="_top">人员队伍</a>
+				</td>
+				<td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu06" onmousemove="MM_showHideLayers('menu06','','show')" onmouseout="MM_showHideLayers('menu06','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../../rczp/gk/index.html" target="_top">概况</a></li> 
+				
+                <li><a href="../../../rczp/zpxx/index.html" target="_top">招聘信息</a></li> 
+				
+                <li><a href="../../../rczp/lyxx/index.html" target="_top">录用信息</a></li> 
+				
+                </ul></div> 
+				<a href="../../../rczp/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu06','','show')" onmouseout="MM_showHideLayers('menu06','','hide')" target="_top">人才招聘</a>
+				</td>
+				
+                                     <td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu07" onmousemove="MM_showHideLayers('menu07','','show')" onmouseout="MM_showHideLayers('menu07','','hide')">
+                <ul class="mmul">
+
+				
+                <li><a href="../../../hzjl/hzyjl/index.html" target="_top">合作交流</a></li> 
+				
+                </ul></div> 
+				<a href="../../../hzjl/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu07','','show')" onmouseout="MM_showHideLayers('menu07','','hide')" target="_top">合作交流</a>
+				</td>
+				<td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu08" onmousemove="MM_showHideLayers('menu08','','show')" onmouseout="MM_showHideLayers('menu08','','hide')">
+                <ul class="mmul">
+
+				
+                <li><a href="../../../kycc/hjqk/index.html" target="_top">获奖情况</a></li> 
+				
+                <li><a href="../../../kycc/lwcc/index.html" target="_top">论文产出</a></li> 
+				
+                <li><a href="../../../kycc/zlsq/index.html" target="_top">专利申请</a></li> 
+				
+                </ul></div> 
+				<a href="../../../kycc/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu08','','show')" onmouseout="MM_showHideLayers('menu08','','hide')" target="_top">科研产出</a>
+				</td>
+
+                <td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+
+				<div class="apDiv2" id="menu09" onmousemove="MM_showHideLayers('menu09','','show')" onmouseout="MM_showHideLayers('menu09','','hide')">
+                <ul class="mmul">
+
+				
+                <li><a href="../../../xzzq/wyjxgrj/index.html" target="_top">13.7米望远镜相关软件</a></li> 
+				
+                <li><a href="../../../xzzq/sqb/index.html" target="_top">申请表</a></li> 
+				
+                </ul></div> 
+				<a href="../../../xzzq/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu09','','show')" onmouseout="MM_showHideLayers('menu09','','hide')" target="_top">下载专区</a>
+				</td>
+
+                <td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu11" onmousemove="MM_showHideLayers('menu11','','show')" onmouseout="MM_showHideLayers('menu11','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../../kpjd/kpdt/index.html" target="_top">科普动态</a></li> 
+				
+                <li><a href="../../../kpjd/kxtp/index.html" target="_top">科学图片</a></li> 
+				
+                </ul></div> 
+				<a href="../../../kpjd/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu11','','show')" onmouseout="MM_showHideLayers('menu11','','hide')" target="_top">科普基地</a>
+				</td>
+
+                <td width="2"><img src="../../../images/cn53top06.gif"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td height="3" bgcolor="#46acfb"></td>
+        </tr>
+      </table>
+      <table width="970" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="235" bgcolor="#EEEEEE">
+		  <table width="235" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="1" bgcolor="#FFFFFF"></td>
+              </tr>
+              <tr>
+                <td height="30" bgcolor="#1B67B0"><table width="235" border="0" cellpadding="0" cellspacing="0" class="cn51white14b">
+                    <tr>
+                      <td width="30" align="center"><img src="../../../images/cn53left02.gif" width="14" height="14"></td>
+                      <td width="205">望远镜设备介绍</td>
+                    </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td height="1" bgcolor="#738B98"></td>
+              </tr>
+              <tr>
+                <td height="1" bgcolor="#FFFFFF"></td>
+              </tr>
+            </table>
+            <table width="235" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" valign="top" style="padding:16px">
+                  
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="cn51white12b">
+                    <tr>
+                      <td width="20" height="22" align="center" bgcolor="#6E97D7"><img src="../../../images/cn53left13.gif"></td>
+                      <td width="1"></td>
+                      <td bgcolor="#6E97D7" style="padding:0 0 0 8px"><a href="../index.html" class='cn51white12b'>13.7米毫米波望远镜</a></td>
+                    </tr>
+                    <tr>
+                      <td height="4" colspan="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top" style="padding:6px 9px 10px 9px">
+					  
+						</td>
+                    </tr>
+                  </table>
+				  
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="cn51white12b">
+                    <tr>
+                      <td width="20" height="22" align="center" bgcolor="#6E97D7"><img src="../../../images/cn53left13.gif"></td>
+                      <td width="1"></td>
+                      <td bgcolor="#6E97D7" style="padding:0 0 0 8px"><a href="../../kjsp/index.html" class='cn51white12b'>空间碎片</a></td>
+                    </tr>
+                    <tr>
+                      <td height="4" colspan="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top" style="padding:6px 9px 10px 9px">
+					  
+						</td>
+                    </tr>
+                  </table>
+				  
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="cn51white12b">
+                    <tr>
+                      <td width="20" height="22" align="center" bgcolor="#6E97D7"><img src="../../../images/cn53left13.gif"></td>
+                      <td width="1"></td>
+                      <td bgcolor="#6E97D7" style="padding:0 0 0 8px"><a href="../../song/index.html" class='cn51white12b'>SONG</a></td>
+                    </tr>
+                    <tr>
+                      <td height="4" colspan="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top" style="padding:6px 9px 10px 9px">
+					  
+						</td>
+                    </tr>
+                  </table>
+				  
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="cn51white12b">
+                    <tr>
+                      <td width="20" height="22" align="center" bgcolor="#6E97D7"><img src="../../../images/cn53left13.gif"></td>
+                      <td width="1"></td>
+                      <td bgcolor="#6E97D7" style="padding:0 0 0 8px"><a href="../../lztx/index.html" class='cn51white12b'>量子通信</a></td>
+                    </tr>
+                    <tr>
+                      <td height="4" colspan="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top" style="padding:6px 9px 10px 9px">
+					  
+						</td>
+                    </tr>
+                  </table>
+				  
+                  </td>
+              </tr>
+            </table>		
+			</td>
+          <td width="3" bgcolor="#FFFFFF"></td>
+          <td width="1" bgcolor="#D8D8D8"></td>
+          <td width="731" bgcolor="#FFFFFF"><table width="731" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="30" bgcolor="#E9E9E9" style="padding:0 0 0 10px"><span>现在位置：<a href="../../../index.html" title="首页" class="CurrChnlCls">首页</a>&nbsp;&gt;&nbsp;<a href="../../index.html" title="望远镜设备介绍" class="CurrChnlCls">望远镜设备介绍</a>&nbsp;&gt;&nbsp;<a href="../index.html" title="13.7米毫米波望远镜" class="CurrChnlCls">13.7米毫米波望远镜</a></span></td>
+              </tr>
+              <tr>
+                <td height="1" bgcolor="#BCC3B9"></td>
+              </tr>
+            </table>
+            <table width="724" border="0" cellpadding="0" cellspacing="0" class="cn5rightkj">
+              <tr>
+                <td valign="top" style="padding:10px 0 10px 0"><table width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td align="center" class="black_20_600">2020-2021观测季节13.7米望远镜状态报告</td>
+                    </tr>
+                    <tr>
+                      <td align="center" class="font03"> | 20-12-06 |  【<a href="javascript:doZoom(3)" class="black12data">大</a> <a href="javascript:doZoom(2)" class="black12data">中</a> <a href="javascript:doZoom(1)" class="black12data">小</a>】<a href="#" onclick="window.print()">【打印】</a><a href="#" onclick="javascript:window.close();">【关闭】</a></td>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top" class="font04" id="content"><div class="TRS_Editor"><p align="center"><o:smarttagtype name="chsdate" namespaceuri="urn:schemas-microsoft-com:office:smarttags"><o:smarttagtype name="chmetcnv" namespaceuri="urn:schemas-microsoft-com:office:smarttags"><font face="黑体" style="font-size: 22pt"><strong>&nbsp;　<st1:chmetcnv style="font-size: 22pt" unitname="米" sourcevalue="13.7" hasspace="False" negative="False" numbertype="1" tcsc="0" w:st="on"><span>13.7米</span></st1:chmetcnv><span>毫米波望远镜<o:p style="font-size: 22pt" align="justify"></o:p></span>&nbsp;</strong></font></o:smarttagtype></o:smarttagtype></p>
+<p align="center"><font face="黑体" style="font-size: 22pt"><strong>　　<span>2020-2021观测季节<span style="font-size: 22pt">状态报告<span style="font-size: 22pt"><o:p style="font-size: 22pt" align="justify"></o:p></span></span></span>&nbsp;</strong></font></p>
+<p align="center"><font style="font-size: 16pt">　　<span style="font-size: 16pt">( Status Report on the <st1:chmetcnv style="font-size: 16pt" unitname="m" sourcevalue="13.7" hasspace="True" negative="False" numbertype="1" tcsc="0" w:st="on">13.7 m</st1:chmetcnv> MM-Wave Telescope for<o:p style="font-size: 16pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="center"><font style="font-size: 16pt">　　<span style="font-size: 16pt">the 2020-2021 Observing Season )<o:p style="font-size: 16pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="center">　　<img width="640" height="635" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551434668714.jpg" oldsrc="W020201206556643072887.jpg" src="../../../xwdt/xw/202012/W020201206551434668714.jpg"><span><o:p align="justify"></o:p></span>&nbsp;</p>
+<p align="center"><font style="font-size: 14pt">　　<span style="font-size: 14pt">徐烨</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">左营喜</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">张旭国</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">李振强</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">李积斌</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">张海龙</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">金凤娟</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">李阳</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">董守豪</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">李亚鹏</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="center"><font style="font-size: 14pt">　　<span style="font-size: 14pt">巨秉刚</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">孙继先</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">逯登荣</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">王敏</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">颜昆</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">张永兴</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">颜萍</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">靳生玉</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">罗春盛</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">李翔春</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="center"><font style="font-size: 14pt">　　<span style="font-size: 14pt">中国科学院紫金山天文台青海射电天文观测站</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="center"><font style="font-size: 16pt">　　<span style="font-size: 16pt">德令哈毫米波观测基地</span><span style="font-size: 16pt"><o:p style="font-size: 16pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="center">　　<span>2020</span><span>年</span><span>10</span><span>月</span>&nbsp;</p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">(一)</span></span><b style="font-size: 14pt"><span style="font-size: 14pt">望远镜系统概况及夏季维护与更新改造情况</span></b><b style="font-size: 14pt"><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span></b>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">在</span><span style="font-size: 14pt">2020</span><span style="font-size: 14pt">年夏季（</span><span style="font-size: 14pt">7-8</span><span style="font-size: 14pt">月）维护更新季节，对望远镜机械传动系统进行了全面检修，对超导成像频谱仪系统进行了检修和维护。至</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="14" month="8" year="2020"><span style="font-size: 14pt">8</span><span style="font-size: 14pt">月</span><span style="font-size: 14pt">14</span><span style="font-size: 14pt">日</span></st1:chsdate><span style="font-size: 14pt">完成了夏季的各项维护（检修、更新）计划项目。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">从</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="14" month="8" year="2020"><span style="font-size: 14pt">8</span><span style="font-size: 14pt">月</span><span style="font-size: 14pt">14</span><span style="font-size: 14pt">日</span></st1:chsdate><span style="font-size: 14pt">开始，基地对望远镜进行了为期</span><span style="font-size: 14pt">12</span><span style="font-size: 14pt">天的</span><span style="font-size: 14pt">“</span><span style="font-size: 14pt">综合性能天文测试</span><span style="font-size: 14pt">”</span><span style="font-size: 14pt">工作，包括望远镜指向测试、副反射面调焦、接收机</span><span style="font-size: 14pt">9</span><span style="font-size: 14pt">个</span><span style="font-size: 14pt">beam</span><span style="font-size: 14pt">方向图测试、</span><span style="font-size: 14pt">9</span><span style="font-size: 14pt">个</span><span style="font-size: 14pt">beam</span><span style="font-size: 14pt">间隔矩阵和效率矩阵测试、天体谱线标准源的强度与视向速度测试等。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">以下简要报告维护、更新、测试等方面的主要工作和结果：</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">（</span><span style="font-size: 14pt">1</span><span style="font-size: 14pt">）用照相测量的方法调整天线面板</span><sup style="font-size: 14pt"><span style="font-size: 14pt">[1]</span></sup><span style="font-size: 14pt">。从</span><span style="font-size: 14pt">2009</span><span style="font-size: 14pt">年以来，采用工业数字照相摄影测量系统，以</span><span style="font-size: 14pt">EL=52</span><span style="font-size: 14pt"><span style="font-size: 14pt">°</span></span><span style="font-size: 14pt">为基准位置，对天线面板进行测量，并根据测量结果，进行面板预置调整，今年调整后的天线面板精度</span><span style="font-size: 14pt">RMS</span><span style="font-size: 14pt">为</span><span style="font-size: 14pt">77μm</span><span style="font-size: 14pt">。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">（</span><span style="font-size: 14pt">2</span><span style="font-size: 14pt">）对天线机械系统做全面检修</span><sup style="font-size: 14pt"><span style="font-size: 14pt">[2]</span></sup><span style="font-size: 14pt">。对主反射面的方位和俯仰电机、高速箱、传动箱进行检修、加润滑油；对主反射面的方位和俯仰大齿轮加润滑油；副反射面机械系统检修（电机、联轴结、减速箱、涡轮蜗杆检查、加润滑油）。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">（</span><span style="font-size: 14pt">3</span><span style="font-size: 14pt">）清洗天线主反射面板</span><sup style="font-size: 14pt"><span style="font-size: 14pt">[2]</span></sup><span style="font-size: 14pt">。望远镜经过一个观测季节的运行，主反射面表面覆盖了灰尘，影响望远镜的反射性能。为保证望远镜的反射性能和口面效率，延长面板的使用寿命，在夏季维护期间，对天线主反射面板进行清洗。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">（</span><span style="font-size: 14pt">4</span><span style="font-size: 14pt">）接收机系统其它夏季维护工作</span><sup style="font-size: 14pt"><span style="font-size: 14pt">[3]</span></sup><span style="font-size: 14pt">。</span><span style="font-size: 14pt">更换了</span><span style="font-size: 14pt">Beam6</span><span style="font-size: 14pt">的混频器，同时更新了</span><span style="font-size: 14pt">2</span><span style="font-size: 14pt">个新版混合电桥（</span><span style="font-size: 14pt">Beam6</span><span style="font-size: 14pt">、</span><span style="font-size: 14pt">Beam9</span><span style="font-size: 14pt">）。更新了一组</span><span style="font-size: 14pt">HBT</span><span style="font-size: 14pt">放大器（对应</span><span style="font-size: 14pt">Beam1</span><span style="font-size: 14pt">、</span><span style="font-size: 14pt">4</span><span style="font-size: 14pt">、</span><span style="font-size: 14pt">7</span><span style="font-size: 14pt">）</span><span style="font-size: 14pt">，</span><span style="font-size: 14pt">目前系统中全部采用优化了</span><span style="font-size: 14pt">2.14~3.14GHz</span><span style="font-size: 14pt">频段性能的新</span><span style="font-size: 14pt">HBT</span><span style="font-size: 14pt">放大器</span><span style="font-size: 14pt">。</span><span style="font-size: 14pt">在杜瓦</span><span style="font-size: 14pt">300K</span><span style="font-size: 14pt">内壁贴镜面膜，可以有效抑制环境温度升高对制冷温度的影响；同时增加了两路温度传感器，监测混合电桥和加强筋处的温度。更换了部分</span><span style="font-size: 14pt">HEMT</span><span style="font-size: 14pt">放大器，更换</span><span style="font-size: 14pt">50K</span><span style="font-size: 14pt">到混频器</span><span style="font-size: 14pt">/HEMT</span><span style="font-size: 14pt">放大器偏置电缆，检查更新半刚性电缆</span><span style="font-size: 14pt">。</span><span style="font-size: 14pt">波束测量使用的电移台今年对</span><span style="font-size: 14pt">XY</span><span style="font-size: 14pt">进行了互换重组，并且加油润滑等。仪器除尘，</span><span style="font-size: 14pt">FFTS</span><span style="font-size: 14pt">板卡芯片重新涂抹散热硅胶；更换制冷机，更换</span><span style="font-size: 14pt">300K</span><span style="font-size: 14pt">屏蔽罩密封圈；维护</span><span style="font-size: 14pt">FECU</span><span style="font-size: 14pt">及</span><span style="font-size: 14pt">BECU</span><span style="font-size: 14pt">工控机。进行</span><span style="font-size: 14pt">TRX/IRR</span><span style="font-size: 14pt">测试，接收机噪声温度</span><span style="font-size: 14pt">Trx</span><span style="font-size: 14pt">测试，波束测量</span><span style="font-size: 14pt">。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">(二)</span></span><b style="font-size: 14pt"><span style="font-size: 14pt">望远镜性能的简要说明</span></b><b style="font-size: 14pt"><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span></b>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">1<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">天线及表面精度</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">德令哈基地毫米波望远镜口径为</span><st1:chmetcnv style="font-size: 14pt" unitname="米" sourcevalue="13.7" hasspace="False" negative="False" numbertype="1" tcsc="0" w:st="on"><span style="font-size: 14pt">13.7</span><span style="font-size: 14pt">米</span></st1:chmetcnv><span style="font-size: 14pt"> <span style="font-size: 14pt">(45</span></span><span style="font-size: 14pt">英尺</span><span style="font-size: 14pt">) </span><span style="font-size: 14pt">，使用地平式机架。望远镜的光学系统是经典“卡塞格林”系统，接收机工作在卡焦上。</span><span style="font-size: 14pt">2020</span><span style="font-size: 14pt">年经过面板调整后的主反射面的表面精度</span><span style="font-size: 14pt">rms</span><span style="font-size: 14pt">为</span><span style="font-size: 14pt">77</span><span style="font-size: 14pt">μ</span><span style="font-size: 14pt">m<sup style="font-size: 14pt">[1] </sup></span><span style="font-size: 14pt">。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">2<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">望远镜跟踪测试</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">通过对望远镜系统的测试表明，天线方位</span><span style="font-size: 14pt">(AZ)</span><span style="font-size: 14pt">跟踪误差的</span><span style="font-size: 14pt">rms</span><span style="font-size: 14pt">为</span><span style="font-size: 14pt">1.21</span><span style="font-size: 14pt">″，俯仰</span><span style="font-size: 14pt">(EL)</span><span style="font-size: 14pt">跟踪误差的</span><span style="font-size: 14pt">rms</span><span style="font-size: 14pt">为</span><span style="font-size: 14pt">0.70</span><span style="font-size: 14pt">″，对绝大部分天区，跟踪误差在</span><span style="font-size: 14pt">1~3"</span><span style="font-size: 14pt">左右</span><sup style="font-size: 14pt"><span style="font-size: 14pt">[4]</span></sup><span style="font-size: 14pt">，完全符合观测要求（根据望远镜的波束大小，观测时望远镜的跟踪误差允许范围限制在</span><span style="font-size: 14pt">5"</span><span style="font-size: 14pt">以内，以保证足够的跟踪精度）。图</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.2.1</span></st1:chsdate><span style="font-size: 14pt">为天线在</span><span style="font-size: 14pt">AZ</span><span style="font-size: 14pt">和</span><span style="font-size: 14pt">EL</span><span style="font-size: 14pt">两个方向的跟踪误差测试结果：</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img width="320" height="227" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551434761988.jpg" oldsrc="W020201206556643157841.jpg" src="../../../xwdt/xw/202012/W020201206551434761988.jpg">&nbsp;<img width="320" height="227" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551434829243.jpg" oldsrc="W020201206556643201282.jpg" src="../../../xwdt/xw/202012/W020201206551434829243.jpg"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><st1:chsdate style="font-size: 10.5pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 10.5pt">2.2.1</span></st1:chsdate><span style="font-size: 10.5pt"><span style="font-size: 10.5pt">&nbsp; </span></span><span style="font-size: 10.5pt">方位和俯仰的跟踪误差统计分布图。方位</span><span style="font-size: 10.5pt">96.75%</span><span style="font-size: 10.5pt">在</span><span style="font-size: 10.5pt">3</span><span style="font-size: 10.5pt">角秒内，</span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">俯仰</span><span style="font-size: 10.5pt">99.97%</span><span style="font-size: 10.5pt">在</span><span style="font-size: 10.5pt">3</span><span style="font-size: 10.5pt">角秒内。数据取自参考资料</span><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt">[4]</span></sup><span style="font-size: 10.5pt">。</span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">3<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">望远镜指向校准</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">采用“连续谱总功率接收工作模式”对行星（木星、金星等）进行连续谱“五点指向观测”，同时对行星状星云、</span><span style="font-size: 14pt">SiO</span><span style="font-size: 14pt">（</span><span style="font-size: 14pt">2-1</span><span style="font-size: 14pt">）脉泽源进行点源的谱线“五点指向观测”。通过</span><span style="font-size: 14pt">3</span><span style="font-size: 14pt">天时间，将观测取得的</span><span style="font-size: 14pt">899</span><span style="font-size: 14pt">组数据用指向修正模型进行拟合。从</span><span style="font-size: 14pt">2006</span><span style="font-size: 14pt">－</span><span style="font-size: 14pt">2007</span><span style="font-size: 14pt">观测季节开始，使用</span><span style="font-size: 14pt">10</span><span style="font-size: 14pt">个参数的指向模型，以赤纬</span><span style="font-size: 14pt">32</span><span style="font-size: 14pt">度为界把南北天区分开拟合，新的指向模型在全天区域的适用性更好。图</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.3.1</span></st1:chsdate><span style="font-size: 14pt">是一个指向测试实例中指向源的空间覆盖。图</span><span style="font-size: 14pt">2.3.2</span><span style="font-size: 14pt">是指向修正模型计算出的南天区和北天区的残差分布。结果显示，该轮测试得到的望远镜南天指向误差（</span><span style="font-size: 14pt">rms</span><span style="font-size: 14pt">）为</span><span style="font-size: 14pt">3.0</span><span style="font-size: 14pt">″</span><sup style="font-size: 14pt"><span style="font-size: 14pt">[5]</span></sup><span style="font-size: 14pt">，北天的指向误差（</span><span style="font-size: 14pt">rms</span><span style="font-size: 14pt">）为</span><span style="font-size: 14pt">4.8</span><span style="font-size: 14pt">″</span><sup style="font-size: 14pt"><span style="font-size: 14pt">[6]</span></sup><span style="font-size: 14pt">。在综合测试过程中，“指向观测</span><span style="font-size: 14pt"><span style="font-size: 14pt">à</span></span><span style="font-size: 14pt">模型拟合</span><span style="font-size: 14pt"><span style="font-size: 14pt">à</span></span><span style="font-size: 14pt">修改验证”的过程要进行多轮。重复测试的结果显示望远镜最终全天指向精度小于</span><span style="font-size: 14pt">5</span><span style="font-size: 14pt">″。</span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img width="320" height="224" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551434908447.jpg" oldsrc="W020201206556643245556.jpg" src="../../../xwdt/xw/202012/W020201206551434908447.jpg"><img width="320" height="224" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551435001951.jpg" oldsrc="W020201206556643296722.jpg" src="../../../xwdt/xw/202012/W020201206551435001951.jpg"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><st1:chsdate style="font-size: 10.5pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 10.5pt">2.3.1</span></st1:chsdate><span style="font-size: 10.5pt"><span style="font-size: 10.5pt">&nbsp; </span></span><span style="font-size: 10.5pt">五点观测时南天</span><span style="font-size: 10.5pt">VENUS</span><span style="font-size: 10.5pt">、</span><span style="font-size: 10.5pt">SATURN</span><span style="font-size: 10.5pt">、</span><span style="font-size: 10.5pt">ORIA</span><span style="font-size: 10.5pt">、</span><span style="font-size: 10.5pt">R-Leo<sup style="font-size: 10.5pt">[5]</sup></span><span style="font-size: 10.5pt">和</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">北天</span><span style="font-size: 10.5pt">T-Cep </span><span style="font-size: 10.5pt">、</span><span style="font-size: 10.5pt">X-Cyg</span><span style="font-size: 10.5pt">、</span><span style="font-size: 10.5pt">R-Cas</span><span style="font-size: 10.5pt">、</span><span style="font-size: 10.5pt">TX-Cam</span><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt"> [6]</span></sup><span style="font-size: 10.5pt">有效数据点在天空中的分布</span><span style="font-size: 10.5pt">。</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img width="320" height="289" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551435065465.jpg" oldsrc="W020201206556643332459.jpg" src="../../../xwdt/xw/202012/W020201206551435065465.jpg"><img width="320" height="289" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551435120737.jpg" oldsrc="W020201206556643376573.jpg" src="../../../xwdt/xw/202012/W020201206551435120737.jpg"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><st1:chsdate style="font-size: 10.5pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 10.5pt">2.3.2</span></st1:chsdate><span style="font-size: 10.5pt"><span style="font-size: 10.5pt">&nbsp; </span></span><span style="font-size: 10.5pt">模型拟合后得到的方位残差和俯仰残差的图示。左边是南天的拟合结果，</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">椭圆的长半轴为</span><span style="font-size: 10.5pt">2.4</span><span style="font-size: 10.5pt">″，短半轴为</span><span style="font-size: 10.5pt">1.7</span><span style="font-size: 10.5pt">″，方向角为</span><span style="font-size: 10.5pt">6.9</span><span style="font-size: 10.5pt">°</span><span style="font-size: 10.5pt">，</span><span style="font-size: 10.5pt">数据取自参考资料</span><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt">[5]</span></sup><span style="font-size: 10.5pt">。</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">右边是北天的拟合结果，椭圆的长半轴为</span><span style="font-size: 10.5pt">4.0</span><span style="font-size: 10.5pt">″，短半轴为</span><span style="font-size: 10.5pt">2.7</span><span style="font-size: 10.5pt">″，方向角为</span><span style="font-size: 10.5pt">42.2</span><span style="font-size: 10.5pt">°</span><span style="font-size: 10.5pt">，<span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">数据取自参考资料</span><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt">[6]</span></sup><span style="font-size: 10.5pt">。</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">在望远镜运行阶段，指向状况还可以通过观测</span><span style="font-size: 14pt">CO</span><span style="font-size: 14pt">谱线点源（如</span><span style="font-size: 14pt">IRC+10216</span><span style="font-size: 14pt">等晚期恒星）或者具有明显局部空间分布特征的部分</span><span style="font-size: 14pt">CO</span><span style="font-size: 14pt">面源（如</span><span style="font-size: 14pt">S140</span><span style="font-size: 14pt">等）来不定期地加以验证。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">作为常规测试项目，在观测季节内，每个月还要进行指向测试与验证。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">4<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">望远镜的温标和效率参数（半功率波束宽度、方向图、月面效率、口面效率、波束效率、间隔矩阵、效率矩阵）</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">在分子谱线观测中，本望远镜采用标准的斩波轮校准方法（</span><span style="font-size: 14pt">Ulich &amp; Haas 1976, ApJS, 30, 247</span><span style="font-size: 14pt">及随后文献），得到的温标是改正了大气吸收及欧姆损耗后的“天线温度”，也就是文献中的</span><span style="font-size: 14pt">T<sub style="font-size: 14pt">A</sub>*</span><span style="font-size: 14pt">。对于星际分子云展源，通常这个温标要进一步改正望远镜的主波束效率</span><i style="font-size: 14pt"><span style="font-size: 14pt">h</span></i><i style="font-size: 14pt"><sub style="font-size: 14pt"><span style="font-size: 14pt">mb</span></sub></i><span style="font-size: 14pt">，得到与同类望远镜可比的“观测辐射温度”即</span><span style="font-size: 14pt">T<sub style="font-size: 14pt">R</sub>*</span><span style="font-size: 14pt">。这个温标代表望远镜的理想主波束与源空间亮温度分布的卷积。<b style="font-size: 14pt"><span style="font-size: 14pt">在基地</span></b></span><b style="font-size: 14pt"><sup style="font-size: 14pt"><span style="font-size: 14pt">12</span></sup></b><b style="font-size: 14pt"><span style="font-size: 14pt">CO</span></b><b style="font-size: 14pt"><span style="font-size: 14pt">、</span></b><b style="font-size: 14pt"><sup style="font-size: 14pt"><span style="font-size: 14pt">13</span></sup></b><b style="font-size: 14pt"><span style="font-size: 14pt">CO</span></b><b style="font-size: 14pt"><span style="font-size: 14pt">、</span></b><b style="font-size: 14pt"><span style="font-size: 14pt">C<sup style="font-size: 14pt">18</sup>O</span></b><b style="font-size: 14pt"><span style="font-size: 14pt">三条谱线的原始数据中已经按照<img style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" oldsrc="W020201206556643429383.png" src="../../../xwdt/xw/202012/W020201206551435171363.png"></span></b><b style="font-size: 14pt"><span style="font-size: 14pt">的关系进行了波束效率修正，其他频率未做修正</span></b><span style="font-size: 14pt">。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">半功率波束宽度（</span><span style="font-size: 14pt">HPBW</span><span style="font-size: 14pt">）反映了望远镜的分辨本领。对于口径为</span><span style="font-size: 14pt">D</span><span style="font-size: 14pt">、工作波长为</span><span style="font-size: 14pt">l</span><span style="font-size: 14pt">的天线而言，</span><span style="font-size: 14pt">HPBW=k</span><span style="font-size: 14pt">l</span><span style="font-size: 14pt">/D</span><span style="font-size: 14pt">，系数</span><span style="font-size: 14pt">k</span><span style="font-size: 14pt">与天线口面的照明函数有关。通过谱线五点观测的数据拟合得到在</span><span style="font-size: 14pt">112.6 GHz</span><span style="font-size: 14pt">本振频率下，望远镜上边带</span><span style="font-size: 14pt">（</span><span style="font-size: 14pt">115.2 GHz</span><span style="font-size: 14pt">）半功率波束宽度</span><span style="font-size: 14pt">HPBW</span><span style="font-size: 14pt">为</span><span style="font-size: 14pt">AZ</span><span style="font-size: 14pt">方向</span><span style="font-size: 14pt">48.6±1.6</span><span style="font-size: 14pt">角秒，</span><span style="font-size: 14pt">EL</span><span style="font-size: 14pt">方向</span><span style="font-size: 14pt">49.2±1.7</span><span style="font-size: 14pt">角秒；下边带（</span><span style="font-size: 14pt">110.2 GHz</span><span style="font-size: 14pt">）半功率波束宽度</span><span style="font-size: 14pt">HPBW</span><span style="font-size: 14pt">为</span><span style="font-size: 14pt">AZ</span><span style="font-size: 14pt">方向</span><span style="font-size: 14pt">50.8±1.6</span><span style="font-size: 14pt">角秒，</span><span style="font-size: 14pt">EL</span><span style="font-size: 14pt">方向</span><span style="font-size: 14pt">51.7±1.6</span><span style="font-size: 14pt">角秒</span><sup style="font-size: 14pt"><span style="font-size: 14pt">[7] </span></sup><span style="font-size: 14pt">。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">二维波束分布可以通过对天体的扫描加以测量。对金星</span><span style="font-size: 14pt">OTF</span><span style="font-size: 14pt">扫描获得的二维扫描结果如图</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.4.1</span></st1:chsdate><span style="font-size: 14pt">和</span><span style="font-size: 14pt">2.4.2<sup style="font-size: 14pt">[8]</sup></span><span style="font-size: 14pt">；对金星一维扫描结果如图</span><span style="font-size: 14pt">2.4.3</span><span style="font-size: 14pt">和</span><span style="font-size: 14pt">2.4.4<sup style="font-size: 14pt">[8]</sup></span><span style="font-size: 14pt">。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" oldsrc="W020201206556643464877.jpg" src="../../../xwdt/xw/202012/W020201206551435236945.jpg"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><st1:chsdate style="font-size: 10.5pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 10.5pt">2.4.1</span></st1:chsdate><span style="font-size: 10.5pt"> </span><span style="font-size: 10.5pt">望远镜二维方向图分布【</span><span style="font-size: 10.5pt">上边带</span><span style="font-size: 10.5pt">115.2GHz</span><span style="font-size: 10.5pt">】。对金星进行的</span><span style="font-size: 10.5pt">OTF</span><span style="font-size: 10.5pt">观测，</span><span style="font-size: 10.5pt">ReGrid</span><span style="font-size: 10.5pt">步长</span><span style="font-size: 10.5pt">20</span><span style="font-size: 10.5pt">″。</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" oldsrc="W020201206556643528548.jpg" src="../../../xwdt/xw/202012/W020201206551435304591.jpg"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><st1:chsdate style="font-size: 10.5pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 10.5pt">2.4.2</span></st1:chsdate><span style="font-size: 10.5pt"> </span><span style="font-size: 10.5pt">望远镜二维方向图分布【</span><span style="font-size: 10.5pt">下边带</span><span style="font-size: 10.5pt">110.2GHz</span><span style="font-size: 10.5pt">】。对金星进行的</span><span style="font-size: 10.5pt">OTF</span><span style="font-size: 10.5pt">观测，</span><span style="font-size: 10.5pt">ReGrid</span><span style="font-size: 10.5pt">步长</span><span style="font-size: 10.5pt">20</span><span style="font-size: 10.5pt">″。</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" oldsrc="W020201206556643573027.jpg" src="../../../xwdt/xw/202012/W020201206551435378752.jpg"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><st1:chsdate style="font-size: 10.5pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 10.5pt">2.4.3</span></st1:chsdate><span style="font-size: 10.5pt"><span style="font-size: 10.5pt">&nbsp; </span></span><span style="font-size: 10.5pt">望远镜不同俯仰一维方向图【</span><span style="font-size: 10.5pt">beam5</span><span style="font-size: 10.5pt">上边带（</span><span style="font-size: 10.5pt">115.2GHz</span><span style="font-size: 10.5pt">）结果】。对金星进行</span><span style="font-size: 10.5pt">AZ</span><span style="font-size: 10.5pt">方向一维扫描观测，步长</span><span style="font-size: 10.5pt">10</span><span style="font-size: 10.5pt">″，每个位置积分</span><span style="font-size: 10.5pt">5</span><span style="font-size: 10.5pt">秒钟。采用绝对强度校准，数据用天线温度表示。</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" oldsrc="W020201206556643636923.jpg" src="../../../xwdt/xw/202012/W020201206551435424265.jpg"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><st1:chsdate style="font-size: 10.5pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 10.5pt">2.4.4</span></st1:chsdate><span style="font-size: 10.5pt"><span style="font-size: 10.5pt">&nbsp; </span></span><span style="font-size: 10.5pt">望远镜不同俯仰一维方向图【</span><span style="font-size: 10.5pt">beam5</span><span style="font-size: 10.5pt">下边带（</span><span style="font-size: 10.5pt">110.2GHz</span><span style="font-size: 10.5pt">）结果】。对金星进行</span><span style="font-size: 10.5pt">EL</span><span style="font-size: 10.5pt">方向一维扫描观测，步长</span><span style="font-size: 10.5pt">10</span><span style="font-size: 10.5pt">″，每个位置积分</span><span style="font-size: 10.5pt">5</span><span style="font-size: 10.5pt">秒钟。采用绝对强度校准，数据用天线温度表示。</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify">&nbsp;</o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">月面效率</span><span style="font-size: 14pt"> h</span><sub style="font-size: 14pt"><span style="font-size: 14pt">MOON</span></sub><span style="font-size: 14pt">, </span><span style="font-size: 14pt">是用来衡量望远镜对于“宽面源”的波束效率。在望远镜指向工作完成之后，将本振频率设置为</span><span style="font-size: 14pt">112.6 GHz</span><span style="font-size: 14pt">对月面进行一维扫描，在考虑月相的修正以后，得到</span><span style="font-size: 14pt">9</span><span style="font-size: 14pt">个</span><span style="font-size: 14pt">beam</span><span style="font-size: 14pt">上下边带的</span><span style="font-size: 14pt">月面效率</span><sup style="font-size: 14pt"><span style="font-size: 14pt">[9]</span></sup><span style="font-size: 14pt">，</span><span style="font-size: 14pt">见表</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.4.1</span></st1:chsdate><span style="font-size: 14pt">。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">表</span><span style="font-size: 14pt">2.4.1<span style="font-size: 14pt">&nbsp; </span>9</span><span style="font-size: 14pt">个</span><span style="font-size: 14pt">beam</span><span style="font-size: 14pt">上下边带测得的月面效率</span><span style="font-size: 14pt">(%)<o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<div>
+<table>
+    <tbody>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">边带</span></b><b style="font-size: 10.5pt"><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam1<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam2<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam3<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam4<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam5<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam6<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam7<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam8<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam9<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">USB<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">58.4</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.7</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">59.6</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.7</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">59.9</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.7</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">59.3</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.7</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">61.0</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.7</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">61.2</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.7</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">59.9</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.7</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">61.7</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.7</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">61.4</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.7</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">LSB<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">63.4</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.7</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">63.6</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.7</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">63.8</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.7</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">65.3</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.8</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">65.1</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.7</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">65.5</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.8</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">64.5</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.7</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">65.4</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.8</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">65.3</span><span style="font-size: 10.5pt">±</span><span style="font-size: 10.5pt">0.8</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">月面效率比采用行星测量得到的主波束效率要高，因为前者包含了主波束以外的部分“前向</span><span style="font-size: 14pt"> (forward)</span><span style="font-size: 14pt">”旁瓣成份。在实际观测中，目标天体（分子云）的尺度通常大于望远镜的波束宽度，则望远镜的波束效率相对的接近月面效率。但是这种接近往往并不是观测者需要的，因为旁瓣接收了来自观测方向以外的辐射。因此，对面源观测的射电望远镜，往往需要更低的旁瓣。望远镜旁瓣越低，用行星测量得到的“主波束效率”就越接近“月面效率”。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img width="320" height="240" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551435489889.png" oldsrc="W020201206556643685274.png" src="../../../xwdt/xw/202012/W020201206551435489889.png"><img width="320" height="240" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551435530573.png" oldsrc="W020201206556643720952.png" src="../../../xwdt/xw/202012/W020201206551435530573.png"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><st1:chsdate style="font-size: 10.5pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 10.5pt">2.4.5</span></st1:chsdate><span style="font-size: 10.5pt"><span style="font-size: 10.5pt">&nbsp; 对月</span></span><span style="font-size: 10.5pt">面一维扫描得到的强度分布。测量时接收机的本振频率设置为</span><span style="font-size: 10.5pt">112.6 GHz</span><span style="font-size: 10.5pt">，</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">扫描范围</span><span style="font-size: 10.5pt">±1500″</span><span style="font-size: 10.5pt">，步长</span><span style="font-size: 10.5pt">20″</span><span style="font-size: 10.5pt">。</span><span style="font-size: 10.5pt">数据取自参考资料</span><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt">[9]</span></sup><span style="font-size: 10.5pt">。月相范围</span><span style="font-size: 10.5pt">-359.94</span><span style="font-size: 10.5pt">°～</span><span style="font-size: 10.5pt">-359.08</span><span style="font-size: 10.5pt">°，</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">月面亮温度</span><span style="font-size: 10.5pt">193.3K~215.1K</span><span style="font-size: 10.5pt">。左图是上边带</span><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">(115.2 GHz)</span></b><span style="font-size: 10.5pt">，右图是下边带</span><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">(110.2 GHz)</span></b><span style="font-size: 10.5pt">。</span></font><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">对于主要从事星际分子云等面源观测的望远镜而言，波束效率是一个重要的效率指标。测量望远镜主波束效率最恰当的方式是寻找一个与望远镜波束尺寸一致的天体来进行。但是，实际中并没有这样的天体（或人造）目标存在。因此，测量望远镜主波束效率是分别通过对月面、行星、谱线面源、谱线点源等目标的测量来进行。在进行五点指向观测的同时，通过前置黑体温标将观测结果校准为温度，同时可以得到望远镜的波束宽度，通过计算便得到望远镜的口面效率和主波束效率。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">由于今年</span><span style="font-size: 14pt">JUPITER</span><span style="font-size: 14pt">俯仰最高只有</span><span style="font-size: 14pt">30？</span><span style="font-size: 14pt">，无法反应望远镜的波束效率随天线俯仰的变化。所以用行星</span><span style="font-size: 14pt">VENUS</span><span style="font-size: 14pt">对望远镜的波束效率进行了测试，如图</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.4.6</span></st1:chsdate><span style="font-size: 14pt">和</span><span style="font-size: 14pt">2.4.7</span><span style="font-size: 14pt">，用此效率对谱线标准源修正后与</span><span style="font-size: 14pt">2017</span><span style="font-size: 14pt">年结果比较发现，</span><span style="font-size: 14pt">NGC2264</span><span style="font-size: 14pt">、</span><span style="font-size: 14pt">S140</span><span style="font-size: 14pt">的峰值强度与</span><span style="font-size: 14pt">2017</span><span style="font-size: 14pt">年基本一致。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img width="320" height="257" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551435596463.jpg" oldsrc="W020201206556643765609.jpg" src="../../../xwdt/xw/202012/W020201206551435596463.jpg"><img width="320" height="241" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551435640891.jpg" oldsrc="W020201206556643816348.jpg" src="../../../xwdt/xw/202012/W020201206551435640891.jpg"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><st1:chsdate style="font-size: 10.5pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 10.5pt">2.4.6</span></st1:chsdate><span style="font-size: 10.5pt"><span style="font-size: 10.5pt">&nbsp; </span></span><span style="font-size: 10.5pt">望远镜中心波束（第</span><span style="font-size: 10.5pt">5</span><span style="font-size: 10.5pt">波束）的主波束效率与俯仰的图示</span><span style="font-size: 10.5pt">[7]</span><span style="font-size: 10.5pt">。</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">左边是上边带（</span><span style="font-size: 10.5pt">115.2GHz</span><span style="font-size: 10.5pt">），右边是下边带（</span><span style="font-size: 10.5pt">110.2GHz</span><span style="font-size: 10.5pt">）。</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　 <img width="320" height="240" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551435696730.jpg" oldsrc="W020201206556643867900.jpg" src="../../../xwdt/xw/202012/W020201206551435696730.jpg"><img width="320" height="238" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551435746352.jpg" oldsrc="W020201206556643901497.jpg" src="../../../xwdt/xw/202012/W020201206551435746352.jpg"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><st1:chsdate style="font-size: 10.5pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 10.5pt">2.4.7</span></st1:chsdate><span style="font-size: 10.5pt"><span style="font-size: 10.5pt">&nbsp; </span></span><span style="font-size: 10.5pt">望远镜中心波束（第</span><span style="font-size: 10.5pt">5</span><span style="font-size: 10.5pt">波束）的口面效率与俯仰的图示</span><span style="font-size: 10.5pt">[7]</span><span style="font-size: 10.5pt">。</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">左边是上边带（</span><span style="font-size: 10.5pt">115.2GHz</span><span style="font-size: 10.5pt">），右边是下边带（</span><span style="font-size: 10.5pt">110.2GHz</span><span style="font-size: 10.5pt">）。</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify">&nbsp;</o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">用</span><span style="font-size: 14pt">von Hoerner-Wong</span><span style="font-size: 14pt">的结构函数效率公式【见公式（</span><span style="font-size: 14pt">1</span><span style="font-size: 14pt">）】对效率测试数据进行拟合，符合实际的天线效率，物理意义清楚</span><sup style="font-size: 14pt"><span style="font-size: 14pt">[10]</span></sup><span style="font-size: 14pt">：</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" oldsrc="W020201206556643951959.png" src="../../../xwdt/xw/202012/W020201206551435801710.png"><span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">（</span><span style="font-size: 14pt">1</span><span style="font-size: 14pt">）</span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">拟合结果如表</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.4.2</span></st1:chsdate><sup style="font-size: 14pt"><span style="font-size: 14pt">[7]</span></sup><span style="font-size: 14pt">：</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">表</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.4.2</span></st1:chsdate><span style="font-size: 14pt"> </span><span style="font-size: 14pt">上下边带主波束效率拟合参数值</span>&nbsp;</font></p>
+<div>
+<table>
+    <tbody>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify">&nbsp;</o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">A(%)<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">hh(mm)<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">hz(mm)<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">el<sub style="font-size: 10.5pt">0</sub>(°)<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">R-square<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">RMSE<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">上边带</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">54.99</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.</span><span style="font-size: 10.5pt">1723</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.</span><span style="font-size: 10.5pt">10513</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">59.07</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.72</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">1.04</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">下边带</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">62.80</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">-0.1537</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.0</span><span style="font-size: 10.5pt">0937</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">55.45</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.54</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">1.12</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">对</span><span style="font-size: 14pt">JUPITER</span><span style="font-size: 14pt">用</span><span style="font-size: 14pt">beam 5</span><span style="font-size: 14pt">做五点跟踪观测，本振频率设置在</span><span style="font-size: 14pt">86 GHz</span><span style="font-size: 14pt">、</span><span style="font-size: 14pt">88 GHz</span><span style="font-size: 14pt">、</span><span style="font-size: 14pt">96 GHz</span><span style="font-size: 14pt">、</span><span style="font-size: 14pt">98 GHz</span><span style="font-size: 14pt">、</span><span style="font-size: 14pt">104 GHz</span><span style="font-size: 14pt">、</span><span style="font-size: 14pt">110 GHz</span><span style="font-size: 14pt">轮流观测，计算这些频率对应的上下边带的效率，结果如下表</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.4.3</span></st1:chsdate><sup style="font-size: 14pt"><span style="font-size: 14pt">[7]</span></sup><span style="font-size: 14pt">：</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">表</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.4.3</span></st1:chsdate><span style="font-size: 14pt"> </span><span style="font-size: 14pt">不同频率主波束效率、口面效率、波束宽度统计表</span>&nbsp;</font></p>
+<div>
+<table>
+    <tbody>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">频率（</span><span style="font-size: 10.5pt">GHz)<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">83.71<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">86.07<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">88.99<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">91.35<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">93.52<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">95.49<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">98.8<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">100.77<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">101.73<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">107.01<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">108.22<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">110.04<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">113.5<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">115.32<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">主波束效率（％）</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">63.0<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">62.0 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">62.8 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">62.0 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">66.5 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">64.7 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">63.7 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">63.0 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">60.6 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">54.7 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">55.2 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">53.2 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">47.5 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">46.8 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">口面效率（％）</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">53.2<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">51.9 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">50.8 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">51.1 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">53.4 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">51.4 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">50.2 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">49.1 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">49.8 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">42.6 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">43.0 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">39.3 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">34.6 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">34.9 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">HPBW_AZ (")<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">61.7<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">60.9 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">59.2 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">57.6 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">56.8 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">56.3 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">54.5 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">54.0 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">51.3 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">49.8 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">49.8 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">50.1 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">49.2 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">47.6 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">HPBW_EL (")<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">62.6<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">61.2 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">60.3 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">57.7 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">57.3 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">56.1 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">54.5 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">53.4 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">52.4 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">51.4 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">50.3 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">51.0 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">49.5 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">48.3 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p align="justify"><font style="font-size: 14pt">　　<img width="320" height="256" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551435866532.jpg" oldsrc="W020201206556644007361.jpg" src="../../../xwdt/xw/202012/W020201206551435866532.jpg"><img width="320" height="244" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551435910936.jpg" oldsrc="W020201206556644044152.jpg" src="../../../xwdt/xw/202012/W020201206551435910936.jpg"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><st1:chsdate style="font-size: 10.5pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 10.5pt">2.4.8</span></st1:chsdate><span style="font-size: 10.5pt"><span style="font-size: 10.5pt">&nbsp; </span></span><span style="font-size: 10.5pt">左图为主波束效率与频率的对应关系，右图为口面效率与频率的对应关系</span><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt">[7]<o:p style="font-size: 10.5pt" align="justify"></o:p></span></sup>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img width="320" height="224" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551435965937.jpg" oldsrc="W020201206556644093484.jpg" src="../../../xwdt/xw/202012/W020201206551435965937.jpg"><img width="320" height="224" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551436017514.jpg" oldsrc="W020201206556644131147.jpg" src="../../../xwdt/xw/202012/W020201206551436017514.jpg"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><st1:chsdate style="font-size: 10.5pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 10.5pt">2.4.9</span></st1:chsdate><span style="font-size: 10.5pt"> </span><span style="font-size: 10.5pt">波束宽度与观测波长的图示</span><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt">[7]<o:p style="font-size: 10.5pt" align="justify"></o:p></span></sup>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">波束宽度与观测波长可以用下式表示</span><sup style="font-size: 14pt"><span style="font-size: 14pt">[7]</span></sup><span style="font-size: 14pt">：</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" oldsrc="W020201206556644172141.png" src="../../../xwdt/xw/202012/W020201206551436078968.png"><span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">（</span><span style="font-size: 14pt">2</span><span style="font-size: 14pt">）</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" oldsrc="W020201206556644210608.png" src="../../../xwdt/xw/202012/W020201206551436125529.png"><span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">（</span><span style="font-size: 14pt">3</span><span style="font-size: 14pt">）</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">目前安装到</span><st1:chmetcnv style="font-size: 14pt" unitname="米" sourcevalue="13.7" hasspace="False" negative="False" numbertype="1" tcsc="0" w:st="on"><span style="font-size: 14pt">13.7</span><span style="font-size: 14pt">米</span></st1:chmetcnv><span style="font-size: 14pt">毫米波射电望远镜的接收机是一台</span><span style="font-size: 14pt">3</span><span style="font-size: 14pt">×</span><span style="font-size: 14pt">3 </span><span style="font-size: 14pt">像元的超导成像频谱仪，需要精确的测量</span><span style="font-size: 14pt">9</span><span style="font-size: 14pt">个</span><span style="font-size: 14pt">beam</span><span style="font-size: 14pt">之间的间隔矩阵和效率矩阵。在测试阶段，用高信噪比连续谱源在</span><span style="font-size: 14pt">AZ-EL</span><span style="font-size: 14pt">方向做二维方向图，拟合出各个波束中心的</span><span style="font-size: 14pt">AZ</span><span style="font-size: 14pt">、</span><span style="font-size: 14pt">EL</span><span style="font-size: 14pt">坐标计算其它波束相对于中心波束</span><span style="font-size: 14pt">AZ</span><span style="font-size: 14pt">、</span><span style="font-size: 14pt">EL</span><span style="font-size: 14pt">方向的间隔矩阵，间隔矩阵测试结果见表</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.4.4</span></st1:chsdate><sup style="font-size: 14pt"><span style="font-size: 14pt">[8]</span></sup><span style="font-size: 14pt">:<o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">表</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.4.4</span></st1:chsdate><span style="font-size: 14pt"> </span><span style="font-size: 14pt">波束间隔矩阵</span>&nbsp;</font></p>
+<div>
+<table>
+    <tbody>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify">&nbsp;</o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam1<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam2<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam3<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam4<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam5<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam6<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam7<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam8<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam9<o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">△</span></b><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">AZ</span></b><span style="font-size: 10.5pt">(")</span><b style="font-size: 10.5pt"><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">176.1<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">6.2<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">-166.5<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">173.7<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">2.8<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">-168.9<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">172.8<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">3.0<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">-170.3<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">△</span></b><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">EL</span></b><span style="font-size: 10.5pt">(")</span><b style="font-size: 10.5pt"><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">-172.0<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">-172.5<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">-174.1<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">3.5<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">-1.0<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">-2.6<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">174.5<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">171.1<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">169.7<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">在进行效率矩阵测试时，采用对标准源</span><span style="font-size: 14pt">S140</span><span style="font-size: 14pt">、</span><span style="font-size: 14pt">DR21</span><span style="font-size: 14pt">、</span><span style="font-size: 14pt">NGC2264</span><span style="font-size: 14pt">进行</span><span style="font-size: 14pt">9</span><span style="font-size: 14pt">个</span><span style="font-size: 14pt">beam</span><span style="font-size: 14pt">“轮流”观测的方式，通过计算其它波束与中心波束（第</span><span style="font-size: 14pt">5</span><span style="font-size: 14pt">波束）的</span><sup style="font-size: 14pt"><span style="font-size: 14pt">12</span></sup><span style="font-size: 14pt">CO</span><span style="font-size: 14pt">、</span><sup style="font-size: 14pt"><span style="font-size: 14pt">13</span></sup><span style="font-size: 14pt">CO</span><span style="font-size: 14pt">峰值强度、积分强度的比值，得到望远镜其它波束相对于中心波束归一化的效率矩阵，结果见表</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.4.5</span></st1:chsdate><sup style="font-size: 14pt"><span style="font-size: 14pt">[11]</span></sup><span style="font-size: 14pt">：</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">表</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.4.5</span></st1:chsdate><span style="font-size: 14pt"> </span><span style="font-size: 14pt">波束效率矩阵</span>&nbsp;</font></p>
+<div>
+<table>
+    <tbody>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">边带<span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam1<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam2<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam3<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam4<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam5<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam6<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam7<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam8<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">beam9<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">USB </span></b><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">(115.2GHz)</span></b><b style="font-size: 10.5pt"><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.86 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.96 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.93 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.85 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">1.00 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.89 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.90 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.94 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.91 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">LSB </span></b><b style="font-size: 10.5pt"><span style="font-size: 10.5pt">(110.2GHz)</span></b><b style="font-size: 10.5pt"><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span></b>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.88 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.94 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.87 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.84 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">1.00 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.91 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.88 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.93 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.86 </span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">望远镜作为一个整体，对天体谱线标准源进行观测的数据精度通常用来反映天文观测能够达到的实际测量精度。在运行过程中，用该精度作为衡量整个望远镜仪器性能、工作状态、观测方法、以及数据归算处理等全过程的依据。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">由于天线面板的重力形变与光学耦合变化，观测得到的天线温度随俯仰有一定的依赖关系。在“综合性能的天文测试”阶段，对谱线面源</span><span style="font-size: 14pt">S140</span><span style="font-size: 14pt">、</span><span style="font-size: 14pt">NGC 2264</span><span style="font-size: 14pt">进行了中心点全天观测，观测结果用上面测出的效率修正公式和效率矩阵进行修正，得到谱线峰值强度与俯仰的关系，如图</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.4.10</span></st1:chsdate><span style="font-size: 14pt">和</span><span style="font-size: 14pt">2.4.11</span><span style="font-size: 14pt">。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img width="640" height="401" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551436170628.png" oldsrc="W020201206556644267719.png" src="../../../xwdt/xw/202012/W020201206551436170628.png"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><span style="font-size: 10.5pt">2.4.10<span style="font-size: 10.5pt">&nbsp; </span>9</span><span style="font-size: 10.5pt">个波束观测得到的</span><span style="font-size: 10.5pt">S140</span><span style="font-size: 10.5pt">的</span><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt">12</span></sup><span style="font-size: 10.5pt">CO</span><span style="font-size: 10.5pt">峰值强度随俯仰的图示。</span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">数据已经过效率矩阵、主波束效率校准，数据取自报告</span><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt">[11]</span></sup>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img width="640" height="400" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551436224719.png" oldsrc="W020201206556644308525.png" src="../../../xwdt/xw/202012/W020201206551436224719.png"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><span style="font-size: 10.5pt">2.4.11<span style="font-size: 10.5pt">&nbsp; </span>9</span><span style="font-size: 10.5pt">个波束观测得到的</span><span style="font-size: 10.5pt">NGC2264</span><span style="font-size: 10.5pt">的</span><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt">13</span></sup><span style="font-size: 10.5pt">CO</span><span style="font-size: 10.5pt">峰值强度随俯仰的图示。</span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">数据已经过效率矩阵、主波束效率校准，数据取自报告</span><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt">[11]</span></sup>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">从图</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.4.10</span></st1:chsdate><span style="font-size: 14pt">和图</span><span style="font-size: 14pt">2.4.11</span><span style="font-size: 14pt">可以看到，目前得到的北天谱线标准源</span><span style="font-size: 14pt">S140</span><span style="font-size: 14pt">的</span><sup style="font-size: 14pt"><span style="font-size: 14pt">12</span></sup><span style="font-size: 14pt">CO</span><span style="font-size: 14pt">（</span><span style="font-size: 14pt">1-0</span><span style="font-size: 14pt">）和南天谱线标准源</span><span style="font-size: 14pt">NGC 2264</span><sup style="font-size: 14pt"><span style="font-size: 14pt"> </span></sup><span style="font-size: 14pt">的</span><sup style="font-size: 14pt"><span style="font-size: 14pt">13</span></sup><span style="font-size: 14pt">CO</span><span style="font-size: 14pt">（</span><span style="font-size: 14pt">1-0</span><span style="font-size: 14pt">）的峰值强度经过效率改正后，强度和俯仰的依赖关系不大。用</span><span style="font-size: 14pt">OTF</span><span style="font-size: 14pt">观测可以使整个扫描区域内各个点强度随俯仰的变化被削弱。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">5<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">接收机的参数（频率工作范围、噪声温度、稳定性）</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">超导成像频谱仪是一台毫米波段</span><span style="font-size: 14pt">3×3 </span><span style="font-size: 14pt">像元的多波束接收机，该设备主要包括：</span><span style="font-size: 14pt">9</span><span style="font-size: 14pt">个边带分离型超导</span><span style="font-size: 14pt">SIS</span><span style="font-size: 14pt">混频器、无调谐数字本振源、全数字偏置电源、独立中频、宽带高分辨数字频谱仪等多项新技术，成功实现了大规模毫米波系统集成。该设备是国际上毫米波段的第一例基于边带分离技术原理的多波束接收机，也是我国射电天文领域研制的第一台多波束接收机。按照标准的波段设置要求，该波段的接收机工作频率范围在</span><span style="font-size: 14pt">85-115 GHz</span><span style="font-size: 14pt">。本观测季节当本振频率</span><span style="font-size: 14pt">86-112.6GHz</span><span style="font-size: 14pt">时，接收机的噪声温度</span><span style="font-size: 14pt">T</span><sub style="font-size: 14pt"><span style="font-size: 14pt">rx</span></sub><span style="font-size: 14pt">的实测值见图</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.5.1</span></st1:chsdate><sup style="font-size: 14pt"><span style="font-size: 14pt"> [12]</span></sup><span style="font-size: 14pt">，而包含了地球大气噪声、圆堡等辐射贡献在内的“系统温度”</span><span style="font-size: 14pt">T</span><sub style="font-size: 14pt"><span style="font-size: 14pt">sys</span></sub><span style="font-size: 14pt">的测量值分布见图</span><span style="font-size: 14pt">2.5.2<sup style="font-size: 14pt">[16]</sup></span><span style="font-size: 14pt">。这些系统温度的数据有助于观测者估计项目所需要的观测积分时间和灵敏度。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" oldsrc="W020201206556644358519.jpg" src="../../../xwdt/xw/202012/W020201206551436288754.jpg"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><st1:chsdate style="font-size: 10.5pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 10.5pt">2.5.1</span></st1:chsdate><span style="font-size: 10.5pt"><span style="font-size: 10.5pt">&nbsp; </span></span><span style="font-size: 10.5pt">接收机噪声温度</span><span style="font-size: 10.5pt">Trx</span><span style="font-size: 10.5pt">在不同频点的分布（</span><span style="font-size: 10.5pt">MG<st1:chmetcnv style="font-size: 10.5pt" unitname="C" sourcevalue="3692" hasspace="False" negative="False" numbertype="1" tcsc="0" w:st="on">3692C</st1:chmetcnv></span><span style="font-size: 10.5pt">频综）。横坐标是</span><span style="font-size: 10.5pt">Beam</span><span style="font-size: 10.5pt">号，纵坐标是等效成双边带接收机的噪声温度</span><span style="font-size: 10.5pt">Trx (K)</span><span style="font-size: 10.5pt">，不同颜色符号表示不同的本振频率</span><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt"> [12]</span></sup><span style="font-size: 10.5pt">。</span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" oldsrc="W020201206556644392233.jpg" src="../../../xwdt/xw/202012/W020201206551436346962.jpg"></font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">图</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.5.2</span></st1:chsdate><span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp; </span></span><span style="font-size: 14pt">系统温度的分布【本振频率</span><span style="font-size: 14pt">112.6GHz</span><span style="font-size: 14pt">】。横坐标是</span><span style="font-size: 14pt">Beam</span><span style="font-size: 14pt">号，纵坐标是边带分离型接收机直接测量的系统温度（等同于单边带工作模式）</span><span style="font-size: 14pt">Tsys (K)</span><span style="font-size: 14pt">，黑色方框为上边带</span><span style="font-size: 14pt">(115.2GHz)</span><span style="font-size: 14pt">测试结果，红色圆点为下边带</span><span style="font-size: 14pt">(110.2GHz)</span><span style="font-size: 14pt">测试结果。它包含了接收机、天线与光学系统、圆顶和蒙皮、以及地球大气的贡献</span><sup style="font-size: 14pt"><span style="font-size: 14pt"> [13]</span></sup><span style="font-size: 14pt">。</span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">本观测季节，望远镜可以从事</span><span style="font-size: 14pt">85-115 GHz</span><span style="font-size: 14pt">整个波段内的观测。多次重复测量结果表明，当</span><span style="font-size: 14pt">SIS</span><span style="font-size: 14pt">工作在第一台阶时，</span><span style="font-size: 14pt">10</span><span style="font-size: 14pt">分钟内系统相对稳定性</span><span style="font-size: 14pt">D</span><span style="font-size: 14pt">G/G</span><span style="font-size: 14pt">＜</span><span style="font-size: 14pt"> 2</span><span style="font-size: 14pt"><span style="font-size: 14pt">′</span></span><span style="font-size: 14pt">10</span><sup style="font-size: 14pt"><span style="font-size: 14pt">-3 </span></sup><span style="font-size: 14pt">。图</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.5.3</span></st1:chsdate><span style="font-size: 14pt">显示了接收机在工作波段内相对稳定性的典型测量结果。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<img width="640" height="449" style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="" complete="complete" uploadpic="W020201206551436402361.jpg" oldsrc="W020201206556644444213.jpg" src="../../../xwdt/xw/202012/W020201206551436402361.jpg"></font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt">图</span><st1:chsdate style="font-size: 10.5pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 10.5pt">2.5.3</span></st1:chsdate><span style="font-size: 10.5pt"><span style="font-size: 10.5pt">&nbsp; </span></span><span style="font-size: 10.5pt">接收机相对稳定性（计算机以</span><span style="font-size: 10.5pt">4.5Hz</span><span style="font-size: 10.5pt">采样率采集中频检波输出</span><span style="font-size: 10.5pt">3</span><span style="font-size: 10.5pt">小时数据做</span><span style="font-size: 10.5pt">allan</span><span style="font-size: 10.5pt">方差分析</span><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt"> [12]</span></sup><span style="font-size: 10.5pt">）</span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 10.5pt">　　<span style="font-size: 10.5pt"><span style="font-size: 10.5pt">6<span style="font-size: 10.5pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 10.5pt">后端频谱仪</span><span style="font-size: 10.5pt">-</span><span style="font-size: 10.5pt">高分辨数字频谱仪</span><span style="font-size: 10.5pt">FFTS</span><span style="font-size: 10.5pt">技术参数（带宽、通道数、分辨率、稳定性）</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">装调到</span><st1:chmetcnv style="font-size: 14pt" unitname="米" sourcevalue="13.7" hasspace="False" negative="False" numbertype="1" tcsc="0" w:st="on"><span style="font-size: 14pt">13.7</span><span style="font-size: 14pt">米</span></st1:chmetcnv><span style="font-size: 14pt">望远镜的超导成像频谱仪系统，后端由</span><span style="font-size: 14pt">18</span><span style="font-size: 14pt">路高分辨数字频谱仪</span><span style="font-size: 14pt">FFTS</span><span style="font-size: 14pt">组成，带宽为</span><span style="font-size: 14pt">1000 MHz</span><span style="font-size: 14pt">或</span><span style="font-size: 14pt">200 MHz</span><span style="font-size: 14pt">，每路带宽的通道数均为</span><span style="font-size: 14pt">16384</span><span style="font-size: 14pt">个。经过测试表明，目前</span><span style="font-size: 14pt">18</span><span style="font-size: 14pt">路数字频谱仪在带宽、频谱分辨本领、动态范围、稳定性等关键技术指标上都有新的突破。这种频谱仪对河外星系的谱线接收、高分辨率谱线观测以及深度积分的谱线观测等极限观测项目显示出新的使用潜力。经过测试，在不同的频谱仪带宽下，包含实际大气变化在内的系统整体</span><span style="font-size: 14pt">Allan</span><span style="font-size: 14pt">方差拐点约为</span><span style="font-size: 14pt">200</span><span style="font-size: 14pt">秒</span><sup style="font-size: 14pt"><span style="font-size: 14pt">[14]</span></sup><span style="font-size: 14pt">。</span><span style="font-size: 14pt">FFTS</span><span style="font-size: 14pt">也可以同时观测多条谱线，观测者可以利用“谱线观测频率计算软件（</span><span style="font-size: 14pt">FFTS freqset</span><span style="font-size: 14pt">）”</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">查看哪些谱线可同时观测（在基地网页</span><span style="font-size: 14pt"><a style="font-size: 14pt" href="javascript:;">http://www.radioast.nsdc.cn/tools.php</a></span><span style="font-size: 14pt">上下载）。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">表</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="30" month="12" year="1899"><span style="font-size: 14pt">2.6.1</span></st1:chsdate><span style="font-size: 14pt"> </span><span style="font-size: 14pt">望远镜频谱后端</span><span style="font-size: 14pt">FFTS</span><span style="font-size: 14pt">的基本参数</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<div>
+<table>
+    <tbody>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">工作带宽</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td colspan="2">
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt">12</span></sup><span style="font-size: 10.5pt">CO<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td colspan="2">
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><sup style="font-size: 10.5pt"><span style="font-size: 10.5pt">13</span></sup><span style="font-size: 10.5pt">CO<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">通道频率间隔</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">（</span><span style="font-size: 10.5pt">kHz</span><span style="font-size: 10.5pt">）</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">通道速度间隔</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">（</span><span style="font-size: 10.5pt">km/s</span><span style="font-size: 10.5pt">）</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">通道频率间隔</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">（</span><span style="font-size: 10.5pt">kHz</span><span style="font-size: 10.5pt">）</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">通道速度间隔</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">（</span><span style="font-size: 10.5pt">km/s</span><span style="font-size: 10.5pt">）</span><span style="font-size: 10.5pt"><o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">1000 MHz<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">61.0 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.159<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">61.0 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.167<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">200 MHz<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">12.2 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.032<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">12.2 <o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+            <td>
+            <p align="justify"><font style="font-size: 14pt"><font style="font-size: 10.5pt"><span style="font-size: 10.5pt">0.033<o:p style="font-size: 10.5pt" align="justify"></o:p></span>&nbsp;</font></font></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify">&nbsp;</o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">7<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">数据存储系统</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">为适应</span><span style="font-size: 14pt">OTF</span><span style="font-size: 14pt">观测海量数据存储，配置了数据存储系统，该系统有两台</span><span style="font-size: 14pt">DELL PowerEdge R910</span><span style="font-size: 14pt">，</span><span style="font-size: 14pt">2017</span><span style="font-size: 14pt">年扩容后存储容量为</span><span style="font-size: 14pt">300TB </span><span style="font-size: 14pt">，操作系统为</span><span style="font-size: 14pt">Scientific Linux 5.4</span><span style="font-size: 14pt">，该系统同时实现</span><span style="font-size: 14pt">OTF</span><span style="font-size: 14pt">数据预处理。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">8<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">观测模式</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">·</span></span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">在接收机工作频率范围内，望远镜以位置开关模式进行谱线单点观测。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">·</span></span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">使用“超导成像频谱仪”</span><span style="font-size: 14pt">+OTF</span><span style="font-size: 14pt">谱线成图观测。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">·</span></span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">谱线观测采用标准的斩波轮方法进行温度定标。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">·</span></span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">可以进行</span><st1:chmetcnv style="font-size: 14pt" unitname="mm" sourcevalue="3" hasspace="True" negative="False" numbertype="1" tcsc="0" w:st="on"><span style="font-size: 14pt">3 mm</span></st1:chmetcnv><span style="font-size: 14pt">波段大气不透明度的测量。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">·</span></span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">连续谱单点、成图和</span><span style="font-size: 14pt">OTF</span><span style="font-size: 14pt">观测。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">·</span></span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">对点源进行两个波束调制单点观测。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">9<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">资料格式</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">控制系统输出数据为国际通用的标准</span><span style="font-size: 14pt">FITS</span><span style="font-size: 14pt">格式和</span><span style="font-size: 14pt">CLASS</span><span style="font-size: 14pt">格式文件。用户可以使用</span><span style="font-size: 14pt">GILDAS/CLASS</span><a name="书签1"></a><span style="font-size: 14pt">等一些通用的射电谱线数据处理软件来进行处理。</span><span style="font-size: 14pt"> <o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span>GILDAS/CLASS</span><span style="font-size: 14pt">是由法国</span><span style="font-size: 14pt">Grenoble</span><span style="font-size: 14pt">天文台与</span><span style="font-size: 14pt">IRAM</span><span style="font-size: 14pt">合作开发的射电天文数据处理软件，网址</span><span style="font-size: 14pt">http://iram.fr/IRAMFR/GILDAS/</span><span style="font-size: 14pt">。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">10<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">数据下载</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt">观测数据可以从</span><span style="font-size: 14pt"><a style="font-size: 14pt" href="javascript:;">http://www.radioast.nsdc.cn</a></span><span style="font-size: 14pt">数据库下载，未开放数据需要用户登录后才能下载，用户名为观测者课题编号，密码由课题安排人员设定后告知课题申请者。用户可以从如下网页查看观测记录来了解课题观测情况：</span><span style="font-size: 14pt"><a style="font-size: 14pt" href="javascript:;">http://www.radioast.nsdc.cn/viewrecord.php</a> </span><span style="font-size: 14pt">。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify">&nbsp;</o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">(三)<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><b style="font-size: 14pt"><span style="font-size: 14pt">开放观测课题的申请和日程安排</span></b><b style="font-size: 14pt"><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span></b>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span>2020</span><span style="font-size: 14pt"><span style="font-size: 14pt">-</span></span><span style="font-size: 14pt">2021</span><span style="font-size: 14pt">观测季节德令哈基地</span><st1:chmetcnv style="font-size: 14pt" unitname="米" sourcevalue="13.7" hasspace="False" negative="False" numbertype="1" tcsc="0" w:st="on"><span style="font-size: 14pt">13.7</span><span style="font-size: 14pt">米</span></st1:chmetcnv><span style="font-size: 14pt">毫米波望远镜最新状态信息将及时公布在基地网页上：</span><span style="font-size: 14pt"><a style="font-size: 14pt" href="../../../index.html">http://ww<span style="font-size: 14pt"><span style="font-size: 14pt">w</span></span>.dlh.pmo.cas.cn</a><a name="_Hlt493358000"></a><a name="_Hlt493358001"></a></span><span style="font-size: 14pt">。德令哈毫米波观测基地热情邀请国内外专家使用该望远镜从事天文和相关科学的观测研究。</span><st1:chmetcnv style="font-size: 14pt" unitname="米" sourcevalue="13.7" hasspace="False" negative="False" numbertype="1" tcsc="0" w:st="on"><span style="font-size: 14pt">13.7</span><span style="font-size: 14pt">米</span></st1:chmetcnv><span style="font-size: 14pt">望远镜常年接受观测课题申请。所有观测申请均由</span><span style="font-size: 14pt"><a style="font-size: 14pt" href="mailto:dlhproposal@pmo.ac.cn"><span style="font-size: 14pt">dlhproposal@pmo.ac.cn</span></a> </span><span style="font-size: 14pt">加以受理。观测申请的格式文本可以从基地网页</span><span style="font-size: 14pt"><a style="font-size: 14pt" href="../../../xzzq/dqhd/index.html"><span style="font-size: 14pt">http://www.dlh.pmo.cas.cn/xzzq/d<span style="font-size: 14pt"><span style="font-size: 14pt">q</span></span>hd/</span></a><a name="_Hlt22567188"></a><a name="_Hlt22567189"></a></span><span style="font-size: 14pt">下载。申请的观测课题或者时间要求在出现竞争的情况下将完全经由</span><span style="font-size: 14pt">“</span><span style="font-size: 14pt">毫米波评议会</span><span style="font-size: 14pt">”</span><span style="font-size: 14pt">的专家根据申请项目的科学意义和项目可行性进行打分评议确定优先级，基地将根据观测课题的要求，及时安排观测时间并提前通知观测课题的</span><span style="font-size: 14pt"> PI </span><span style="font-size: 14pt">或者联系人。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">(四)<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><b style="font-size: 14pt"><span style="font-size: 14pt">近几个观测季节内望远镜从事的观测课题举例</span></b><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">1<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">银河系分子云物理结构的探测；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">2<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">年轻星的高速气体外流和动力学；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">3<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">星际化学；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">4<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">银河系恒星形成区内分子气体的分布；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">5<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">银河系动力学；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">6<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">超新星遗迹与星际介质相互作用、宇宙射线源；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">7<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">恒星演化和晚型恒星的分子气体观测；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">8<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">太阳系天体的分子谱线观测；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">9<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">月球的毫米波辐射性质的观测研究；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">10<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">地球大气的毫米波电波传播和辐射物理性质的观测研究；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">11<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">星暴星系的观测研究。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">(五)<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><b style="font-size: 14pt"><span style="font-size: 14pt">使用望远镜进行观测</span></b><b style="font-size: 14pt"><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span></b>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">1<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">数据处理、数据备份</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">数据存储系统可同时实现</span><span style="font-size: 14pt">OTF</span><span style="font-size: 14pt">数据预处理，预处理后的文件上传到“毫米波射电天文数据库</span><span style="font-size: 14pt"><span style="font-size: 14pt">http://</span></span><span style="font-size: 14pt"><a style="font-size: 14pt" href="javascript:;">www.radio<span style="font-size: 14pt">a</span>s<span style="font-size: 14pt"><span style="font-size: 14pt">t</span></span>.<span style="font-size: 14pt">n</span>sdc.cn</a><a name="_Hlt492562349"></a><a name="_Hlt492562318"></a><a name="_Hlt492562319"></a><a name="_Hlt492562324"></a></span><span style="font-size: 14pt">”，观测者在首页登录后点击“下载</span><span style="font-size: 14pt">CLASS</span><span style="font-size: 14pt">格式数据”进入下载页面进行数据下载；</span><span style="font-size: 14pt"> </span><span style="font-size: 14pt">（注：用户名、密码由基地人员告知课题申请者）。位置调制观测模式生成单点</span><span style="font-size: 14pt">FITS</span><span style="font-size: 14pt">文件（登录后在首页检索下载）和</span><span style="font-size: 14pt">CLASS</span><span style="font-size: 14pt">格式文件（</span><st1:chmetcnv style="font-size: 14pt" unitname="m" sourcevalue="14" hasspace="False" negative="False" numbertype="1" tcsc="0" w:st="on"><span style="font-size: 14pt">14m</span></st1:chmetcnv><span style="font-size: 14pt">文件），</span><span style="font-size: 14pt"> OTF</span><span style="font-size: 14pt">观测产生的数据经过</span><span style="font-size: 14pt">regrid</span><span style="font-size: 14pt">后生成间隔</span><span style="font-size: 14pt">30″×30″</span><span style="font-size: 14pt">的</span><span style="font-size: 14pt">CLASS</span><span style="font-size: 14pt">格式文件（</span><span style="font-size: 14pt">bur</span><span style="font-size: 14pt">文件），同一个目标源多遍观测的</span><span style="font-size: 14pt">bur</span><span style="font-size: 14pt">文件合并到一起生成</span><span style="font-size: 14pt">fitscube</span><span style="font-size: 14pt">文件。基地指派的天文观测助手将协助观测者熟悉数据处理的操作。</span><span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">根据国际惯例，课题观测的所有数据将由课题申请者独占使用一年后成为开放共享数据。跨年度的长期项目在观测结束日起满一整年以后成为开放共享数据。共享后的数据任何人都可以从“毫米波射电天文数据库”检索下载。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">2<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">交通与生活服务</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">基地将为所有观测人员做好迎送接待、食宿、交通、网络通讯、应急供氧等支撑工作。经过</span><span style="font-size: 14pt">2017</span><span style="font-size: 14pt">年夏季对办公及招待所的装修，基地的工作和住宿环境得到了明显改善。前来基地从事观测课题研究的人员食宿交通等费用自理。由于地处西部，交通不便</span><span style="font-size: 14pt">, </span><span style="font-size: 14pt">我们推荐前来基地观测的研究人员事先计划安排好车（机）票，目前有德令哈到西宁的航班。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">基地负责德令哈市当地的接送工作。到达基地前，请与基地办公室<u style="font-size: 14pt">巨秉刚</u>先生联系接站时间和具体要求，电话</span><span style="font-size: 14pt">(0977)8224969</span><span style="font-size: 14pt">。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">德令哈基地地处青藏高原，<b style="font-size: 14pt"><u style="font-size: 14pt">干燥缺氧，冬季气候寒冷</u><i style="font-size: 14pt">。</i></b>基地提醒前来工作的天文学家携带足够的御寒衣物，做好充分的适应准备。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">(六)<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><b style="font-size: 14pt"><span style="font-size: 14pt">意见建议、或进一步的联系咨询</span></b><b style="font-size: 14pt"><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span></b>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 14pt">本报告涉及的更新改造项目和综合性能的天文测试内容是德令哈毫米波观测基地全体工作人员及其与毫米波</span><span style="font-size: 14pt">-</span><span style="font-size: 14pt">亚毫米波技术实验室、南京中科天仪中心、恒星形成团组等单位的技术人员和天文学研究人员共同努力完成的。需要了解基地望远镜更多内容、提出意见（包括对本报告的质疑）或建议时，请与基地徐烨研究员联系：</span><span style="font-size: 14pt"> <span style="font-size: 14pt"><a style="font-size: 14pt" href="mailto:xuye@pmo.ac.cn">xuye@pmo.ac.cn</a></span></span><span style="font-size: 14pt">。对本报告有关内容的质询或批评也请发给上述地址。观测项目实施以后，欢迎研究人员对观测中的天文和技术问题以及各种观测服务工作出现的问题等提出意见和建议。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<span>
+<div><font style="font-size: 14pt"><br style="font-size: 14pt">
+</font></div>
+</span>
+<p align="justify"><font style="font-size: 14pt">　　<b style="font-size: 14pt"><span style="font-size: 14pt">参考资料和测试报告<span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span></span></b>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">[1]<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">孙继先、张海龙、颜昆、靳生玉、罗春盛、张永兴、石峰、李翔春、李海勇、娄铮、钱元、刘伟、应晓科、庞健康、杨征、张磊</span><span style="font-size: 14pt">，</span><span style="font-size: 14pt">2020.7.21</span><span style="font-size: 14pt">，《</span><span style="font-size: 14pt">2020</span><span style="font-size: 14pt">年夏季维护天线面板照相测量总结》，德令哈毫米波观测基地；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">[2]<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">张海龙、孙继先、李翔春、罗春盛、石峰</span><span style="font-size: 14pt">，</span><span style="font-size: 14pt">2020.7.13</span><span style="font-size: 14pt">，《</span><span style="font-size: 14pt">2020</span><span style="font-size: 14pt">年夏季天线机械维护小结</span><span style="font-size: 14pt">v1.0</span><span style="font-size: 14pt">》，德令哈毫米波观测基地。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">[3]<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">运行组、观测组、后勤组，</span><span style="font-size: 14pt">2020.8.14</span><span style="font-size: 14pt">，《</span><span style="font-size: 14pt">2020</span><span style="font-size: 14pt">年夏季维护小结》，德令哈毫米波观测基地；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">[4]<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">张海龙、罗春盛，</span><span style="font-size: 14pt">2020.8.15</span><span style="font-size: 14pt">，《</span><span style="font-size: 14pt">2020</span><span style="font-size: 14pt">夏季维护天线跟踪误差测试报告》，德令哈毫米波观测基地；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">[5]<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">靳生玉、张永兴、孙继先、逯登荣、罗春盛、颜萍，</span><span style="font-size: 14pt">2020.8.19</span><span style="font-size: 14pt">，《五点指向观测快报</span><span style="font-size: 14pt">(</span><span style="font-size: 14pt">南天</span><span style="font-size: 14pt">)(<st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="20" month="8" year="2020">2020-08-20</st1:chsdate>)</span><span style="font-size: 14pt">》，德令哈毫米波观测基地；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">[6]<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">靳生玉、张永兴、孙继先、逯登荣、罗春盛、颜萍，</span><span style="font-size: 14pt">2020.8.19</span><span style="font-size: 14pt">，《五点指向观测快报</span><span style="font-size: 14pt">(</span><span style="font-size: 14pt">北天</span><span style="font-size: 14pt">)(<st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="20" month="8" year="2020">2020-08-20</st1:chsdate>)</span><span style="font-size: 14pt">》，德令哈毫米波观测基地；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">[7]<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">靳生玉、张永兴、逯登荣、孙继先、罗春盛、颜萍，</span><span style="font-size: 14pt">2020.9.7</span><span style="font-size: 14pt">，《波束效率测试报告（</span><span style="font-size: 14pt">2020</span><span style="font-size: 14pt">）》，德令哈毫米波观测基地；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">[8]<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">颜昆、靳生玉、颜萍、逯登荣、孙继先、张永兴、罗春盛，</span><span style="font-size: 14pt">2020.8.22</span><span style="font-size: 14pt">，《方向图扫描快报（</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="22" month="8" year="2020"><span style="font-size: 14pt">2020-08-22</span></st1:chsdate><span style="font-size: 14pt">）》，德令哈毫米波观测基地；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">[9]<span style="font-size: 14pt">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size: 14pt">颜昆、罗春盛、张永兴、逯登荣，</span><span style="font-size: 14pt">2020.9.4</span><span style="font-size: 14pt">，《月面效率测试报告（</span><span style="font-size: 14pt">20200904</span><span style="font-size: 14pt">）》，德令哈毫米波观测基地；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">[10]<span style="font-size: 14pt"> </span></span></span><span style="font-size: 14pt">杨戟，</span><span style="font-size: 14pt">2008.8.16</span><span style="font-size: 14pt">，《关于进一步提高</span><span style="font-size: 14pt">13.7</span><span style="font-size: 14pt">米望远镜天线面精度的技术路线图</span><span style="font-size: 14pt">v1.1</span><span style="font-size: 14pt">》，德令哈毫米波观测基地；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">[11]<span style="font-size: 14pt"> </span></span></span><span style="font-size: 14pt">王敏、逯登荣，</span><span style="font-size: 14pt">2020.9.3</span><span style="font-size: 14pt">，《标准源观测报告（波束效率矩阵、视向速度等）（</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="3" month="9" year="2020"><span style="font-size: 14pt">2020-09-03</span></st1:chsdate><span style="font-size: 14pt">）》，德令哈毫米波观测基地；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">[12]<span style="font-size: 14pt"> </span></span></span><span style="font-size: 14pt">董守豪、张旭国、李振强、孙继先、李积斌、金风娟、张海龙、罗春盛、李亚鹏，</span><span style="font-size: 14pt">2020.8.12</span><span style="font-size: 14pt">，《夏季维护通报（三）》，德令哈毫米波观测基地；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">[13]<span style="font-size: 14pt"> </span></span></span><span style="font-size: 14pt">董守豪、张旭国、李振强、姚骑均、李晶晶、李积斌、张海龙、孙继先、马奎、金风娟、李亚鹏、罗春盛、李海勇，</span><span style="font-size: 14pt">2020.8.17</span><span style="font-size: 14pt">，《</span><span style="font-size: 14pt">2020</span><span style="font-size: 14pt">夏季维护通报（四）》，德令哈毫米波观测基地；</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><span style="font-size: 14pt">[14]<span style="font-size: 14pt"> </span></span></span><span style="font-size: 14pt">颜萍、罗春盛、靳生玉、孙继先、逯登荣、张永兴，</span><span style="font-size: 14pt">2020.8.22</span><span style="font-size: 14pt">，《</span><span style="font-size: 14pt">Allan</span><span style="font-size: 14pt">方差测试（</span><st1:chsdate style="font-size: 14pt" w:st="on" isrocdate="False" islunardate="False" day="22" month="8" year="2020"><span style="font-size: 14pt">2020-8-22</span></st1:chsdate><span style="font-size: 14pt">）》，德令哈毫米波观测基地。</span><span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify"></o:p></span>&nbsp;</font></p>
+<p align="justify"><font style="font-size: 14pt">　　<span style="font-size: 14pt"><o:p style="font-size: 14pt" align="justify">&nbsp;</o:p></span>&nbsp;</font></p></div></td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding:5px">
+</td>
+                    </tr>
+					<tr>
+                      <td align="center" style="padding:5px"><script language="JavaScript">
+createPageHTML(1, 0, "t20201206_5809622", "html");	
+</script>
+</td>
+                    </tr>
+                  </table>
+                  <table width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td valign="top"><table width="692" border="0" align="center" cellpadding="0" cellspacing="0" class="font05">
+                          <tr>
+                            <td height="22"><img src="../../../images/cn53right11.gif" width="11" height="11"> <a href="javascript:;">评 论</a></td>
+                          </tr>
+                        </table>
+                        <table width="692" height="8" border="0" align="center" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table>
+				  <table id="appendix" width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td valign="top"><table width="692" border="0" align="center" cellpadding="0" cellspacing="0" class="font05">
+                          <tr>
+                            <td height="22"><img src="../../../images/cn53right11.gif" width="11" height="11"> 附件下载：</td>
+                          </tr>
+                        </table>
+                        <table width="692" height="8" border="0" align="center" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td>
+	<ul class="isa_article_list" id="imgUl">
+		<a href="javascript:;" target="_blank">2020-2021观测季节13.7米望远镜状态报告.doc</a>&nbsp;&nbsp;<script>writeImg();</script>	</ul>
+</td>
+<script>
+				if(document.getElementById("imgUl").innerText=="")
+				{document.getElementById("appendix").style.display="none"}
+				</script>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table>
+                  <table id="RelNews" width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td valign="top"><table width="692" border="0" align="center" cellpadding="0" cellspacing="0" class="font05">
+                          <tr>
+                            <td height="22"><img src="../../../images/cn53right11.gif" width="11" height="11"> 相关新闻</td>
+                          </tr>
+                        </table>
+						 
+                        <table style="display:" width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+						  <tr>
+                            <td class="hui_13" style="padding:10px 20px">
+							<ul id="relnew">
+							
+							  </ul></td>
+							  <script>
+			  
+				if(document.getElementById("relnew").innerText=="")
+				{
+				document.getElementById("RelNews").style.display="none"}
+			  </script>
+                          </tr>
+						   </table>
+						</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+    </table></td>
+    <td width="15" background="../../../images/cn53r02.gif"><img src="../../../images/cn53r01.jpg"></td>
+  </tr>
+</table>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="77" align="center" valign="top" background="http://www.dlh.pmo.cas.cn/images/cn53bottom01.gif"><table width="970" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="234" height="57" align="center" background="http://www.dlh.pmo.cas.cn/images/cn53bottom02.gif"><a href="javascript:;"><img src="../../../images/cn53bottom04.jpg" width="186" height="57" border="0"></a></td>
+          <td width="2" background="http://www.dlh.pmo.cas.cn/images/cn53bottom02.gif"><img src="../../../images/cn53bottom03.gif" width="2" height="43"></td>
+          <td width="714" background="http://www.dlh.pmo.cas.cn/images/cn53bottom02.gif" class="cn51white13" style="padding:0 0 0 20px">Copyright？2003-2009 中国科学院紫金山天文台青海观测站 版权所有 青ICP备06001436号<br> 
+            <span class="cn51blue124">青海省德令哈市邮政局人民路支局26号信箱（天文台）817000<br>电话：09778221935 传真：09778224970
+</span></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>

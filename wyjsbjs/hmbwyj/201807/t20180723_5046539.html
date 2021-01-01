@@ -1,0 +1,982 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>2007－2008观测季节13.7米望远镜状态报告（2007.12.20）----中国科学院紫金山天文台青海观测站</title>
+<link href="../../../images/cn53css.css" rel="stylesheet" type="text/css">
+<script>
+function writeImg(){
+   var filePath = "";//记录A链接的地址
+   var imgUl = document.getElementById('imgUl');//得到appendix的父标签
+   for(var i=imgUl.childNodes.length-1;i>=0;i--){//倒序循环父标签的元素，通过标签名得到A标签的地址
+      if(imgUl.childNodes[i].tagName=="A"){
+	     filePath = imgUl.childNodes[i].href;
+		 //alert(imgUl.childNodes[i].innerText);
+		 break;//得到父标签里最后的一个A标签即退出循环
+	  }
+   }
+
+   var fileExt = filePath.substring(filePath.lastIndexOf(".")+1);//得到附件的后缀名
+   //根据后缀名判断附件类型，填写不同的图片
+   if(fileExt=="doc" || fileExt=="docx"){
+     document.write("<img src='../../../images/ico_doc.jpg' />");
+   }
+   else if(fileExt=="xls" || fileExt=="xlsx"){
+	 document.write("<img src='../../../images/ico_xls.jpg' />");
+   }
+   else if(fileExt=="ppt" || fileExt=="pptx"){
+	 document.write("<img src='../../../images/ico_ppt.jpg' />");
+   }
+   else if(fileExt=="rar"){
+	 document.write("<img src='../../../images/ico_rar.jpg' />");
+   }
+   else if(fileExt=="txt"){
+	 document.write("<img src='../../../images/ico_txt.jpg' />");
+   }
+   else{
+	 document.write("<img src='../../../images/ico_other.jpg' />");
+   }
+}
+   </script>
+<script language="javascript">    
+ 
+function doZoom(size){
+	document.getElementById('content').className ="black_12_zhengwne"+size;
+}    
+</script>
+<style>
+.black_12_zhengwne{font-size: 12px;line-height: 24px;font-style:normal; color:#424242; padding:20px 25px;border-bottom:1px dashed #d1d1d1;}
+
+.black_12_zhengwne1{font-size:12px;line-height: 24px;font-style:normal; color:#424242; padding:20px 25px;border-bottom:1px dashed #d1d1d1;}
+.black_12_zhengwne1 p{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 span{font-size:12px;line-height: 24px;  }
+.black_12_zhengwne1 div{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 strong{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 table{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 tr{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 td{font-size:12px;line-height: 24px; }
+.black_12_zhengwne1 font{font-size:12px;line-height: 24px; }
+.black_12_zhengwne2{font-size:14px;line-height: 24px; font-style:normal; color:#424242; padding:20px 25px;border-bottom:1px dashed #d1d1d1; }
+.black_12_zhengwne2 span{font-size:14px;line-height: 24px; }
+.black_12_zhengwne2 p{font-size:14px;line-height: 24px; }
+.black_12_zhengwne2 div{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 strong{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 table{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 tr{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 td{font-size:14px;line-height: 24px;  }
+.black_12_zhengwne2 font{font-size:14px;line-height: 24px; }
+.black_12_zhengwne3{font-size:16px; line-height: 24px;font-style:normal; color:#424242; padding:20px 25px;border-bottom:1px dashed #d1d1d1;}
+.black_12_zhengwne3 p{font-size:16px;line-height: 24px;}
+.black_12_zhengwne3 span{font-size:16px; line-height: 24px;  }
+.black_12_zhengwne3 div{font-size:16px;line-height: 24px; }
+.black_12_zhengwne3 strong{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 table{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 tr{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 td{font-size:16px;line-height: 24px;  }
+.black_12_zhengwne3 font{font-size:16px;line-height: 24px; }
+</style>		
+
+<script language="javascript">   
+function num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt){
+		var nCurrIndex = _nCurrIndex || 0;
+		if(nCurrIndex == 0)
+			document.write("<span style='color:#007355'>1</span>&nbsp;");
+		else
+			document.write("<a style='font-size:12px;color:#007355' href=\""+_sPageName+"."+_sPageExt+"\">1</a>&nbsp;");
+		
+		for(var i=1; i<_nPageCount; i++){
+		if(nCurrIndex == i)
+			document.write("<span style='color:#007355'>"+(i+1)+"</span>&nbsp;");
+		else
+			document.write("<a style='font-size:12px;color:#007355' href=\""+_sPageName+"_" + i + "."+_sPageExt+"\">"+(i+1)+"</a>&nbsp;");
+			}
+		return "";
+		}
+		
+function createPageHTML(_nPageCount, _nCurrIndex, _sPageName, _sPageExt){
+	if(_nPageCount == null || _nPageCount<=1){
+		return;
+	}
+	
+	var nCurrIndex = _nCurrIndex || 0;
+	
+	if (_nPageCount==2){
+		if(nCurrIndex == 0){
+		document.write("<span style='color:#007355'>1</span>&nbsp;<a style='font-size:12px;color:#007355' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">2</a>&nbsp;<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">【下一页】</a>&nbsp;");
+		}
+		else if (nCurrIndex == 1){
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+ "."+_sPageExt+"\">【上一页】</a>&nbsp;<a style='font-size:12px;color:#007355' href=\""+_sPageName+ "."+_sPageExt+"\">1</a>&nbsp;<span style='color:#007355'>2</span>&nbsp;");
+		}
+	}
+	else{
+
+	if(nCurrIndex == 0){
+		document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">【下一页】</a>&nbsp;");
+		}
+	else if (nCurrIndex == 1){
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"."+_sPageExt+"\">【上一页】</a>&nbsp;");
+		document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">【下一页】</a>&nbsp;");
+		}
+	else if(nCurrIndex == (_nPageCount-1)){
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex-1) + "."+_sPageExt+"\">【上一页】</a>&nbsp;");
+		document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+		}
+	else{
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex-1) + "."+_sPageExt+"\">【上一页】</a>&nbsp;");
+		document.write(num(_nPageCount, _nCurrIndex, _sPageName, _sPageExt));
+		document.write("<a style='font-size:10.5pt;color:#007355;text-decoration:none;' href=\""+_sPageName+"_" + (nCurrIndex+1) + "."+_sPageExt+"\">【下一页】</a>&nbsp;");
+		}
+		} 
+	
+}
+    
+</script>
+</head>
+<body>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="15" background="../../../images/cn53l02.gif"><img src="../../../images/cn53l01.jpg"></td>
+    <td width="970">
+      <style>
+.apDiv1 {
+	position:absolute;
+	z-index:1;
+	text-align:left;
+	visibility:visible; 
+}
+.apDiv2 {
+	position:absolute;
+	z-index:1;
+	text-align:left;
+	visibility: hidden;
+        white-space:nowrap;
+}
+.cn51toppd1 {
+color:#FFFFFF;
+font-size:12px;
+font-weight:bold;
+padding:0 8px 0 8px;
+}
+.mmul { padding:0px;  border:1px #b9b9b9 solid; margin:29px 0px 0px 0px; background: #F6F6F6; padding:4px 0px; }
+.mmul li { list-style-type:none; margin:0px;}
+.mmul li a { width:100%; height:100%; margin:0px; background: #F6F6F6; padding:3px 8px 3px 10px; font-size:10px; font-weight:normal; }
+.mmul li a:hover { color:#CC3300; text-decoration:none; background: #e1e1e1;}
+</style>
+<script type="text/javascript">
+<!--
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+<table width="970" border="0" cellpadding="0" cellspacing="0" class="logo" align="center">
+        <tr>
+          <td width="509" height="64" align="right" valign="top"><img src="../../../images/cn53logo01.jpg" width="484" height="60"></td>
+          <td width="461" align="right" valign="top"><table border="0" cellpadding="0" cellspacing="0" class="cn51white12" style="margin-top:10px;">
+              <tr>
+                <td height="25" align="right" style="padding:0 10px 0 0"><a href="../../../lxwm/index.html" class="cn51white12" target="_top">联系我们</a> | <a href="../../../wzdt/index.html" class="cn51white12" target="_top">网站地图</a> | <a href="../../../index1.html" class="cn51white12" target="_top">English</a> | <a href="javascript:;" class="cn51white12" target="_top">中国科学院紫金山天文台</a> | <a href="javascript:;" class="cn51white12" target="_top">中国科学院</a></td>
+              </tr>
+            </table>
+			<table border="0" cellpadding="0" cellspacing="0" style="margin:5px 15px 0 0;">
+        <form name="searchform" action="http://search.cas.cn/search" method="post" onsubmit="return search_check()" target="_top">
+        <input type="hidden" name="channelid" value="44052">
+        <input type="hidden" name="option" value="ideosingle">
+        <input type="hidden" name="searchword" value="">
+<input name="preKeyword" value="" type="hidden">
+        <tr> 
+          <td align="left" valign="center">
+          关键字：<input name="iptSword" id="iptSword" type="text" onclick="javascript:if(this.value=='请输入关键字') this.value=''" class="input" border="0" value="请输入关键字"></td>
+          <td width="43" align="right"><input type="image" src="../../images/cn53icon.jpg" width="27" height="18"></td>
+        </tr></form>
+<script type="text/javascript">
+function escapeTrs(str){//转义trs关键字
+	var arr = new Array("\\\\","!","@","#","\\$","\%","\\^","\&","\\*","\\(","\\)","\\_","\\+","\-","\=","\\{","\\}","\\|","\\[","\\]",";","'",":","\"","\<","\>","\\?","\,","\\.","\/");
+	
+	for(var i=0;i<arr.length;i++){
+	 var re = new RegExp(arr[i],"img");
+	 str = str.replace(re, '\\' + arr[i]);
+	}
+	
+	return str;
+}
+function dealKeywords(sword, relation)
+{	
+	var sTemp = "";
+	var swordtemp = ""; 
+	var sArray;
+
+	if(sword.indexOf("*")<0&&sword.indexOf("+")<0&&sword.indexOf(")")<0&&sword.indexOf("(")<0&&sword.indexOf("\\")<0)
+	{
+		sword = escapeTrs(sword);
+		//不含trs关键字
+		sArray = sword.split(" ");//输入框空格处理,空格表示 relation 关系
+		for(var i=0; i<sArray.length;i++)
+		{	
+			sTemp = sArray[i].replace(/^\s+|\s+$/g,"");//去掉sword前后空格
+			if(sTemp!="")
+			{
+				swordtemp += "'"+ sTemp + "' "+relation+" ";/*加上''符号,处理trs带运算符的检索词报错的问题*/
+			}					
+		}
+		if(swordtemp.lastIndexOf(" "+relation+" ")!=-1)//去掉relation结尾
+		{
+			swordtemp = swordtemp.substring(0,swordtemp.length-relation.length-2);
+		} 
+	}
+	
+	else//包含trs关键字
+	{    
+		 if(sword.indexOf("\\")!=-1){
+		 	var re = new RegExp("\\\\","img");
+	 		sword = sword.replace(re, '\\\\');
+		 }
+		 swordtemp = "'"+sword+"'";
+	}
+	return swordtemp;	
+} 
+
+function search_check() {
+	var sword =document.getElementById("iptSword").value.replace(/^\s+|\s+$/g,"");
+	
+	if (sword=='' || sword=='请输入关键字') {
+		alert('请输入关键字!');
+		return false;
+	} else {	
+		document.searchform.searchword.value = dealKeywords(sword, "and");
+		document.searchform.preKeyword.value = encodeURI(document.getElementById("iptSword").value);//传参前进行编码
+		document.searchform.submit();
+	}
+}
+</script>
+      </table>
+	  </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="banner" align="center">
+        <tr>
+          <td valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:15px;">
+            <tr>
+              <td align="right">&nbsp;</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="34" background="http://www.dlh.pmo.cas.cn/images/cn53top04.gif"><table border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+			  <style>
+			  .cn51toppd{font-weight: bold;color: #FFFFFF;padding: 0 12px 0 15px;font-size: 12px;}
+			  </style>
+                <td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>  
+				<a href="../../../index.html" class="cn51toppd" target="_top">首页</a>
+				</td>
+                <td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu01" onmousemove="MM_showHideLayers('menu01','','show')" onmouseout="MM_showHideLayers('menu01','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../../qhzgk/qhgczjj/index.html" target="_top">青海观测站简介</a></li> 
+				
+                <li><a href="../../../qhzgk/qhzhyc/index.html" target="_top">青海站欢迎辞</a></li> 
+				
+                <li><a href="../../../qhzgk/xrld/index.html" target="_top">现任领导</a></li> 
+				
+                <li><a href="../../../qhzgk/lrld/index.html" target="_top">历任领导</a></li> 
+				
+                <li><a href="../../../qhzgk/qhzfm/index.html" target="_top">青海站风貌</a></li> 
+				
+                </ul></div>  
+				<a href="../../../qhzgk/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu01','','show')" onmouseout="MM_showHideLayers('menu01','','hide')" target="_top">青海站概况</a>
+				</td>
+				<td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu02" onmousemove="MM_showHideLayers('menu02','','show')" onmouseout="MM_showHideLayers('menu02','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../../jgsz/yxz/index.html" target="_top">运行组</a></li> 
+				
+                <li><a href="../../../jgsz/gcyjz/index.html" target="_top">观测研究组</a></li> 
+				
+                <li><a href="../../../jgsz/hqz/index.html" target="_top">后勤组</a></li> 
+				
+                <li><a href="../../../jgsz/song/index.html" target="_top">SONG组</a></li> 
+				
+                </ul></div>  
+				<a href="../../../jgsz/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu02','','show')" onmouseout="MM_showHideLayers('menu02','','hide')" target="_top">机构设置</a>
+				</td>
+				<td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu03" onmousemove="MM_showHideLayers('menu03','','show')" onmouseout="MM_showHideLayers('menu03','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../../xwdt/cdcxppy/index.html" target="_top">超导成像频谱仪（多波束系统）最新观测结果</a></li> 
+				
+                <li><a href="../../../xwdt/xw/index.html" target="_top">新闻</a></li> 
+				
+                <li><a href="../../../xwdt/tpxw/index.html" target="_top">图片新闻</a></li> 
+				
+                </ul></div>  
+				<a href="../../../xwdt/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu03','','show')" onmouseout="MM_showHideLayers('menu03','','hide')" target="_top">新闻动态</a>
+				</td>
+                <td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu04" onmousemove="MM_showHideLayers('menu04','','show')" onmouseout="MM_showHideLayers('menu04','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../index.html" target="_top">13.7米毫米波望远镜</a></li> 
+				
+                <li><a href="../../kjsp/index.html" target="_top">空间碎片</a></li> 
+				
+                <li><a href="../../song/index.html" target="_top">SONG</a></li> 
+				
+                <li><a href="../../lztx/index.html" target="_top">量子通信</a></li> 
+				
+                </ul></div> 
+				<a href="../../index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu04','','show')" onmouseout="MM_showHideLayers('menu04','','hide')" target="_top">望远镜设备介绍</a>
+				</td>
+                <td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu05" onmousemove="MM_showHideLayers('menu05','','show')" onmouseout="MM_showHideLayers('menu05','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../../rydw/kygg/index.html" target="_top">科研骨干</a></li> 
+				
+                <li><a href="../../../rydw/yjy/index.html" target="_top">研究员</a></li> 
+				
+                <li><a href="../../../rydw/fyjy/index.html" target="_top">副研究员</a></li> 
+				
+                </ul></div> 
+				<a href="../../../rydw/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu05','','show')" onmouseout="MM_showHideLayers('menu05','','hide')" target="_top">人员队伍</a>
+				</td>
+				<td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu06" onmousemove="MM_showHideLayers('menu06','','show')" onmouseout="MM_showHideLayers('menu06','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../../rczp/gk/index.html" target="_top">概况</a></li> 
+				
+                <li><a href="../../../rczp/zpxx/index.html" target="_top">招聘信息</a></li> 
+				
+                <li><a href="../../../rczp/lyxx/index.html" target="_top">录用信息</a></li> 
+				
+                </ul></div> 
+				<a href="../../../rczp/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu06','','show')" onmouseout="MM_showHideLayers('menu06','','hide')" target="_top">人才招聘</a>
+				</td>
+				
+                                     <td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu07" onmousemove="MM_showHideLayers('menu07','','show')" onmouseout="MM_showHideLayers('menu07','','hide')">
+                <ul class="mmul">
+
+				
+                <li><a href="../../../hzjl/hzyjl/index.html" target="_top">合作交流</a></li> 
+				
+                </ul></div> 
+				<a href="../../../hzjl/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu07','','show')" onmouseout="MM_showHideLayers('menu07','','hide')" target="_top">合作交流</a>
+				</td>
+				<td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu08" onmousemove="MM_showHideLayers('menu08','','show')" onmouseout="MM_showHideLayers('menu08','','hide')">
+                <ul class="mmul">
+
+				
+                <li><a href="../../../kycc/hjqk/index.html" target="_top">获奖情况</a></li> 
+				
+                <li><a href="../../../kycc/lwcc/index.html" target="_top">论文产出</a></li> 
+				
+                <li><a href="../../../kycc/zlsq/index.html" target="_top">专利申请</a></li> 
+				
+                </ul></div> 
+				<a href="../../../kycc/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu08','','show')" onmouseout="MM_showHideLayers('menu08','','hide')" target="_top">科研产出</a>
+				</td>
+
+                <td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+
+				<div class="apDiv2" id="menu09" onmousemove="MM_showHideLayers('menu09','','show')" onmouseout="MM_showHideLayers('menu09','','hide')">
+                <ul class="mmul">
+
+				
+                <li><a href="../../../xzzq/wyjxgrj/index.html" target="_top">13.7米望远镜相关软件</a></li> 
+				
+                <li><a href="../../../xzzq/sqb/index.html" target="_top">申请表</a></li> 
+				
+                </ul></div> 
+				<a href="../../../xzzq/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu09','','show')" onmouseout="MM_showHideLayers('menu09','','hide')" target="_top">下载专区</a>
+				</td>
+
+                <td width="2"><img src="../../../images/cn53top06.gif"></td>
+                <td>
+				<div class="apDiv2" id="menu11" onmousemove="MM_showHideLayers('menu11','','show')" onmouseout="MM_showHideLayers('menu11','','hide')">
+                <ul class="mmul">
+				
+                <li><a href="../../../kpjd/kpdt/index.html" target="_top">科普动态</a></li> 
+				
+                <li><a href="../../../kpjd/kxtp/index.html" target="_top">科学图片</a></li> 
+				
+                </ul></div> 
+				<a href="../../../kpjd/index.html" class="cn51toppd1" onmousemove="MM_showHideLayers('menu11','','show')" onmouseout="MM_showHideLayers('menu11','','hide')" target="_top">科普基地</a>
+				</td>
+
+                <td width="2"><img src="../../../images/cn53top06.gif"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td height="3" bgcolor="#46acfb"></td>
+        </tr>
+      </table>
+      <table width="970" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="235" bgcolor="#EEEEEE">
+		  <table width="235" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="1" bgcolor="#FFFFFF"></td>
+              </tr>
+              <tr>
+                <td height="30" bgcolor="#1B67B0"><table width="235" border="0" cellpadding="0" cellspacing="0" class="cn51white14b">
+                    <tr>
+                      <td width="30" align="center"><img src="../../../images/cn53left02.gif" width="14" height="14"></td>
+                      <td width="205">望远镜设备介绍</td>
+                    </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td height="1" bgcolor="#738B98"></td>
+              </tr>
+              <tr>
+                <td height="1" bgcolor="#FFFFFF"></td>
+              </tr>
+            </table>
+            <table width="235" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" valign="top" style="padding:16px">
+                  
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="cn51white12b">
+                    <tr>
+                      <td width="20" height="22" align="center" bgcolor="#6E97D7"><img src="../../../images/cn53left13.gif"></td>
+                      <td width="1"></td>
+                      <td bgcolor="#6E97D7" style="padding:0 0 0 8px"><a href="../index.html" class='cn51white12b'>13.7米毫米波望远镜</a></td>
+                    </tr>
+                    <tr>
+                      <td height="4" colspan="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top" style="padding:6px 9px 10px 9px">
+					  
+						</td>
+                    </tr>
+                  </table>
+				  
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="cn51white12b">
+                    <tr>
+                      <td width="20" height="22" align="center" bgcolor="#6E97D7"><img src="../../../images/cn53left13.gif"></td>
+                      <td width="1"></td>
+                      <td bgcolor="#6E97D7" style="padding:0 0 0 8px"><a href="../../kjsp/index.html" class='cn51white12b'>空间碎片</a></td>
+                    </tr>
+                    <tr>
+                      <td height="4" colspan="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top" style="padding:6px 9px 10px 9px">
+					  
+						</td>
+                    </tr>
+                  </table>
+				  
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="cn51white12b">
+                    <tr>
+                      <td width="20" height="22" align="center" bgcolor="#6E97D7"><img src="../../../images/cn53left13.gif"></td>
+                      <td width="1"></td>
+                      <td bgcolor="#6E97D7" style="padding:0 0 0 8px"><a href="../../song/index.html" class='cn51white12b'>SONG</a></td>
+                    </tr>
+                    <tr>
+                      <td height="4" colspan="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top" style="padding:6px 9px 10px 9px">
+					  
+						</td>
+                    </tr>
+                  </table>
+				  
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="cn51white12b">
+                    <tr>
+                      <td width="20" height="22" align="center" bgcolor="#6E97D7"><img src="../../../images/cn53left13.gif"></td>
+                      <td width="1"></td>
+                      <td bgcolor="#6E97D7" style="padding:0 0 0 8px"><a href="../../lztx/index.html" class='cn51white12b'>量子通信</a></td>
+                    </tr>
+                    <tr>
+                      <td height="4" colspan="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top" style="padding:6px 9px 10px 9px">
+					  
+						</td>
+                    </tr>
+                  </table>
+				  
+                  </td>
+              </tr>
+            </table>		
+			</td>
+          <td width="3" bgcolor="#FFFFFF"></td>
+          <td width="1" bgcolor="#D8D8D8"></td>
+          <td width="731" bgcolor="#FFFFFF"><table width="731" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="30" bgcolor="#E9E9E9" style="padding:0 0 0 10px"><span>现在位置：<a href="../../../index.html" class="CurrChnlCls">首页</a>&nbsp;&gt;&nbsp;<a href="../../index.html" class="CurrChnlCls">望远镜设备介绍</a>&nbsp;&gt;&nbsp;<a href="../index.html" class="CurrChnlCls">13.7米毫米波望远镜</a></span></td>
+              </tr>
+              <tr>
+                <td height="1" bgcolor="#BCC3B9"></td>
+              </tr>
+            </table>
+            <table width="724" border="0" cellpadding="0" cellspacing="0" class="cn5rightkj">
+              <tr>
+                <td valign="top" style="padding:10px 0 10px 0"><table width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td align="center" class="black_20_600">2007－2008观测季节13.7米望远镜状态报告（2007.12.20）</td>
+                    </tr>
+                    <tr>
+                      <td align="center" class="font03"> | 10-11-22 |  【<a href="javascript:doZoom(3)" class="black12data">大</a> <a href="javascript:doZoom(2)" class="black12data">中</a> <a href="javascript:doZoom(1)" class="black12data">小</a>】<a href="#" onclick="window.print()">【打印】</a><a href="#" onclick="javascript:window.close();">【关闭】</a></td>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top" class="font04" id="content"><div class="cas_content">
+<p></p>
+<div>
+<p align="center"><font style="FONT-SIZE: 16pt"><b style="FONT-SIZE: 16pt">13</b><b style="FONT-SIZE: 16pt">.7</b><b style="FONT-SIZE: 16pt">米</b><b style="FONT-SIZE: 16pt">毫米波望远镜</b></font></p>
+<p align="center"><font style="FONT-SIZE: 16pt"><b style="FONT-SIZE: 16pt">2007-2008</b>观测季节状态报告</font></p>
+<p align="center">&nbsp;</p>
+<p align="center">( Status Report on the 13.7m Mm-Wave Telescope for </p>
+<p align="center">The 2007-2008 Observing Season )</p>
+<p align="center"><img height="489" src="W020180723379287996467.gif" width="276" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400772817587.gif" v:shapes="_x0000_s1066 _x0000_s1065 Picture_x0020_4" oldsrc="W020180723379287996467.gif"></p>
+<p align="center">巨秉刚、孙继先、杨戟</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;中国科学院紫金山天文台青海射电天文观测站</p>
+<p align="center">德令哈毫米波观测基地</p>
+<p align="center">&nbsp;</p>
+<p align="center">2007年10月<br clear="all"></p>
+<p align="center">　</p>
+<p>一.望远镜系统概况及夏季维护与更新改造情况</p>
+<p>在2007年夏季（7－9月）维护更新季节，对望远镜机械传动系统进行了常规检修和维护，解决了副面Y轴行程不够和限位失灵等问题，保证 Y轴运转正常。检修方位码盘。</p>
+<p>对副面位置随俯仰的变化情况进行了详细测试，测试结果用于副面主动控制。用天文调焦的方法对副面位置随环境温度变化进行了测试。有关工作将在今后继续进行。</p>
+<p>在9月1日前基地陆续完成了夏季的各项维护（检修、更新）计划项目。从9月1日开始，基地对望远镜进行了为期一个半月的“综合性能的天文测试”工作，包括指向跟踪、系统稳定性、连续谱和谱线五点指向、方向图及天线效率测试、声光频谱仪定标、观测过程优化、天体谱线标准源的强度与视向速度、观测成图效率等。</p>
+<p>为了适应观测课题的需要，基地与实验室合作新研制了宽带高分辨数字FFTS频谱仪及相关的IF配套系统。2007年4月，该频谱仪和配套的IF系统在13.7米望远镜上进行了测试，并取得了成功。该频谱仪从本观测季节投入开放观测。</p>
+<p></p>
+<p>以下简要报告维护、更新、测试等方面的主要工作和结果。</p>
+<p>（1）天线主面机械系统检修 [1]。继续通过合同方式，由南京中科天仪中心主持对天线的机械部分做了详细检修；对所有轴承、齿轮进行了清洗、加油。</p>
+<p>（2）天线副面机械系统检修[1]。去年在调焦测试时发现副面Y轴行程不够，限位开关已经没有调节余地，Y轴随俯仰的调节受到限制，俯仰低于30°Y轴不能再继续调节。夏季维护季节加工了限位开关安装座，重新安装了限位开关，并对副面所有轴系的蜗轮箱和减速箱进行清洗加油，测试了各轴间隙、回差，保证了副面位置可靠、传动系统工作正常。</p>
+<p>（3）宽带高分辨数字FFT频谱仪及配套中频系统投入使用[2]。2007年4月，由毫米波亚毫米波技术实验室与基地共同研制的宽带高分辨数字FFT频谱仪及配套中频系统在13.7米望远镜上安装调试。该频谱仪的带宽为1000 MHz、500 MHz、250 MHz、200 MHz(可选)，每个带宽的通道数均为16384个。经过一系列测试评估和试观测结果表明，该数字频谱仪在带宽、频谱分辨本领、动态范围、稳定性等关键技术指标上都有新的突破。针对该设备在望远镜上的应用操作编写了FFTS谱线观测程序，利用频率设置软件FFTSfreqset灵活的选取和设置频率，可以同时观测带内的多条谱线。该频谱仪从本观测季节投入开放观测。</p>
+<p>（4）接收机系统夏季维护[3]。我们对接收机系统的一些主要设备进行检修、更换和更新：其中：(1)更换了SIS超导混频器及HEMT放大器，确保前端接收机各设备稳定、可靠运行；(２)有效抑制了中频本振信号2215 MHz和2110 MHz频点通过辐射方式造成的交调干扰信号；(３)数字式SIS混频器偏置电源的计算机控制、操作界面由Windows操作系统移至Linux操作系统下运行； (４)集成环境检测设备投入工作。该设备不仅测量圆堡外的温度、湿度和大气压、平台温度及杜瓦工作温度，同时可检测锁相失锁信号并报警，可通过工控机采集相关数据。</p>
+<p></p>
+<p>二.望远镜性能的简要说明</p>
+<p>1.天线及表面精度</p>
+<p>德令哈基地毫米波望远镜口径为13.7 m (45英尺) ，使用地平式机架。望远镜的光学系统是经典卡塞格林系统，接收机工作在卡焦上。经过面板调整后的主反射面的表面精度为70 mm [4]。</p>
+<p>2.望远镜的跟踪</p>
+<p>控制系统采用位置反馈的PID控制量算法。经过大量测试，获得较好的控制量参数组合。测试表明，方位跟踪误差的rms为1.42″，俯仰跟踪误差的rms为1.44″，对绝大部分天区，天线的跟踪误差在1-3"左右。图2.2.1为天线跟踪误差的部分测试结果：</p>
+<p align="center"><img height="273" src="W020180723379288232122.gif" width="371" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400777735950.gif" v:shapes="_x0000_s1026" oldsrc="W020180723379288232122.gif"></p>
+<p align="center"><img height="284" src="W020180723379288285018.gif" width="381" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400779669613.gif" v:shapes="_x0000_s1027" oldsrc="W020180723379288285018.gif"></p>
+<p align="center">图2.2.1&nbsp;方位和俯仰的跟踪误差统计分布图。方位99.8%在3.5角秒内，俯仰98.8%在3.5角秒内。数据取自参考资料[5]。</p>
+<p align="center">&nbsp;</p>
+<p>3.望远镜指向</p>
+<p>采用“连续谱调制接收工作模式”对行星（金星和木星）进行“五点指向观测”，通过86.243 GHz处的SiO (v=1，J=2-1)谱线对RCas脉泽源采用“谱线五点方法”进行全程（full-track）观测。用指向修正模型对这些数据进行拟合。从2006－2007观测季节开始，使用“10-参数指向模型”。新的指向模型在全天区域的适用性更好。图2.3.1是一个指向测试实例中指向源的空间覆盖。图2.3.2是指向修正模型计算出的残差分布。结果显示，该轮测试得到的望远镜指向误差(rms)为7.9″[6]。在综合测试过程中，“指向观测à模型拟合à修改验证”的过程要进行多轮。重复测试的结果都显示望远镜全天指向精度为5″左右。</p>
+<p align="center"><img height="363" src="W020180723379288330012.jpg" width="558" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400781566831.jpg" v:shapes="_x0000_s1028" oldsrc="W020180723379288330012.jpg"></p>
+<p align="center">图2.3.1五点观测时VENUS、JUPITER和R-Cas有效数据点在天空中的分布[6]。</p>
+<p align="center"><img height="383" src="W020180723379288399865.gif" width="477" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400785391005.gif" v:shapes="_x0000_s1029" oldsrc="W020180723379288399865.gif"></p>
+<p align="center">图2.3.2&nbsp;南天五点强度拟合后得到的方位残差和俯仰残差的分布。指向误差分布椭圆的长半轴为5.6″短半轴为4.15″，方向角为-21.7o。数据取自参考资料[6]。</p>
+<p>我们对谱线标准源NGC 2264和S140分别进行了全天的跟踪观测验证。在望远镜运行阶段，指向状况还可以通过观测CO谱线点源（例如IRC+10216等晚期恒星）或者具有明显局部空间分布特征的部分CO面源（如S140等）来不定期地加以验证。</p>
+<p>作为常规测试项目，在观测季节内，每个月还要进行一轮指向测试与验证。</p>
+<p>　</p>
+<p>4.望远镜的温标和效率参数（半功率波束宽度、方向图、月面效率、口面效率、波束效率）</p>
+<p>在分子谱线观测中，本望远镜采用标准的斩波轮校准方法(Ulich &amp; Haas 1976; ApJS, 30, 247及随后的文献)，给出的温标是改正了大气吸收及欧姆损耗以后的“天线温度”，也就是文献上的T<font style="FONT-SIZE: 16pt">A</font>*。对于星际分子云展源，通常这个温标要进一步改正望远镜的主波束效率h<sub><font style="FONT-SIZE: 16pt">mb</font></sub>，得到与同类望远镜可比的“观测辐射温度”T<font style="FONT-SIZE: 16pt">R</font>*。这个温标代表望远镜的理想主波束与源空间亮温度分布的卷积。<blink><font style="FONT-SIZE: 16pt">在我们的原始数据中不进行波束效率改正</font>。</blink>观测者在进行银河系分子云等面源观测中，得到源的天线温度后，需根据望远镜相应观测季节所公布的波束效率，按照 <img height="33" src="W020180723379288442047.gif" width="110" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400787290035.gif" v:shapes="_x0000_s1030" oldsrc="W020180723379288442047.gif">的关系计算T<font style="FONT-SIZE: 16pt">R</font>*。注意：这里假定了h<sub><font style="FONT-SIZE: 16pt">mb</font></sub>不随俯仰变化。</p>
+<p>半功率波束宽度(HPBW)反映了望远镜的空间分辨本领。对于口径为D、工作波长为l的天线而言，HPBW=kl/D，系数k与天线口面的照明分布有关。波束分布可以通过对天体的二维扫描加以测量。通过谱线五点观测的数据拟合得到在112 GHz本振频率下，望远镜半功率波束宽度HPBW在方位方向为59±9角秒[6]，俯仰方向波束宽度为66±8角秒[6]。对金星扫描获得的二维扫描结果如图2.4.1。</p>
+<p align="center"><img height="387" src="W020180723379288484990.gif" width="523" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400789202335.gif" v:shapes="_x0000_s1031" oldsrc="W020180723379288484990.gif"></p>
+<p align="center">图2.4.1&nbsp;望远镜二维方向图分布。对金星进行的31×31二维扫描，步长15″，每个点积分时间为2秒钟。采用绝对强度校准，数据用天线温度表示。数据取自参考资料[7]。</p>
+<p></p>
+<p>月面效率, h<sub><font style="FONT-SIZE: 16pt">MOON</font></sub>, 是用来衡量望远镜对于“宽面源”的波束效率。在望远镜指向工作完成之后，对月面进行一维扫描，在考虑月相的修正以后，得到月面效率平均值为66.1±2.6 %[8]，见图2.4.2。</p>
+<p>月面效率比采用行星测量得到的主波束效率要高，因为前者包含了主波束以外的部分“前向 (forward)” 旁瓣成份。在实际观测中，目标天体（分子云）的尺度通常大于望远镜的波束宽度，这时望远镜的波束效率相对地接近月面效率。但是这种接近往往并不是观测者需要的，因为旁瓣接收了来自观测方向以外的辐射。因此，对面源观测的射电望远镜，往往需要更低的旁瓣。望远镜旁瓣越低，用行星测量得到的“主波束效率”越接近“月面效率”。</p>
+<p style="TEXT-ALIGN: center"><img height="414" src="W020180723379288538270.gif" width="537" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400792251671.gif" v:shapes="_x0000_s1067" oldsrc="W020180723379288538270.gif"></p>
+<p>图2.4.2对月面一维扫描得到的强度分布。测量时接收机的本振频率设置为112 GHz，扫描范围±1800″, 步长30″。观测时月相为-2.72°左右，月面亮温度320.5 K。数据取自参考资料[8]。</p>
+<p>对于主要从事星际分子云等面源观测的望远镜而言，波束效率是一个重要的效率指标。测量望远镜主波束效率最恰当的方式是寻找一个与望远镜波束尺寸一致的天体来进行。但是实际中并没有这样的天体（或人造）目标存在。因此，测量望远镜主波束效率是分别测量月面、行星、谱线面源、谱线点源等不同空间尺度的天体。随着前置黑体装置的正常工作，在进行五点指向观测的同时，将观测结果校准为温度，同时可以得到望远镜的波束宽度，通过计算便得到望远镜的口面效率和主波束效率。</p>
+<p align="center"><img height="408" src="W020180723379288598579.gif" width="523" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400794259838.gif" v:shapes="_x0000_s1033" oldsrc="W020180723379288598579.gif"></p>
+<p align="center">图2.4.3&nbsp;望远镜主波束效率与俯仰余弦的图示。通过对上图中数据的线性拟合，得到关系式：f(EL)=0.67(±0.02)-0.24(±0.03)cos(EL)。数据取自参考资料[9]。</p>
+<p>通过本次观测得到天顶方向望远镜主波束效率为67%，天顶方向望远镜口面效率为25%[9]。</p>
+<p>望远镜作为一个整体，对天体谱线标准源进行观测的数据精度通常用来反应天文观测能够达到的实际测量精度。在运行过程中，我们用该精度作为衡量整个望远镜仪器性能、工作状态、观测方法、以及数据归算处理等全过程的依据。</p>
+<p align="center"><img height="366" src="W020180723379288637744.gif" width="473" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400796280902.gif" v:shapes="_x0000_s1034" oldsrc="W020180723379288637744.gif"></p>
+<p align="center">图2.4.4北天谱线标准源S140 12CO峰值强度随俯仰余弦的图示。通过对上图中数据的线性拟合，然后归一化，得到关系式：f(EL)=1-0.26(±0.009)cos(EL) 数据取自参考资料<sup>[10]</sup>。</p>
+<p>由于天线面板的重力形变与光学耦合变化，观测得到的天线温度随俯仰有一定的依赖关系。在“综合性能的天文测试”阶段，对谱线面源S140、NGC 2264进行了中心点全天观测，得到谱线峰值强度与俯仰的关系（见图2.4.4和2.4.5）。</p>
+<p align="center"><img height="338" src="W020180723379288688483.gif" width="471" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400799159970.gif" v:shapes="_x0000_s1035" oldsrc="W020180723379288688483.gif"></p>
+<p align="center">&nbsp;图2.4.5南天谱线标准源NGC 2264 12CO峰值强度随俯仰余弦的图示。通过对上图中数据的线性拟合，然后归一化，得到关系式：f(EL)=1-0.22(±0.012)cos(EL)。 数据取自参考资料[10]。</p>
+<p>根据谱线标准源的观测结果，对照文献提供的标准温度，得到望远镜主波束效率随俯仰的关系 [10]，如表2.4.1</p>
+<p align="center">表2.4.1观测谱线标准源得到的效率与俯仰余弦的关系列表[10]</p>
+<div align="center">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#000000" cellspacing="0" cellpadding="0" width="608" border="1">
+<tbody>
+<tr>
+<td width="79">
+<p align="center">SOURCE</p></td>
+<td width="265">
+<p align="center">h(EL)<sup>[a]</sup></p></td>
+<td width="264">
+<p align="center">h(EL)<sup>[b]</sup></p></td></tr>
+<tr>
+<td width="79">
+<p align="center">NGC2264</p></td>
+<td width="265">
+<p align="center">h (EL)= 0.81(±0.15)-0.17(±0.23)cos(EL)</p></td>
+<td width="264">
+<p align="center">h (EL)= 0.63(±0.11)-0.01(±0.17)cos(EL)</p></td></tr>
+<tr>
+<td width="79">
+<p align="center">ORIONA</p></td>
+<td width="265">
+<p align="center">h (EL)= 0.92(±0.88)-0.41(±1.20)cos(EL)</p></td>
+<td width="264">
+<p align="center">h (EL)= 0.78(±0.49)-0.31(±0.66)cos(EL)</p></td></tr>
+<tr>
+<td width="79">
+<p align="center">S140</p></td>
+<td width="265">
+<p align="center">h (EL)= 0.61(±0.10)-0.16(±0.16)cos(EL)</p></td>
+<td width="264">
+<p align="center">h (EL)= 0.55(±0.10)-0.06(±0.14)cos(EL)</p></td></tr>
+<tr>
+<td width="79">
+<p align="center">DR21</p></td>
+<td width="265">
+<p align="center">h (EL)= 0.62(±0.34)-0.22(±0.48)cos(EL)</p></td>
+<td width="264">
+<p align="center">h (EL)= 0.54(±0.20)-0.16(±0.29)cos(EL)</p></td></tr>
+<tr>
+<td width="79">
+<p align="center">W3OH</p></td>
+<td width="265">
+<p align="center">h (EL)= 0.76(±0.18)-0.31(±0.28)cos(EL)</p></td>
+<td width="264">
+<p align="center">h (EL)= 0.57(±0.10)-0.31(±0.16)cos(EL)</p></td></tr>
+<tr>
+<td width="79">
+<p align="center">L134</p></td>
+<td width="265">
+<p align="center">h (EL)= 1.18(±0.38)-0.53(±0.53)cos(EL)</p></td>
+<td width="264">
+<p align="center">…</p></td></tr></tbody></table></div>
+<p>注：a.12CO谱线峰值强度得出结果　　&nbsp; b.13CO谱线峰值强度得出结果</p>
+<p>通过校正了这一变化后，北天谱线标准源S140的12CO峰值强度的数据起伏（rms代表了最终可以得到的数据精度）降低到0.56 K，天线温度测量的相对精度达到3.5%。对其它谱线标准源的测量也表明，“俯仰效率关系”f(EL)以及相对精度与S140的观测结果基本接近。</p>
+<p>基地建议观测者在进行课题观测的过程中适当选取待测目标源附近的谱线标准源定期（每1-2小时）地加以观测，或者利用待测源的某一特定位置（例如，中心点）作为相对标准，观测过程中在不同EL方向多次加以观测，建立对应的俯仰效率关系f(EL)。在此基础上，根据以下关系进行效率修正：</p>
+<p align="center"><img height="63" src="W020180723379288828919.gif" width="136" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400802013332.gif" v:shapes="_x0000_s1036" oldsrc="W020180723379288828919.gif">　　　　　　　　　　　&nbsp;（1）</p>
+<p>其中h<sub><font style="FONT-SIZE: 16pt">mb</font></sub>是天顶方向的望远镜主波束效率。</p>
+<p></p>
+<p>5.接收机的参数[3]（频率工作范围、噪声温度、稳定性）</p>
+<p>13.7米望远镜目前使用一台3 mm波段的SIS超导接收机。按照标准的波段设置要求，该波段的接收机工作频率范围在85-115 GHz。使用中的接收机本观测季节在f(LO)= 85-115 GHz波段范围内接收机的噪声温度Trx的实测值为70-123 K(DSB)[3]，而包含了地球大气噪声辐射贡献在内的“系统温度”Tsys的测量值分布在图2.5.1中显示。这些系统温度的数据有助于观测者估计项目所需要的观测积分时间和灵敏度。</p>
+<p align="center"><img height="379" src="W020180723379288875104.gif" width="466" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400803929707.gif" v:shapes="_x0000_s1037" oldsrc="W020180723379288875104.gif"></p>
+<p align="center">图2.5.1. 系统温度随接收机本振频率的分布。横坐标是接收机的工作频率， 纵坐标是双边带工作方式下测量的系统温度Tsys[DSB] (K)，红色圆点为对数检波器输出，黑色方框为平方律检波器输出。它包含了接收机、天线与光学系统、圆顶和蒙皮、以及地球大气的贡献。本图的系统温度随工作频率的分布可用估计观测的积分时间。在冬季的相当时间范围内，由于气温普遍低于测试时间（9月份），因此，预计的系统温度值应当略低于本图的分布。数据取自参考资料[3]。</p>
+<p>本观测季节，望远镜可以从事85-115 GHz整个波段内的观测。多次重复测量结果表明，单位小时内的系统相对稳定性DG/G￡ 6′10-3。图2.5.2显示了接收机在工作波段内的相对稳定性的典型测量结果。</p>
+<p align="center"><img height="335" src="W020180723379288929513.gif" width="416" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400806942501.gif" v:shapes="_x0000_s1068" oldsrc="W020180723379288929513.gif"></p>
+<p align="center">图2.5.2. 接收机中频总功率输出的相对稳定性随前端本振频率的分布。横坐标表示本振的工作频率，纵坐标表示每单位小时的总功率的相对起伏，用以度量接收机增益的相对稳定性。测量时间是2007年8月。为了比较，上图中也将2005、2006、2007年的相对稳定性用“黑色方块”、“红色圆点”、“绿色三角”表示。从图上可以看到，本季节在整个85-115 GHz频段内的接收机稳定性（绿色数据点）都达到￡ 6′10-3/hr的水平。数据取自参考资料[3]。</p>
+<p>6.后端频谱仪的主要技术参数[3]（带宽、通道数、分辨率、稳定性）</p>
+<p>6.1&nbsp;后段频谱仪AOS技术参数</p>
+<p>“3毫米波段多谱线系统”仍然是望远镜的主要频谱后端设备，它同时接收天体物理重要的12CO (J=1-0)、13CO(J=1-0)、C18O(J=1-0)等3条星际分子谱线。“3毫米波段多谱线系统”由宽带4路中频和3个AOS后端频谱仪组成，其中１个频谱仪带宽为145 MHz，另外2个带宽为43 MHz。系统同时获得3×1024通道的谱线信息。表2.6.1列出了这3个AOS后端的基本参数。望远镜实际运行中，仪器随工作环境的微小变化（例如温度变化）会导致表2.6.1中的参数也发生微小变化。观测基地会经常性地进行频率定标测试。在每次常规测试以后，最新的准确数值将在观测数据FITS文件中及时更新，以便保证数据中反映的参数是最新的。</p>
+<p align="center">表2.6.1 望远镜频谱后端AOS的基本参数 [3]。</p>
+<p align="center">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+<tbody>
+<tr>
+<td valign="top">
+<p align="center">后端名称</p></td>
+<td valign="top">
+<p align="center">带宽（MHz)</p></td>
+<td valign="top">
+<p align="center">中心频率(MHz) </p></td>
+<td valign="top">
+<p align="center">通道数</p></td>
+<td valign="top">
+<p align="center">通道频率</p>
+<p align="center">间隔 (KHz)</p></td>
+<td valign="top">
+<p align="center">通道频率</p>
+<p align="center">分辨率 (KHz) </p></td></tr>
+<tr>
+<td valign="top">
+<p align="center">AOS-I（13CO）</p>
+<p align="center">（110.201353 GHz）</p></td>
+<td>
+<p align="center">42.691 </p></td>
+<td>
+<p align="center">70.01294</p></td>
+<td>
+<p align="center">1024</p></td>
+<td>
+<p align="center">41.73 </p></td>
+<td>
+<p align="center">79.3±2.5 </p></td></tr>
+<tr>
+<td valign="top">
+<p align="center">AOS-II（C18O）</p>
+<p align="center">(109.782183 GHz) </p></td>
+<td>
+<p align="center">43.077 </p></td>
+<td>
+<p align="center">70.00898</p></td>
+<td>
+<p align="center">1024</p></td>
+<td>
+<p align="center">42.13 </p></td>
+<td>
+<p align="center">80.7±4.2 </p></td></tr>
+<tr>
+<td valign="top">
+<p align="center">AOS-III（12CO）</p>
+<p align="center">(115.271204 GHz) </p></td>
+<td>
+<p align="center">145.337 </p></td>
+<td>
+<p align="center">225.4101</p></td>
+<td>
+<p align="center">1024</p></td>
+<td>
+<p align="center">142.06 </p></td>
+<td>
+<p align="center">212.7±5.9 </p></td></tr></tbody></table>
+<p align="center">通道速度间隔＝光速×通道频率间隔÷静止频率</p>
+<p>基于3条谱线的同时接收，“多谱线系统”使信号接收速率直接提高了3倍，显著加强了望远镜的观测能力。利用“同时观测”的原理，多谱线系统在提高接收机稳定性的基础上，在很大程度上消除了毫米波段大气快速变化所带来的对信号强度的影响，提高了测量精度。图2.6.1示意的是三条谱线同时观测得到的原始谱线数据。</p>
+<p align="center"><img height="321" src="W020180723379288975598.jpg" width="569" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400808958493.jpg" v:shapes="_x0000_s1039" oldsrc="W020180723379288975598.jpg"></p>
+<p align="center">图2.6.1&nbsp;“3毫米波段多谱线系统”一次（例）观测直接输出的NGC2264的12CO、13CO、 C18O(J=1-0)三条原始谱数据。横坐标是视向速度，纵坐标是天线温度。蓝线代表12CO谱，绿色线是13CO谱，红色线是C18O谱。观测的“在源积分时间”为60 sec，EL=62°，系统温度Tsys=203 K。数据未经过基线拟合, 从该图中可以看到，噪声水平与系统温度相对应，谱线的基线足够平整。</p>
+<p>根据星际分子谱线的特定频率位置，观测者也可以在接收机工作波段的任何别的本振频率下选择这3个后端中的1至3个频谱仪接收谱线，并且可以根据大气变化情况和接收机工作状态选择最佳的本振工作频率和边带。为了帮助观测者设计观测方案，基地针对双边带接收模式开发了<a href="javascript:;" target="_blank" _fcksavedurl="http://www.pmodlh.ac.cn/freqcalculatev2.4.rar">频率计算软件（</a><a href="javascript:;" target="_blank" _fcksavedurl="http://www.pmodlh.ac.cn/ASCII2FITS.zip">AOSfreqset）</a>。通过这个软件，观测者可以合理选取AOS，以便同时观测多条谱线。观测者也可以通过观测助手咨询仪器设置和选项的具体方案。</p>
+<p></p>
+<p>6.2&nbsp;高分辨数字频谱仪FFTS技术参数</p>
+<p>该频谱仪的带宽为1000 MHz、500 MHz、250 MHz、200 MHz(可选)，每个带宽的通道数均为16384个。经过测试，在不同的频谱仪带宽下，包含实际大气变化在内的系统整体Allan方差时标&gt;100秒[3]。数字频谱仪可以满足河外星系观测、高频谱分辨观测以及深度积分观测等课题的需求。从本观测季节起投入开放使用。</p>
+<p style="TEXT-ALIGN: center">表2.6.2望远镜频谱后端FFTS的基本参数 [3]。</p>
+<p style="TEXT-ALIGN: center">
+<table style="BORDER-COLLAPSE: collapse" bordercolor="#000000" height="93" cellspacing="0" cellpadding="0" width="492" border="1">
+<tbody>
+<tr>
+<td valign="top" align="middle" width="59">
+<p align="center">工作带宽</p></td>
+<td valign="top" align="middle" width="130">
+<p align="center">通道频率间隔理论值</p></td>
+<td valign="top" align="middle" width="128">
+<p align="center">通道频率间隔测试值</p></td>
+<td valign="top" align="middle" width="114">
+<p align="center">备注</p></td></tr>
+<tr>
+<td valign="top" align="middle" width="59">
+<p align="center">200 MHz </p></td>
+<td valign="top" align="middle" width="130">
+<p align="center">12.2 kHz </p></td>
+<td valign="top" align="middle" width="128">
+<p align="center">12.2 kHz </p></td>
+<td valign="top" align="middle" width="114" rowspan="3">
+<p align="center">基带变换1000 MHz </p></td></tr>
+<tr>
+<td valign="top" align="middle" width="59">
+<p align="center">250 MHz </p></td>
+<td valign="top" align="middle" width="130">
+<p align="center">15.3 kHz </p></td>
+<td valign="top" align="middle" width="128">
+<p align="center">15.3 kHz </p></td></tr>
+<tr>
+<td valign="top" align="middle" width="59">
+<p align="center">1000 MHz </p></td>
+<td valign="top" align="middle" width="130">
+<p align="center">61.0 kHz </p></td>
+<td valign="top" align="middle" width="128">
+<p align="center">61.0 kHz </p></td></tr>
+<tr>
+<td valign="top" align="middle" width="59">
+<p align="center">500 MHz </p></td>
+<td valign="top" align="middle" width="130">
+<p align="center">30.5 kHz </p></td>
+<td valign="top" align="middle" width="128">
+<p align="center">30.5 kHz </p></td>
+<td valign="top" align="middle" width="114">
+<p align="center">基带变换500 MHz </p></td></tr></tbody></table>
+<p style="TEXT-ALIGN: center">&nbsp;</p>
+<p align="center"><img height="362" src="W020180723379289026271.jpg" width="449" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400812787649.jpg" v:shapes="_x0000_s1040" oldsrc="W020180723379289026271.jpg"><img height="355" src="W020180723379289236203.jpg" width="456" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400816619178.jpg" v:shapes="_x0000_s1041" oldsrc="W020180723379289236203.jpg"></p>
+<p align="center">图 2.6.2其黑线是用AOS接收的结果，红线是用FFTS 1000MHz接收的结果，绿线是用FFTS 500MHz接收的结果。数据处理说明：为了和AOS进行比较，对FFTS 1000MHz数据进行了2通道平滑，对FFTS 500MHz数据进行了4通道平滑。数据取自参考资料[2]</p>
+<p align="center"><img height="452" src="W020180723379289298533.jpg" width="612" border="0" _fcksavedurl="/webpic/W0201011/W020101122/W020101122400820452462.jpg" v:shapes="_x0000_s1042" oldsrc="W020180723379289298533.jpg"></p>
+<p align="center">图2.6.3，M82测试谱线，绿色为FFTS结果（积分时间39分钟）、黑色为AOS测试结果（积分时间241分钟，IF带宽为180 MHz）可以看出，FFTS测试结果明显比AOS测试结果好，用AOS测试时，带宽严重不够，只能将信号与基线混为一起来处理。数据取自参考资料[2]</p>
+<p></p>
+<p>7.观测模式</p>
+<p>·在接收机工作频率范围内，望远镜以双边带下的位置开关模式进行谱线观测，单点观测或者成图观测。</p>
+<p>·可以使用“多谱线系统”同时观测CO及其同位素的谱线。</p>
+<p>·谱线观测采用标准的斩波轮方法定标。</p>
+<p>·可以进行3 mm波段大气不透明度的测量。</p>
+<p>·可进行波束调制方式下的3 mm波段连续谱单点和成图观测。</p>
+<p></p>
+<p>8.成图(Mapping)的时间效率</p>
+<p>成图观测(Mapping)是常用的面源观测方式，望远镜通过单一波束在空间的逐点扫描来覆盖一定的天区范围，获得三维(X-Y-Velocity)图象。除了系统温度决定的灵敏度或积分时间以外，观测过程中的天线跟踪移动、斩波轮开关、数据I/O等操作也导致一部分时间损耗。经过测试，目前Mapping模式下该时间效率因子为3。观测者在课题所需观测时间的计算中应将对源的时间总和乘以该因子，作为估算项目总时间需求的依据。</p>
+<p></p>
+<p>9.资料格式</p>
+<p>控制系统输出数据为国际通用的标准FITS格式。头部信息中的关键字符合GILDAS/CLASS处理软件<font style="FONT-SIZE: 14pt"><font style="FONT-SIZE: 12pt"><font style="FONT-SIZE: 12pt">[</font><font style="FONT-SIZE: 12pt">注</font><font style="FONT-SIZE: 12pt">]</font></font></font>的需要。用户可以使用<a href="javascript:;" target="_blank" _fcksavedurl="http://www.pmodlh.ac.cn/ASCII2FITS.zip">GILDAS/CLASS</a>等一些通用的射电谱线数据处理软件来进行处理。</p>
+<p>[注]：GILDAS/CLASS是由法国Grenoble天文台与IRAM合作开发的射电天文数据处理软件。</p>
+<p></p>
+<p>三.开放观测课题的申请和日程安排</p>
+<p>2006-2007观测季节，基地共完成了12件开放课题的观测[11]，包括俄罗斯、印度等国家和地区的课题。</p>
+<p>2007-2008观测季节13.7米毫米波望远镜的对外开放观测服务从2007年10月17日起开始。该观测季节预计将在2008年6月结束。观测季节内望远镜24小时连续运行。2008年春节按照国家法定休假时间表望远镜暂停运行。2007-2008观测季节的基本时间安排如下：</p>
+<p>2007.11-12　　　　　　　&nbsp;使用“3mm波段多谱线”系统的课题；</p>
+<p>2008.01-03　　　　　　&nbsp; &nbsp;使用“3mm波段多谱线”系统的课题；</p>
+<p>2008.03-06　　　　　　 &nbsp; 使用其它频率和观测模式的课题。</p>
+<p>德令哈观测基地根据上述整体时间安排为对所接受的观测课题申请安排具体的观测时间并在项目观测的前2-4周通知项目PI。对每一项接受课题，基地将以正常的仪器状态积极协助天文学家完成观测。基地为每一个观测课题配备天文观测助手。通知观测课题的同时也为每个观测项目指派天文观测助手。部分观测课题有特殊需要时，基地也接受委托观测。尽管如此，基地还是强烈建议：观测者（尤其是还不足够熟悉毫米波望远镜观测的研究人员及学生）能来基地参加观测，在了解毫米波射电天文观测的一般过程的同时，也有机会熟悉13.7米毫米望远镜的特点，把握观测数据的质量。</p>
+<p>德令哈毫米波观测基地热情邀请国内外专家使用该望远镜从事天文和相关科学的观测研究。13.7米望远镜常年接受观测课题申请。所有观测申请均由<a href="mailto:proposal@pmodlh.ac.cn" _fcksavedurl="mailto:proposal@pmodlh.ac.cn">proposal@mail.pmodlh.ac.cn</a>加以受理。观测申请的格式文本可以从<a href="javascript:;" target="_blank" _fcksavedurl="http://www.pmodlh.ac.cn/13.7shenqingbiao.htm">基地网页下载</a>。申请的观测课题或者时间要求在出现竞争的情况下将完全经由“毫米波评议会”的专家根据申请项目的科学意义和项目可行性进行打分评议，确定优先级。毫米波评议会的专家目前由南京大学、北京大学、北京师范大学、上海天文台、以及国家天文台的同行专家组成，今后还将聘请一些海外同行专家担任“毫米波评议会”专家。</p>
+<p>德令哈基地13.7米毫米波望远镜最新状态信息将及时公布在基地网页：<a href="javascript:;" _fcksavedurl="http://www.pmodlh.ac.cn/">http://www.pmodlh.ac.cn</a>上。</p>
+<p></p>
+<p>四.近几个观测季节内望远镜从事的观测课题举例</p>
+<p>1　　　 银河系分子云物理结构的探测；</p>
+<p>2　　　 年轻星的高速气体外流和动力学；</p>
+<p>3　　　&nbsp;星际化学；</p>
+<p>4　　　 银河系恒星形成区内分子气体的分布；</p>
+<p>5　　　&nbsp;银河系动力学；</p>
+<p>6　　　&nbsp;超新星遗迹与星际介质相互作用、宇宙射线源；</p>
+<p>7　&nbsp; 　&nbsp;恒星演化和晚型恒星的分子气体观测；</p>
+<p>8　　　 太阳系天体的分子谱线观测；</p>
+<p>9　　　 月球的毫米波辐射性质的观测研究；</p>
+<p>10　　&nbsp; 地球大气的毫米波电波传播和辐射物理性质的观测研究；</p>
+<p></p>
+<p>五.使用望远镜进行观测</p>
+<p>1.观测准备</p>
+<p>观测者从科学目标出发，准备观测源的基本信息，包括目标源的坐标、速度、尺度、参考背景(reference)的坐标、所需要的探测极限和积分时间估计等。由于毫米波段大气辐射在EL方向的梯度显著，这种梯度制约了谱线观测的基线平整度。因此我们特别提醒，参考背景坐标的选取应尽量限制在距离目标源1°的范围内，以保证谱线基线有足够的平整度。</p>
+<p>从2005-2007观测季节开始，为了在CO三条谱线观测之外的频率上方便地选择接收机工作频率，编制了<a href="javascript:;" _fcksavedurl="http://www.pmodlh.ac.cn/AOSfreqset.rar">《</a><a href="javascript:;" target="_blank" _fcksavedurl="http://www.pmodlh.ac.cn/AOSfreqset.rar">AOSfreqset》软件</a>；从2007-2008观测季节开始，高分辨数字频谱仪投入开放观测，基地编制了<a href="javascript:;" target="_blank" _fcksavedurl="http://www.pmodlh.ac.cn/FFTSfreqset.rar">《</a><a href="javascript:;" target="_blank" _fcksavedurl="http://www.pmodlh.ac.cn/FFTSfreqset.rar">FFTSfreqset》软件</a>，观测者可在基地相关网页下载这两个程序来制定自己的观测计划。使用该程序有困难者也可以通过咨询来熟悉和设计观测频率设置方案。</p>
+<p>&nbsp;从2002-2003观测季节开始，基地提供成图观测的Tcl/Tk<a href="javascript:;" target="_blank" _fcksavedurl="http://www.pmodlh.ac.cn/dtg6.2.rar">制表程序dtg.tcl</a>。从2006-2007观测季节开始，该制表程序提供银道坐标成图。该程序有参考背景坐标查找功能，观测者可以利用该程序查找参考背景坐标，可在基地相关<a href="javascript:;" target="_blank" _fcksavedurl="http://www.pmodlh.ac.cn/dtg6.2.rar">网页下载</a>该程序来制表。使用该制表程序有困难者也可以到基地以后再行制表。</p>
+<p>&nbsp;基地指派的天文观测助手将协助观测者进行必要的观测准备，包括介绍设备情况、提供仪器选项的咨询、协助制表、协助观测日程和步骤的制订、协助观测和数据处理、提供数据备份、与用户保持观测后的必要联系等。</p>
+<p></p>
+<p>2.观测</p>
+<p>望远镜值班操作人员负责进行望远镜和相关仪器的操作，根据要求进行观测。他们根据工作日程的安排进行观测，及时向课题观测研究人员反映仪器的状态，直到完成观测。</p>
+<p>在观测过程中，项目观测研究人员及基地指派的观测助手对获得的数据内容和质量进行核查，及时对操作提出要求。必要时，值班操作人员可根据仪器状况建议观测者调整观测内容。</p>
+<p>基地备有<a href="javascript:;" target="_blank" _fcksavedurl="http://www.pmodlh.ac.cn/13.7guanceshouce2007-10-18.pdf">《望远镜观测手册》</a>，以方便来基地的课题观测研究人员了解和核实操作员的操作内容。基地今后将不定期地举办讲习班和观测操作培训。经过观测操作培训的外单位工作人员和研究生有可能获得授权在他们的观测项目执行过程中操作望远镜。</p>
+<p></p>
+<p>3.数据处理、数据备份</p>
+<p>基地为观测研究人员准备了优质、可靠、实用方便的数据处理操作平台，以SUN BLADE 2000、PC为硬件平台，操作系统有LINUX、WINDOWS， GILDAS/CLASS作为基地处理毫米波谱线数据的标准软件。观测数据可在基地即时处理。基地指派的天文观测助手将协助观测者熟悉数据处理的操作。</p>
+<p>基地指派的天文观测助手将负责为观测者备份光盘数据。观测者也可以通过基地网络将数据传送回自己的研究所。基地将为所有观测项目备份其原始数据。根据国际惯例，课题观测的所有数据将由课题申请者独占使用一年后成为开放共享数据。跨年度的长期项目在观测结束日起满一整年以后成为开放共享数据。</p>
+<p></p>
+<p>4.交通与生活服务</p>
+<p>基地将为所有观测人员做好迎送接待、食宿、交通、网络通讯、应急供氧等支撑工作。经过2003年夏季对办公及招待所的装修，基地的工作和住宿环境得到了明显改善。前来基地从事观测课题研究的人员食宿交通等费用自理。由于地处西部，交通不便,我们推荐前来基地观测的研究人员事先计划安排好车（机）票。目前，当地铁路部门尚未将由德令哈往返附近中转城市的车票纳入全国铁路车票预订网络，车票在当地订购。为此，在基地网页上我们公布有基地在<a href="javascript:;" target="_blank" _fcksavedurl="http://www.pmodlh.ac.cn/qhzdianhuaben.htm">西宁的接待号码</a>，该接待处协助购买从西宁至德令哈的车票。从兰州中转时，也可以根据网页上提供的电话号码与基地协议单位联系订票。从基地返回到上述两个中转城市的车票均由基地帮助解决。</p>
+<p>基地负责德令哈市当地的接送站。到达基地前，请与基地办公室<a href="mailto:jmma@mail.pmodlh.ac.cn" _fcksavedurl="mailto:jmma@mail.pmodlh.ac.cn">马俊梅</a>女士联系接站时间和具体要求，电话(0977)8224969。</p>
+<p>德令哈基地地处青藏高原，<u>干燥缺氧，冬季气候寒冷</u><i>。</i>基地提醒前来工作的天文学家携带足够的御寒衣物，做好充分的适应准备。</p>
+<p></p>
+<p>六.意见建议、或进一步的联系咨询</p>
+<p>本报告涉及的更新改造项目和综合性能的天文测试内容是德令哈毫米波观测基地全体工作人员及其与毫米波-亚毫米波技术实验室、南京中科天仪中心、恒星形成团组等单位的技术人员和天文学研究人员共同努力完成的。需要了解基地望远镜更多内容、提出意见（包括对本报告的质疑）或建议时，请与基地杨戟研究员联系： <a href="mailto:jiyang@pmodlh.ac.cn" _fcksavedurl="mailto:jiyang@pmodlh.ac.cn">jiyang@mail.pmodlh.ac.cn</a>。对本报告有关内容的质询或批评也请发给上述地址。观测项目实施以后，欢迎研究人员对观测中的天文和技术问题以及各种观测服务工作出现的问题等提出意见和建议。在基地网页上也公布有<a href="javascript:;" target="_blank" _fcksavedurl="http://www.pmodlh.ac.cn/renyuan.htm">基地全部工作人员的</a><a href="javascript:;" target="_blank" _fcksavedurl="http://www.pmodlh.ac.cn/renyuan.htm">Email地址</a>。</p>
+<p></p>
+<p>七.参考资料和测试报告</p>
+<p>[1] 李阳、孙继先等，2007.7，《机械维护检修通报》系列，德令哈毫米波观测基地；</p>
+<p>[2] 杨戟、林镇辉等，2006.8.31，《FFTS测试报告》系列, 南京毫米波实验室、德令哈毫米波观测基地；</p>
+<p>[3] 杨戟、左营喜、接收机系统，2007.9.27，《13.7m毫米波射电望远镜接收机系统性能测试3》，德令哈毫米波观测基地；</p>
+<p align="left">[4]邓琪源、孙继先,李阳等，2006.8.14,《2006年13.7米望远镜主面调试记主副面校准报告(邓琪源）》，德令哈毫米波观测基地；</p>
+<p>[5] 李阳、段文英，2007.8.24，《07跟踪误差测试报告（20070823）》，德令哈毫米波观测基地；</p>
+<p>[6]&nbsp;逯登荣，2007.10.12，《五点指向验证观测快报(2007-10-12)》，德令哈毫米波观测基地；</p>
+<p>[7]巨秉刚、逯登荣、段文英、左营喜，2007.9.3，《望远镜波束扫描结果（2007-09-03）》，德令哈毫米波观测基地；</p>
+<p>[8]孙继先，巨秉刚，2007.10.25，《月面效率测试报告（2007-10-25）》，德令哈毫米波观测基地；</p>
+<p>[9]&nbsp;巨秉刚、逯登荣，2007.9.25,《望远镜效率测试报告（2007-09-25）V1.1》，德令哈毫米波观测基地；</p>
+<p>[10]逯登荣，2007.11.6,《CO分子谱线标准源随俯仰变化规律(2007-11-06)》,德令哈毫米波观测基地；</p>
+<p>[11]巨秉刚，2006.7.24，《2006-2007观测季节望远镜运行和课题观测汇总V1.0》, 德令哈毫米波观测基地；</p>
+<p></p>
+<p>封面照片：高分辨率数字频谱仪（FFTS）及配套的IF系统。</p></div></div></td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding:5px">
+</td>
+                    </tr>
+					<tr>
+                      <td align="center" style="padding:5px"><script language="JavaScript">
+createPageHTML(1, 0, "t20180723_5046539", "html");	
+</script>
+</td>
+                    </tr>
+                  </table>
+                  <table width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td valign="top"><table width="692" border="0" align="center" cellpadding="0" cellspacing="0" class="font05">
+                          <tr>
+                            <td height="22"><img src="../../../images/cn53right11.gif" width="11" height="11"> <a href="javascript:;">评 论</a></td>
+                          </tr>
+                        </table>
+                        <table width="692" height="8" border="0" align="center" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table>
+				  <table id="appendix" width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td valign="top"><table width="692" border="0" align="center" cellpadding="0" cellspacing="0" class="font05">
+                          <tr>
+                            <td height="22"><img src="../../../images/cn53right11.gif" width="11" height="11"> 附件下载：</td>
+                          </tr>
+                        </table>
+                        <table width="692" height="8" border="0" align="center" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td>
+	<ul class="isa_article_list" id="imgUl">
+		</ul>
+</td>
+<script>
+				if(document.getElementById("imgUl").innerText=="")
+				{document.getElementById("appendix").style.display="none"}
+				</script>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table>
+                  <table id="RelNews" width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td valign="top"><table width="692" border="0" align="center" cellpadding="0" cellspacing="0" class="font05">
+                          <tr>
+                            <td height="22"><img src="../../../images/cn53right11.gif" width="11" height="11"> 相关新闻</td>
+                          </tr>
+                        </table>
+						 
+                        <table style="display:" width="692" border="0" align="center" cellpadding="0" cellspacing="0">
+						  <tr>
+                            <td class="hui_13" style="padding:10px 20px">
+							<ul id="relnew">
+							
+							  </ul></td>
+							  <script>
+			  
+				if(document.getElementById("relnew").innerText=="")
+				{
+				document.getElementById("RelNews").style.display="none"}
+			  </script>
+                          </tr>
+						   </table>
+						</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+    </table></td>
+    <td width="15" background="../../../images/cn53r02.gif"><img src="../../../images/cn53r01.jpg"></td>
+  </tr>
+</table>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="77" align="center" valign="top" background="http://www.dlh.pmo.cas.cn/images/cn53bottom01.gif"><table width="970" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="234" height="57" align="center" background="http://www.dlh.pmo.cas.cn/images/cn53bottom02.gif"><a href="javascript:;"><img src="../../../images/cn53bottom04.jpg" width="186" height="57" border="0"></a></td>
+          <td width="2" background="http://www.dlh.pmo.cas.cn/images/cn53bottom02.gif"><img src="../../../images/cn53bottom03.gif" width="2" height="43"></td>
+          <td width="714" background="http://www.dlh.pmo.cas.cn/images/cn53bottom02.gif" class="cn51white13" style="padding:0 0 0 20px">Copyright？2003-2009 中国科学院紫金山天文台青海观测站 版权所有 青ICP备06001436号<br> 
+            <span class="cn51blue124">青海省德令哈市邮政局人民路支局26号信箱（天文台）817000<br>电话：09778221935 传真：09778224970
+</span></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>

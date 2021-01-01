@@ -1,0 +1,80 @@
+
+body {color: #000;margin: 0px;font-family: Arial;background: url(cn53bj01.gif) repeat-x top #e6e6e6;}
+a:hover {text-decoration: underline;}
+a {text-decoration: none;color: #000;}
+table {text-align:left;line-height: 18px;text-decoration: none;font-size: 12px;}
+.input{ border:1px solid #2e5298; width:104px; height:18px; line-height:18px;}
+
+.cn51hui12{font-size: 12px;color: #646464;}
+.cn51red12{font-size: 12px;color: #FF0000;}
+.cn51toppd{font-weight: bold;color: #FFFFFF;padding: 0 18px 0 18px;font-size: 12px;}
+.cn51white12{font-size: 12px;color: #000;}
+.cn51white13{font-size: 12px;color: #FFF;}
+.cn51white12b{font-size: 12px;font-weight: bold;color: #FFFFFF;}
+.cn51white14b{font-size: 14px;font-weight: bold;color: #FFFFFF;}
+.cn51leftjj{background-image: url(http://www.dlh.pmo.cas.cn/images/cn53left06.gif);background-repeat: repeat-x;background-position: top;}
+.cn51blue12{font-size: 12px;color: #2e526b;}
+.cn51blue122{font-size: 12px;color: #064286;}
+.cn51blue123{font-size: 12px;color: #485E64;}
+.cn51blue124{font-size: 12px;color: #C4D9E5;}
+.cn51blue125{font-size: 12px;color: #506C84;}
+.cn51black12b{font-size: 12px;color: #FFF;font-weight: bold;}
+.cn51black13b{font-size: 12px;color: #000;font-weight: bold;}
+.cn51black14b{font-size: 14px;color: #000;font-weight: bold;}
+.cn51black14{font-size: 14px;color: #000;}
+.cn51gghui{color: #646464;padding:5px 0 5px 0;font-size: 12px;line-height: 16px;}
+.cn51hui12{color: #4D4D4D;font-size: 12px;}
+.cn51hui122{color: #616466;font-size: 12px;}
+.cn51hui123{color: #8F8F8F;font-size: 12px;}
+.cn5rightdl input{WIDTH: 120px;height:18px;color: #666;border: 1px solid #54728F;}
+.cn5rightkj{margin: 5px 7px 5px 0;border-top-width: 5px;border-right-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;border-top-color: #E9E9E9;border-right-color: #E9E9E9;border-bottom-color: #E9E9E9;}
+.black_20_600 {font-size: 20px;color: #000;font-weight: bold;line-height: 28px;padding: 20px 25px 20px 25px;}
+
+.font03{font-size:12px; font-style:normal; color:#888888; border-bottom:1px dashed #d1d1d1;}
+.font04{font-size:14px; line-height: 24px; font-style:normal; color:#424242; padding:20px 25px;border-bottom:1px dashed #d1d1d1;}
+.font05{font-size:12px; font-style:normal; color:#505050; background-color:#f1f1f1;font-weight:bold; padding-left:10px;}
+.hui_13{font-size: 12px;color: #454444;font-family: "宋体";}
+
+.line{ border: 1px solid #455b68; padding:2px; margin:2px;}
+.title{ background:url(cn53title.jpg) no-repeat left; height:32px; width:235px;}
+.title01{ background: url(cn53title01.jpg) repeat-y left; height:34px; width:235px; border-bottom: 1px solid #3967b1;}
+.banner{ background:url(cn53logo001.jpg) no-repeat top; height:152px; width:970px;}
+.logo{ background:url(cn53img0.jpg) repeat-x; height:64px;}
+.box{ background-color:#f1f9fe; border: 1px solid #acb7c0; width:227px; margin:10px 0px; padding:8px 3px;}
+
+.h1{font-size: 14px;color: #000;font-weight: bold; line-height:35px;}
+.yellow{font-size: 12px;color: #FF6600;font-weight:normal;text-decoration: underline;}
+
+
+
+.cas_content {
+        font-family: Arial, "宋体";
+        text-indent:21pt;
+        padding-bottom:12px;
+        padding-top:0px;
+        margin:0px;
+        line-height:25px;
+        font-size:14px;
+}
+.cas_content P{
+        text-indent:21pt;
+        padding-bottom:12px;
+        padding-top:0px;
+        margin:0px;
+        line-height:25px;
+        font-size:14px;
+}
+.cas_content a:link,visited,hover,active{font-size:14px;}
+.cas_content table td{
+        text-indent:0pt;
+        padding-bottom:0px;
+        padding-top:0px;
+        font-size:14px;
+
+}
+.cas_content table p{
+        text-indent:0pt;
+        padding-bottom:0px;
+        padding-top:0px;
+        font-size:14px;
+} 
